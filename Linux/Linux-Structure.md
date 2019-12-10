@@ -5,6 +5,7 @@
 
 ## Boot
 <table>
+<tbody>
 <tr>
 <td rowspan=1> Boot Steps </td>
 <td rowspan=1> IC PC Register - Bios - MBR,GPT - BootLoader - Kernel - Systemd </td>
@@ -20,7 +21,7 @@
 <td rowspan=1> Partition type </td>
 <td rowspan=1> Primary - Extended(Logical) - LVM - swap </td>
 </tr>
-<tbody>
+</tbody>
 </table>
 
 
@@ -33,6 +34,7 @@
 <td rowspan=1> GRUB - LILO - BURGO </td>
 </tr>
 <tr>
+  </tbody>
 </table>
 
 
