@@ -34,7 +34,7 @@
 <td rowspan=1> GRUB - LILO - BURGO </td>
 </tr>
 <tr>
-  </tbody>
+</tbody>
 </table>
 
 
