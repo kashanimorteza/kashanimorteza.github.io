@@ -1,45 +1,51 @@
+<style>
+.md1{margin-bottom: 50px;}
+.md2{margin-bottom: 50px;}
+</style>
+
+
 # [<span style="color:black;">Linux Basic</span>](Linux.md)
 [Basic](Linux-Basic.md) | [Structure](Linux-Structure.md) | [Components](Linux-Components.md) | [Requirement](Linux-Requirement.md) | [Command](Linux-Command.md) | [Config](Linux-Config.md)
+<div class="md1"></div>
 
-<br>
 
 ## History
 Multics - Unix - Plan 9 - MINIX - BSD
+<div class="md2"></div>
 
 
-<br><br>
 ## Character
 Linus Torvalds - Richard Stallman
+<div class="md2"></div>
 
 
-<br><br>
 ## Organization
 GNU - FSF  -  OSI  -  CC  -  RFC
+<div class="md2"></div>
 
 
-<br><br>
 ## Standard
 Posix
+<div class="md2"></div>
 
 
-<br><br>
 ## Licence & Software Types
 Commercial  -  Shareware  -  Freeware  -  Open Source
 <br>
 GPL
+<div class="md2"></div>
 
 
-<br><br>
 ## Evidence
 LPI  -  LPIC-1  -  LPIC-2  -  LPIC-3
+<div class="md2"></div>
 
 
-<br><br>
 ## Concept
 GNU limux OS = Linux kernel + GNU Software
+<div class="md2"></div>
 
 
-<br><br>
 ## Resource
 #### General
 <a href="http://www.kernel.org/" target="_blank">kernel</a> - <a href="http://www.gnu.org/" target="_blank">gnu</a> - <a href="http://www.linux.com/" target="_blank">linux</a> - <a href="http://www.distrowatch.com/" target="_blank">distrowatch</a>

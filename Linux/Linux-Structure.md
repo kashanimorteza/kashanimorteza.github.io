@@ -31,7 +31,6 @@
 <td>stat, splice, dup, ...</td>
 </tr>
 </tbody></table>
-
 <table><tbody>
 <tr>
 <td rowspan="1">Layer 2</td>
@@ -42,7 +41,6 @@
 <td rowspan="1">Network</td>
 </tr>
 </tbody></table>
-
 <table><tbody>
 <tr>
 <td rowspan="2">Layer 1</td>
