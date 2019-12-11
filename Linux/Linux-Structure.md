@@ -4,24 +4,11 @@
 <br>
 
 ## Boot
-
-<table>
-<tbody>
-<tr>
-<td rowspan="1"> Boot Steps </td>
-<td rowspan="1"> IC PC Register - Bios - MBR,GPT - BootLoader - Kernel - Systemd </td>
-</tr>
-<tr>
-<td rowspan="1"> Boot type </td>
-<td rowspan="1"> Bios - UEFI </td>
-</tr>
-<tr>
-<td rowspan="1"> Partition Table </td>
-<td rowspan="1"> MBR - GPT </td>
-</tr>
-<td rowspan="1"> Partition type </td>
-<td rowspan="1"> Primary - Extended(Logical) - LVM - swap </td>
-</tr>
+<table><tbody>
+<tr><td rowspan="1"> Boot Steps </td><td rowspan="1"> IC PC Register - Bios - MBR,GPT - BootLoader - Kernel - Systemd </td></tr>
+<tr><td rowspan="1"> Boot type </td><td rowspan="1"> Bios - UEFI </td></tr>
+<tr><td rowspan="1"> Partition Table </td><td rowspan="1"> MBR - GPT </td></tr>
+<tr><td rowspan="1"> Partition type </td><td rowspan="1"> Primary - Extended(Logical) - LVM - swap </td></tr>
 </tbody>
 </table>
 
@@ -29,73 +16,43 @@
 
 <br><br>
 ## Boot Loader
-<table>
-<tbody>
-<td rowspan="1"> Boot Loader </td>
-<td rowspan="1"> GRUB - LILO - BURGO </td>
-</tr>
-<tr>
-</tbody>
-</table>
+<table><tbody>
+<tr><td rowspan="1"> Boot Loader </td><td rowspan="1"> GRUB - LILO - BURGO </td></tr>
+</tbody></table>
 
 
 
 <br><br>
 ## Kernel
-<table>
-<tbody>
-<tr>
-<td rowspan="1">Layer 3</td>
-<td rowspan="1">System Call Interfaces (SCI)</td>
-<td>stat, splice, dup, ...</td>
-</tr>
-</tbody>
-</table>
-<table>
-<tbody>
-<tr>
-<td rowspan="1">Layer 2</td>
-<td rowspan="1">Process Scheduling</td>
-<td rowspan="1">IPCSub</td>
-<td rowspan="1">Memory Management</td>
-<td rowspan="1">VirtualFiles</td>
-<td rowspan="1">Network</td>
-</tr>
-</tbody>
-</table>
-<table>
-<tbody>
-<tr>
-<td rowspan=2>Layer 1</td>
-<td rowspan="1">Other Subsystems: </td>
-<td rowspan="1">ALSA, DRI, evdev, LVM, Device mapper, Linux Network Scheduler, Netfilter</td>
-</tr>
-<tr>
-<td rowspan="1">Security Modules</td>
-<td rowspan="1"> SELinux, TOMOYO, AppArmor, Smack</td>
-</tr>
-</tbody>
-</table>
+<table><tbody>
+<tr><td rowspan="1">Layer 3</td><td rowspan="1">System Call Interfaces (SCI)</td><td>stat, splice, dup, ...</td></tr>
+</tbody></table>
+
+<table><tbody>
+<tr><td rowspan="1">Layer 2</td><td rowspan="1">Process Scheduling</td><td rowspan="1">IPCSub</td><td rowspan="1">Memory Management</td><td rowspan="1">VirtualFiles</td><td rowspan="1">Network</td></tr>
+</tbody></table>
+
+<table><tbody>
+<tr><td rowspan=2>Layer 1</td><td rowspan="1">Other Subsystems: </td><td rowspan="1">ALSA, DRI, evdev, LVM, Device mapper, Linux Network Scheduler, Netfilter</td></tr>
+<tr><td rowspan="1">Security Modules</td><td rowspan="1"> SELinux, TOMOYO, AppArmor, Smack</td></tr>
+</tbody></table>
 
 
 <br><br>
 ## C Standard Library
-<table>
-<tbody>
+<table><tbody>
 <tr>
 <td rowspan="1">glibc</td>
 <td rowspan="1">uClibc</td>
 <td rowspan="1">bionic</td>
 <td rowspan="1">Other Implementations</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 
 
 <br><br>
 ## Low-level System Components
-<table>
-<tbody>
+<table><tbody>
 <tr>
 <td rowspan="1">System daemons</td>
 <td rowspan="1">systemd, runit,logind, networkd, soundd</td>
@@ -108,24 +65,15 @@
 <td rowspan="1">Other Libraries</td>
 <td rowspan="1">GTK+, Qt, EFL,SDL, SFML, FLTK, GNUstep</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 
 
 <br><br>
 ## High-level System Components
-<table>
-<tbody>
-<tr>
-<td rowspan="1">Shell system</td>
-<td rowspan="1">Bash, </td>
-</tr>
-<tr>
-<td rowspan="1">Package Manager System (PMS)</td>
-<td rowspan="1">RPMT, dpkg, yum, knl</td>
-</tr>
-</tbody>
-</table>
+<table><tbody>
+<tr><td rowspan="1">Shell system</td><td rowspan="1">Bash, </td></tr>
+<tr><td rowspan="1">Package Manager System (PMS)</td><td rowspan="1">RPMT, dpkg, yum, knl</td></tr>
+</tbody></table>
 
 
 <br><br>
