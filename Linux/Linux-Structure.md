@@ -25,16 +25,34 @@
 <br><br>
 ## Kernel
 <table><tbody>
-<tr><td rowspan="1">Layer 3</td><td rowspan="1">System Call Interfaces (SCI)</td><td>stat, splice, dup, ...</td></tr>
+<tr>
+<td rowspan="1">Layer 3</td>
+<td rowspan="1">System Call Interfaces (SCI)</td>
+<td>stat, splice, dup, ...</td>
+</tr>
 </tbody></table>
 
 <table><tbody>
-<tr><td rowspan="1">Layer 2</td><td rowspan="1">Process Scheduling</td><td rowspan="1">IPCSub</td><td rowspan="1">Memory Management</td><td rowspan="1">VirtualFiles</td><td rowspan="1">Network</td></tr>
+<tr>
+<td rowspan="1">Layer 2</td>
+<td rowspan="1">Process Scheduling</td>
+<td rowspan="1">IPCSub</td>
+<td rowspan="1">Memory Management</td>
+<td rowspan="1">VirtualFiles</td>
+<td rowspan="1">Network</td>
+</tr>
 </tbody></table>
 
 <table><tbody>
-<tr><td rowspan=2>Layer 1</td><td rowspan="1">Other Subsystems: </td><td rowspan="1">ALSA, DRI, evdev, LVM, Device mapper, Linux Network Scheduler, Netfilter</td></tr>
-<tr><td rowspan="1">Security Modules</td><td rowspan="1"> SELinux, TOMOYO, AppArmor, Smack</td></tr>
+<tr>
+<td rowspan="2">Layer 1</td>
+<td rowspan="1">Other Subsystems: </td>
+<td rowspan="1">ALSA, DRI, evdev, LVM, Device mapper, Linux Network Scheduler, Netfilter</td>
+</tr>
+<tr>
+<td rowspan="1">Security Modules</td>
+<td rowspan="1"> SELinux, TOMOYO, AppArmor, Smack</td>
+</tr>
 </tbody></table>
 
 
