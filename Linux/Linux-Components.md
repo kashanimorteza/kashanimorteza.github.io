@@ -6,10 +6,11 @@
 ## System and Service Manage : Systemd
 
 <table><tbody>
-<tr><td rowspan=1>Developer</td><td>Redhat</td></tr>
-<tr><td rowspan=1>Wetsite</td><td><a href="https://www.freedesktop.org/wiki/" target="_blank">www.freedesktop.org</a></td></tr>
-<tr><td rowspan=1>Github</td><td><a href="https://github.com/systemd" target="_blank">www.github.com/systemd</a></td></tr>
-<tr><td rowspan=1>Wiki</td><td><a href="https://www.freedesktop.org/wiki/Software/systemd/" target="_blank">www.freedesktop.org/wiki/Software/systemd/</a></td></tr>
+<tr><td colspan="2" align="center" bgcolor="D1ECCF">Info</td></tr>
+<tr><td rowspan="1">Developer</td><td>Redhat</td></tr>
+<tr><td rowspan="1">Wetsite</td><td><a href="https://www.freedesktop.org/wiki/" target="_blank">www.freedesktop.org</a></td></tr>
+<tr><td rowspan="1">Github</td><td><a href="https://github.com/systemd" target="_blank">www.github.com/systemd</a></td></tr>
+<tr><td rowspan="1">Wiki</td><td><a href="https://www.freedesktop.org/wiki/Software/systemd/" target="_blank">www.freedesktop.org/wiki/Software/systemd/</a></td></tr>
 </tbody></table>
 
 <br>
