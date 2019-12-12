@@ -23,7 +23,7 @@
 </tbody></table>
 <div class="md3"></div>
 <table><tbody>
-<tr><td colspan="2" align=center bgcolor="D1ECCF">Structure</td></tr>
+<tr><td colspan="2" align="center" bgcolor="D1ECCF">Structure</td></tr>
 <tr><td rowspan="1">Libraries</td><td>dbus-1 - libpam - libcam - libcryptsetup - tcpwrapper - libaudit - libnotify</td></tr>
 <tr><td rowspan="1">Components</td><td>journald - logind - networkd - tmpfiles - timedated - udevd - Systemd-boot</td></tr>
 <tr><td rowspan="1">Units</td><td>service - socket - device - mount - automount - swap - target - path - timer - snapshot - slice - scope</td></tr>
@@ -34,7 +34,7 @@
 </tbody></table>
 <div class="md3"></div>
 <table><tbody>
-<tr><td colspan="2" align=center bgcolor="D1ECCF">Hierarchy of configuration files</td></tr>
+<tr><td colspan="2" align="center" bgcolor="D1ECCF">Hierarchy of configuration files</td></tr>
 <tr><td rowspan="1">Local configuration</td><td>/etc/systemd/system</td></tr>
 <tr><td rowspan="1">Runtime units</td><td>/run/systemd/system</td></tr>
 <tr><td rowspan="1">Units of installed packages</td><td>/usr/lib/systemd/system</td></tr>
