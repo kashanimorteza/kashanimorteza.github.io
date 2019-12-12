@@ -18,7 +18,6 @@
 <tr><td rowspan="1"> Boot Steps </td><td rowspan="1"> IC PC Register - Bios - MBR,GPT - BootLoader - Kernel - Systemd </td></tr>
 <tr><td rowspan="1"> Boot type </td><td rowspan="1"> Bios - UEFI </td></tr>
 <tr><td rowspan="1"> Partition Table </td><td rowspan="1"> MBR - GPT </td></tr>
-<tr><td rowspan="1"> Partition type </td><td rowspan="1"> Primary - Extended(Logical) - LVM - swap </td></tr>
 <tr><td rowspan="1"> Boot Loader </td><td rowspan="1"> GRUB - LILO - BURGO </td></tr>
 </tbody>
 </table>

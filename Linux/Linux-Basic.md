@@ -51,7 +51,17 @@ GPL
 <div class="md1"></div>
 
 ## Evidence
-LPI  -  LPIC-1  -  LPIC-2  -  LPIC-3
+<table><tbody>
+<tr><td rowspan="1">Certification</td><td>LPI  -  LPIC-1  -  LPIC-2  -  LPIC-3</td></tr>
+<tr><td rowspan="1">Wetsite</td><td><a href="http://Lpi.org" target="_blank">Lpi</a> - <a href="http://lpimarketplace.com" target="_blank">lpimarketplace</a> - <a href="http://Gratisexam.com" target="_blank">Gratisexam</a> - <a href="http://ibm.com/developerworks/library/l-lpic1-map/" target="_blank">ibm</a></td></tr>
+</tbody></table>
+
+
+
+ <br>
+
+
+
 
 
 <div class="md1"></div>
@@ -66,32 +76,17 @@ GNU limux OS = Linux kernel + GNU Software
 ## Resource
 #### General
 <div>
-<a href="http://www.kernel.org/" target="_blank">kernel</a> - <a href="http://www.gnu.org/" target="_blank">gnu</a> - 
-<a href="http://www.linux.com/" target="_blank">linux</a> - <a href="http://www.distrowatch.com/" target="_blank">distrowatch</a> - 
-<a href="http://linux.org" target="_blank">linux</a> - <a href="http://Opensource.org" target="_blank">Opensource</a>
-</div>
-
-<div>
-<a href="http://x.org " target="_blank">x</a> - <a href="http://kde.org " target="_blank">kde</a> - <a href="http://gnome.org " target="_blank">gnome</a>
-</div>
-
-<div>
+<a href="http://www.kernel.org/" target="_blank">kernel</a> - 
+<a href="http://www.gnu.org/" target="_blank">gnu</a> - 
+<a href="http://www.linux.com/" target="_blank">linux</a> - 
+<a href="http://Opensource.com" target="_blank">Opensource</a> -
+<a href="http://x.org " target="_blank">x</a> - 
+<a href="http://kde.org " target="_blank">kde</a> - 
+<a href="http://gnome.org " target="_blank">gnome</a> - 
+<a href="http://www.distrowatch.com/" target="_blank">distrowatch</a> -
 <a href=" http://Linuxalt.com" target="_blank">Linuxalt</a> - 
-<a href="http://Linuxrsp.ru" target="_blank">Linuxrsp</a> - 
 <a href="http://putty.org" target="_blank">putty</a> - 
-<a href="http://tivo.com" target="_blank">tivo</a> - 
-<a href="http://partedmagic.com" target="_blank">partedmagic</a> - 
-<a href="http://openwrt.org" target="_blank">openwrt</a> - 
-<a href="http://polarcloud.com" target="_blank">polarcloud</a> - 
-<a href="http://Lpi.org" target="_blank">Lpi</a> - 
-</div>
-
-<div>
-<a href="http://lpimarketplace.com" target="_blank">lpimarketplace</a> - 
-<a href="http://Gratisexam.com" target="_blank">Gratisexam</a> - 
-<a href="http://lpic.mp3yab.ir" target="_blank">lpic.mp3yab</a> - 
-<a href="http://ibm.com/developerworks/library/l-lpic1-map/" target="_blank">ibm</a> - 
-<a href="http://gitbook.com/book/jadi/lpic1/details" target="_blank">gitbook</a>
+<a href="http://openwrt.org" target="_blank">openwrt</a> 
 </div>
 
 #### Boot
