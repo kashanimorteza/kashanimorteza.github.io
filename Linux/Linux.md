@@ -1,25 +1,45 @@
+<style>
+.md1{margin-top: 75px;}
+.md2{margin-top: 50px;}
+.md3{margin-top: 25px;}
+</style>
+
+
+
 # [<span style="color:black;">Linux</span>](../index.md) 
 
-<br>
+
+
+<div class="md3"></div>
 
 [Basic](Linux-Basic.md)
 
-<br>
+
+
+<div class="md3"></div>
 
 [Structure](Linux-Structure.md)
 
-<br>
+
+
+<div class="md3"></div>
 
 [Components](Linux-Components.md)
 
-<br>
+
+
+<div class="md3"></div>
 
 [Requirement](Linux-Requirement.md)
 
-<br>
+
+
+<div class="md3"></div>
 
 [Command](Linux-Command.md)
 
-<br>
+
+
+<div class="md3"></div>
 
 [Config](Linux-Config.md)

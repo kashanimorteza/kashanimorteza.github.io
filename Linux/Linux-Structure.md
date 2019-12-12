@@ -1,7 +1,17 @@
+<style>
+.md1{margin-top: 75px;}
+.md2{margin-top: 50px;}
+.md3{margin-top: 25px;}
+</style>
+
+
+
 # [<span style="color:black;">Linux Structure</span>](Linux.md)
 [Basic](Linux-Basic.md) | [Structure](Linux-Structure.md) | [Components](Linux-Components.md) | [Requirement](Linux-Requirement.md) | [Command](Linux-Command.md) | [Config](Linux-Config.md)
 
-<br>
+
+
+<div class="md1"></div>
 
 ## Boot
 <table><tbody>
@@ -9,20 +19,14 @@
 <tr><td rowspan="1"> Boot type </td><td rowspan="1"> Bios - UEFI </td></tr>
 <tr><td rowspan="1"> Partition Table </td><td rowspan="1"> MBR - GPT </td></tr>
 <tr><td rowspan="1"> Partition type </td><td rowspan="1"> Primary - Extended(Logical) - LVM - swap </td></tr>
+<tr><td rowspan="1"> Boot Loader </td><td rowspan="1"> GRUB - LILO - BURGO </td></tr>
 </tbody>
 </table>
 
 
 
-<br><br>
-## Boot Loader
-<table><tbody>
-<tr><td rowspan="1"> Boot Loader </td><td rowspan="1"> GRUB - LILO - BURGO </td></tr>
-</tbody></table>
+<div class="md1"></div>
 
-
-
-<br><br>
 ## Kernel
 <table><tbody>
 <tr>
@@ -52,9 +56,17 @@
 <td rowspan="1"> SELinux, TOMOYO, AppArmor, Smack</td>
 </tr>
 </tbody></table>
+<table><tbody>
+<tr>
+<td rowspan="1">/etc/fstab</td>
+<td>kernel linux read this file at the first</td>
+</tr>
+</tbody></table>
 
 
-<br><br>
+
+<div class="md1"></div>
+
 ## C Standard Library
 <table><tbody>
 <tr>
@@ -64,9 +76,11 @@
 <td rowspan="1">Other Implementations</td>
 </tr>
 </tbody></table>
+<div class="md2"></div>
 
 
-<br><br>
+<div class="md1"></div>
+
 ## Low-level System Components
 <table><tbody>
 <tr>
@@ -84,7 +98,9 @@
 </tbody></table>
 
 
-<br><br>
+
+<div class="md1"></div>
+
 ## High-level System Components
 <table><tbody>
 <tr><td rowspan="1">Shell system</td><td rowspan="1">Bash, </td></tr>
@@ -92,25 +108,9 @@
 </tbody></table>
 
 
-<br><br>
-## runLevel
 
+<div class="md1"></div>
 
-<br><br>
-## File system
-
-<br><br>
-## Hard Disk
-
-| Subject | Memeber |
-| ------ | ------ |
-| /etc/fstab   | kernel linux read this file at the first  |
-
-<br><br>
-## Account & Permission
-
-
-<br><br>
 ## Other
 System daemons - Windowing system - Other libraries - GUI(Gnome)
 * [Init] - 
@@ -121,10 +121,11 @@ System daemons - Windowing system - Other libraries - GUI(Gnome)
 * [Folders] - 
 * [Runlevel] - 
 * [Variables] - 
-<br><br>
 
 
-<br><br>
+
+<div class="md1"></div>
+
 ## Process
 | Process | E |
 | ------ | ------ |
@@ -136,32 +137,25 @@ System daemons - Windowing system - Other libraries - GUI(Gnome)
 | UUID |  |
 
 
-<br><br>
-## Security
 
 
-<br><br>
-## Network
 
+<div class="md1"></div>
 
-<br><br>
-## Log  
-/var/log/messages<br>
-dmesg
-
-
-<br><br>
 ## Script
 
 
-<br><br>
+<div class="md1"></div>
+
 ## Bash
 
 
-<br><br>
+<div class="md1"></div>
+
 ## Reqular expression
 
 
-<br><br>
+<div class="md1"></div>
+
 ## Folder system
 Search on internet

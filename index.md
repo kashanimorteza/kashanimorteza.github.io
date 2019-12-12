@@ -1,16 +1,38 @@
+<style>
+.md1{margin-top: 75px;}
+.md2{margin-top: 50px;}
+.md3{margin-top: 25px;}
+</style>
+
+
+
 version 1
+
+
 
 # Computer
 
+
+
+<div class="md3"></div>
+
 [Linux](Linux/Linux.md)
-<br>
+
+
+
+<div class="md3"></div>
 
 [Atom](Atom/0-Atom.md)
-<br>
+
+
+
+<div class="md3"></div>
 
 [Git](Git/0-Git.md)
-<br>
+
+
+
+<div class="md3"></div>
 
 [Go](Go/Go.md)
-<br>
 

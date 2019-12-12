@@ -1,65 +1,70 @@
 <style>
-.md1{margin-bottom: 50px;}
-.md2{margin-bottom: 50px;}
+.md1{margin-top: 75px;}
+.md2{margin-top: 50px;}
+.md3{margin-top: 25px;}
 </style>
+
 
 
 # [<span style="color:black;">Linux Basic</span>](Linux.md)
 [Basic](Linux-Basic.md) | [Structure](Linux-Structure.md) | [Components](Linux-Components.md) | [Requirement](Linux-Requirement.md) | [Command](Linux-Command.md) | [Config](Linux-Config.md)
-<div class="md1"></div>
 
+
+
+<div class="md1"></div>
 
 ## History
 Multics - Unix - Plan 9 - MINIX - BSD
-<div class="md2"></div>
 
+
+
+<div class="md1"></div>
 
 ## Character
 Linus Torvalds - Richard Stallman
-<div class="md2"></div>
 
+
+
+<div class="md1"></div>
 
 ## Organization
 GNU - FSF  -  OSI  -  CC  -  RFC
-<div class="md2"></div>
 
+
+
+<div class="md1"></div>
 
 ## Standard
 Posix
-<div class="md2"></div>
 
+
+
+<div class="md1"></div>
 
 ## Licence & Software Types
 Commercial  -  Shareware  -  Freeware  -  Open Source
 <br>
 GPL
-<div class="md2"></div>
 
+
+
+<div class="md1"></div>
 
 ## Evidence
 LPI  -  LPIC-1  -  LPIC-2  -  LPIC-3
-<div class="md2"></div>
 
+
+<div class="md1"></div>
 
 ## Concept
 GNU limux OS = Linux kernel + GNU Software
-<div class="md2"></div>
 
+
+
+<div class="md1"></div>
 
 ## Resource
 #### General
-
-<div>
-<a href="" target="_blank">aaa</a> - 
-<a href="" target="_blank">aaaa</a> - 
-<a href="" target="_blank">aaa</a> - 
-<a href="" target="_blank">aaa</a> - 
-<a href="" target="_blank">aaaa</a> - 
-<a href="" target="_blank">aaa</a> - 
-<a href="" target="_blank">aaaa</a> - 
-<a href="" target="_blank">aaa</a>
-</div>
-
 <div>
 <a href="http://www.kernel.org/" target="_blank">kernel</a> - <a href="http://www.gnu.org/" target="_blank">gnu</a> - 
 <a href="http://www.linux.com/" target="_blank">linux</a> - <a href="http://www.distrowatch.com/" target="_blank">distrowatch</a> - 
@@ -89,9 +94,6 @@ GNU limux OS = Linux kernel + GNU Software
 <a href="http://gitbook.com/book/jadi/lpic1/details" target="_blank">gitbook</a>
 </div>
 
-
-
-
 #### Boot
 https://en.wikipedia.org/wiki/GNU_GRUB <br>
 https://en.wikipedia.org/wiki/NTLDR <br>
@@ -114,6 +116,17 @@ http://www.tldp.org/LDP/sag/html/run
 #### Hard Disk
 http://www.tldp.org/LDP/sag/html/dev-fs.html <br>
 https://www.computerhope.com/unix/umount.htm <br>
+
+<div>
+<a href="" target="_blank">aaa</a> - 
+<a href="" target="_blank">aaaa</a> - 
+<a href="" target="_blank">aaa</a> - 
+<a href="" target="_blank">aaa</a> - 
+<a href="" target="_blank">aaaa</a> - 
+<a href="" target="_blank">aaa</a> - 
+<a href="" target="_blank">aaaa</a> - 
+<a href="" target="_blank">aaa</a>
+</div>
 
 
 
