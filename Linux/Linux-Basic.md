@@ -58,11 +58,6 @@ GPL
 
 
 
- <br>
-
-
-
-
 
 <div class="md1"></div>
 

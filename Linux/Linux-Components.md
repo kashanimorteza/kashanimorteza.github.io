@@ -49,6 +49,9 @@
 | ------ | ------ |
 | b | a |
 
+/var/log/messages<br>
+dmesg
+
 
 
 
@@ -108,18 +111,5 @@
 
 <div class="md1"></div>
 
-## Security
+## Security : iptables
 
-
-
-<div class="md1"></div>
-
-## Network
-
-
-
-<div class="md1"></div>
-
-## Log  
-/var/log/messages<br>
-dmesg
