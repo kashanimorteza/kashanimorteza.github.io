@@ -2,14 +2,22 @@
 .md1{margin-top: 75px;}
 .md2{margin-top: 50px;}
 .md3{margin-top: 25px;}
+.tbl1 td#header{background-color: D1ECCF}
 </style>
-
-
 
 # [<span style="color:black;">Linux Components</span>](Linux.md)
 [Basic](Linux-Basic.md) | [Structure](Linux-Structure.md) | [Components](Linux-Components.md) | [Requirement](Linux-Requirement.md) | [Command](Linux-Command.md) | [Config](Linux-Config.md)
 
+<div class="md1"></div>
 
+## Boot Loader : Grub2
+<table><tbody>
+<tr><td colspan="2" align="center" bgcolor="D1ECCF">Config Files</td></tr>
+<tr><td rowspan="1">custom boot</td><td>/etc/grub.d/40_custom</td></tr>
+<tr><td rowspan="1">--</td><td>/etc/defaults/grub</td></tr>
+<tr><td rowspan="1">---</td><td>/etc/grub.d/</td></tr>
+<tr><td rowspan="1">---</td><td>/boot/grub/grub.cfg</td></tr>
+</tbody></table>
 
 <div class="md1"></div>
 

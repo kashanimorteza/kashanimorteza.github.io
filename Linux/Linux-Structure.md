@@ -2,23 +2,17 @@
 .md1{margin-top: 75px;}
 .md2{margin-top: 50px;}
 .md3{margin-top: 25px;}
+.tbl1 td#header{background-color: D1ECCF}
 </style>
-
-
 
 # [<span style="color:black;">Linux Structure</span>](Linux.md)
 [Basic](Linux-Basic.md) | [Structure](Linux-Structure.md) | [Components](Linux-Components.md) | [Requirement](Linux-Requirement.md) | [Command](Linux-Command.md) | [Config](Linux-Config.md)
-
-
 
 <div class="md1"></div>
 
 ## Boot
 <table><tbody>
-<tr><td rowspan="1"> Boot Steps </td><td rowspan="1"> IC PC Register - Bios - MBR,GPT - BootLoader - Kernel - Systemd </td></tr>
-<tr><td rowspan="1"> Boot type </td><td rowspan="1"> Bios - UEFI </td></tr>
-<tr><td rowspan="1"> Partition Table </td><td rowspan="1"> MBR - GPT </td></tr>
-<tr><td rowspan="1"> Boot Loader </td><td rowspan="1"> GRUB - LILO - BURGO </td></tr>
+<tr><td rowspan="1"> Boot Loader </td><td rowspan="1"> Grub </td></tr>
 </tbody>
 </table>
 

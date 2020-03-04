@@ -1,10 +1,15 @@
+<style>
+.md1{margin-top: 75px;}
+.md2{margin-top: 50px;}
+.md3{margin-top: 25px;}
+.tbl1 td#header{background-color: D1ECCF}
+</style>
+
 # [<span style="color:black;">Linux Command</span>](Linux.md)
 [Basic](Linux-Basic.md) | [Structure](Linux-Structure.md) | [Components](Linux-Components.md) | [Requirement](Linux-Requirement.md) | [Command](Linux-Command.md) | [Config](Linux-Config.md)
 
-<br>
+<div class="md1"></div>
 
-
-<br><br>
 ## Hardware
 | Command | Explain |
 | ------ | ------ |
@@ -15,8 +20,8 @@
 | lspcmcia   | Show all mcia card |
 | blkid  | Show block id like HDD  |
 
+<div class="md1"></div>
 
-<br><br>
 ## Kernel
 | Command | Explain |
 | ------ | ------ |
@@ -31,10 +36,8 @@
 | systemctl get-default   | Filter |
 | systemd-analyze   | - |
 
-
-
-
-<br><br>
+<div class="md1"></div><br><br>
+	
 ## Process
 | Command | Explain |
 | ------ | ------ |
@@ -44,9 +47,8 @@
 | kill -9 33407   | kill process with PID 33407 |
 | pkill -KILL fire* | kill all process that starts wirh fire |
 
-
-
-<br><br>
+<div class="md1"></div>
+	
 ## File
 | Command | Explain |
 | ------ | ------ |
@@ -55,8 +57,8 @@
 | locate   | Find Directory or file |
 | which   | Show path of program |
 
-
-<br><br>
+<div class="md1"></div>
+	
 ## Network
 | Command | Explain |
 | ------ | ------ |
@@ -66,8 +68,8 @@
 | ip addr   | Show network card with some information with ipaddress |
 | ip -s link   | Shoe detail of informaion about network card |
 
-
-<br><br>
+<div class="md1"></div>
+	
 ## Libreary
 | Command | Explain |
 | ------ | ------ |
@@ -75,7 +77,8 @@
 | -  | -  |
 
 
-<br><br>
+<div class="md1"></div>
+	
 ## Hard Disk
 | Command | Explain |
 | ------ | ------ |
@@ -86,9 +89,23 @@
 | mount/umount  | add hard to file sytem  |
 | fdisk  | partition bandi  |
 
-
+<div class="md1"></div>
+	
 ## Log
 | Command | Explain |
 | ------ | ------ |
 | dmesg   | Show all log  |
+
+<div class="md1"></div>	
+	
+## Sofware
+#### Parted
+<table class="tbl1"><tbody>
+<tr ><td colspan="1" align="center" id="header">Command</td><td align="center" id="header">Description</td></tr>
+<tr><td rowspan="1">1</td><td>2</td></tr>
+<tr><td rowspan="1">1</td><td>2</td></tr>
+<tr><td rowspan="1">1</td><td>2</td></tr>
+<tr><td rowspan="1">1</td><td>2</td></tr>
+<tr><td rowspan="1">1</td><td>2</td></tr>
+</tbody></table>	
 

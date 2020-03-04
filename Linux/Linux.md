@@ -2,13 +2,10 @@
 .md1{margin-top: 75px;}
 .md2{margin-top: 50px;}
 .md3{margin-top: 25px;}
+.tbl1 td#header{background-color: D1ECCF}
 </style>
 
-
-
 # [<span style="color:black;">Linux</span>](../index.md) 
-
-
 
 <div class="md3"></div>
 
@@ -43,3 +40,6 @@
 <div class="md3"></div>
 
 [Config](Linux-Config.md)
+
+
+

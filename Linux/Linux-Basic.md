@@ -2,14 +2,11 @@
 .md1{margin-top: 75px;}
 .md2{margin-top: 50px;}
 .md3{margin-top: 25px;}
+.tbl1 td#header{background-color: D1ECCF}
 </style>
-
-
 
 # [<span style="color:black;">Linux Basic</span>](Linux.md)
 [Basic](Linux-Basic.md) | [Structure](Linux-Structure.md) | [Components](Linux-Components.md) | [Requirement](Linux-Requirement.md) | [Command](Linux-Command.md) | [Config](Linux-Config.md)
-
-
 
 <div class="md1"></div>
 

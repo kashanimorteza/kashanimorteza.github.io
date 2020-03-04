@@ -1,41 +1,49 @@
+<style>
+.md1{margin-top: 75px;}
+.md2{margin-top: 50px;}
+.md3{margin-top: 25px;}
+.tbl1 td#header{background-color: D1ECCF}
+</style>
+
 # [<span style="color:black;">Linux Requirement</span>](Linux.md)
 [Basic](Linux-Basic.md) | [Structure](Linux-Structure.md) | [Components](Linux-Components.md) | [Requirement](Linux-Requirement.md) | [Command](Linux-Command.md) | [Config](Linux-Config.md)
 
-<br>
+<div class="md1"></div>
+
+## Boot
+<table class="tbl1"><tbody>
+<tr ><td colspan="1" align="center" id="header">Subject</td><td align="center" id="header">Memeber</td></tr>
+<tr><td rowspan="1">Boot Steps</td><td>IC PC Register - Bios - MBR,GPT - BootLoader - Kernel - Systemd</td></tr>
+<tr><td rowspan="1">Boot type</td><td>Bios - UEFI</td></tr>
+<tr><td rowspan="1">Partition Table</td><td>MBR - GPT</td></tr>
+<tr><td rowspan="1">Partition type</td><td>Primary - Extended(Logical) - LVM - swap</td></tr>
+</tbody></table>
+
+<div class="md1"></div>
+
+## Graphic
+<table class="tbl1"><tbody>
+<tr ><td colspan="1" align="center" id="header">Subject</td><td align="center" id="header">Memeber</td></tr>
+<tr><td rowspan="1">User interface types</td><td>CLI - GUI - NUI - VUI</td></tr>
+<tr><td rowspan="1">Windowing system</td><td>X Window System(X11)</td></tr>
+<tr><td rowspan="1">Display manager</td><td>GDM, KDM</td></tr>
+<tr><td rowspan="1">Desktop environment</td><td>Gnome, KDE - Xfce - Unity</td></tr>
+</tbody></table>
+
+<div class="md1"></div>
 
 ## Variable
-| Variable | Explain |
-| ------ | ------ |
-| LD_LIBRARY_PATH   | Read libreary first from this path |
+<table class="tbl1"><tbody>
+<tr ><td colspan="1" align="center" id="header">Name</td><td align="center" id="header">Explain</td></tr>
+<tr><td rowspan="1">LD_LIBRARY_PATH</td><td>Read libreary first from this path</td></tr>
+</tbody></table>
 
-<br><br>
-## Boot
-| Subject | Memeber |
-| ------ | ------ |
-| Boot Steps | IC PC Register - Bios - MBR,GPT - BootLoader - Kernel - Systemd |
-| Boot type | Bios - UEFI |
-| Partition Table | MBR - GPT |
-| Boot Loader | GRUB - LILO - BURGO |
-| Partition type | Primary - Extended(Logical) - LVM - swap |
+<div class="md1"></div>
 
-
-<br><br>
-## Graphic
-| Subject | Member |
-| ------ | ------ |
-| User interface types | CLI - GUI - NUI - VUI |
-| Windowing system | X Window System(X11) |
-| Display manager | GDM, KDM |
-| Desktop environment | Gnome, KDE - Xfce - Unity |
-
-
-
-
-
-<br><br>
 ## Software
 | Windows | Linux |
 | ------ | ------ |
+|Partition Manager | Parted - Gparted
 |Paint | LibreOffice Draw, Pinta
 |Adobe Photoshop (Pixel) | Gimp (Pixel)
 |Adobe Illustrator (Vector) | InkScape (Vector)
@@ -56,7 +64,6 @@
 |Corel Video Studio | Kdenlive,OpenShot
 |Subtitle Editor | Gnome Subtitle
 |NotePad | leafPad,gEdit,Scribes
-|Partition Manager | Gparted
 |Google Picasa | Shotwell
 |Guitar Pro | TuxGuitar
 |Dictionary | GoldenDict,starDict

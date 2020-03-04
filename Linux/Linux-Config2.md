@@ -5,10 +5,11 @@
 .tbl1 td#header{background-color: D1ECCF}
 </style>
 
+
 # [<span style="color:black;">Linux Config</span>](Linux.md)
 [Basic](Linux-Basic.md) | [Structure](Linux-Structure.md) | [Components](Linux-Components.md) | [Requirement](Linux-Requirement.md) | [Command](Linux-Command.md) | [Config](Linux-Config.md)
 
-<div class="md1"></div>
+<br>
 
 ## Config file
 | File | Config |
@@ -17,82 +18,8 @@
 | /etc/ld.so.cache     | Libreary name and phth of cash |
 | /etc/apt/sources.list     | List Of Packages |
 
-<div class="md1"></div>
 
-
-## Boot
-
-#### Create efi booting partition
-	open cmd run as administrator 
-	-----------------------------
-    diskpart	
-	list disk
-    select disk X
-	------
-    clean
-	convert gpt
-	select partition 1
-	delete partition override
-	------
-	CREATE PARTITION PRIMARY SIZE=50
-	format quick label=EFI fs=fat32
-	assign letter=m
-	------
-	Copy EFI folder from linux iso file to this partition
-
-#### Create partition for iso files
-	open cmd run as administrator 
-	-----------------------------
-    diskpart
-	list disk
-    select disk X
-	------
-	CREATE PARTITION PRIMARY SIZE=2300
-	format quick label=Fedora-Server-ISO fs=ntfs
-	assign letter=n
-	------
-	CREATE PARTITION PRIMARY SIZE=2100
-	format quick label=Fedora-Workstation-ISO fs=ntfs
-	assign letter=p
-	------
-	CREATE PARTITION PRIMARY SIZE=1600
-	format quick label=Fedora-Xfce-ISO fs=ntfs
-	assign letter=q
-	------
-	CREATE PARTITION PRIMARY SIZE=7300
-	format quick label=CentOS-ISO fs=ntfs
-	assign letter=r
-	------
-	CREATE PARTITION PRIMARY SIZE=2100
-	format quick label=Ubuntu-ISO fs=ntfs
-	assign letter=s
-	------
-	CREATE PARTITION PRIMARY SIZE=1700
-	format quick label=Ubuntu-Xfce-ISO fs=ntfs
-	assign letter=t
-	------
-	CREATE PARTITION PRIMARY SIZE=5900
-	format quick label=Windows-10-ISO fs=ntfs
-	assign letter=u
-
-
-
-#### Add Menu to grub
-	Add these lines to filr /etc/grub.d/40_custom :
-	---------------------------------------------------
-	menuentry "Install Linux Ubuntu-18.04.2" {
-	set isofile="/Linux-Ubuntu-18.04.2-desktop-amd64.iso"
-	loopback loop (hd1,2)$isofile
-	linuxefi (loop)/casper/vmlinuz boot=casper iso-scan/filename=${isofile} quiet splash
-	initrdefi (loop)/casper/initrd
-	}
-	
-	Run this command : update-grub
-	
-
-	
-	
-	
+<br /><br />
 ## User
 #### Enable root user
     sudo passwd root
@@ -117,15 +44,21 @@
 
 
 
-<div class="md1"></div>
-
+<br /><br />
 ## Install software
 #### Update
-	dnf update
-	dnf upgrade
+	[Fedora]
+	sudo dnf update
+	sudo dnf upgrade
+	
+	[Ubuntu]
+	sudo dnf update
+	sudo dnf upgrade
+
 #### Chrome
-	su
-    
+	sudo -i
+	su -
+
 	[Method 1]
 	dnf install fedora-workstation-repositories
 	dnf config-manager --set-enabled google-chrome
@@ -135,8 +68,15 @@
 	[Method 2]
 	sudo dnf install https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 	google-chrome
-#### Notepad++
-	dnf install notepadqq 
+
+
+	[Ubuntu]
+	sudo apt install libxss1 libappindicator1 libindicator7
+	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+	sudo dpkg -i google-chrome*.deb
+	if u want to Run google-chrome as root :
+	Vim /usr/bin/google-chrome
+	Add to end of the file : --user-data-dir
 #### Xdman
 	wget https://datapacket.dl.sourceforge.net/project/xdman/xdm-2018-x64.tar.xz
 	tar -xvf xdm-2018-x64.tar.xz
@@ -166,6 +106,10 @@
 	sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 	sudo apt-get update
 	sudo apt-get install grub-customizer
+#### Notepad++
+	sudo add-apt-repository ppa:notepadqq-team/notepadqq
+	sudo apt-get update
+	sudo apt-get install notepadqq
 #### Telegram
 	sudo add-apt-repository ppa:atareao/telegram 
 	sudo apt-get update 
