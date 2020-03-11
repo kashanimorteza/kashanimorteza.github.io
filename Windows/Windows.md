@@ -7,7 +7,12 @@
 
 # [<span style="color:black;">Windows</span>](../index.md) 
 
-
 <div class="md3"></div>
 
 [Config](Windows-Config.md)
+
+
+
+<div class="md3"></div>
+
+[Script](Windows-Script.md)

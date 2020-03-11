@@ -6,7 +6,7 @@
 </style>
 
 # [<span style="color:black;">Linux Basic</span>](Linux.md)
-[Basic](Linux-Basic.md) | [Structure](Linux-Structure.md) | [Components](Linux-Components.md) | [Requirement](Linux-Requirement.md) | [Command](Linux-Command.md) | [Config](Linux-Config.md)
+[Basic](Linux-Basic.md) | [Structure](Linux-Structure.md) | [Components](Linux-Components.md) | [Requirement](Linux-Requirement.md) | [Command](Linux-Command.md) | [Config](Linux-Config.md) | [Script](Linux-Script.md)
 
 <div class="md1"></div>
 

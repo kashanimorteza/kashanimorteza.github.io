@@ -6,7 +6,7 @@
 </style>
 
 # [<span style="color:black;">Windows Config</span>](Windows.md)
-[Config](Windows-Config.md)
+[Config](Windows-Config.md) | [Script](Windows-Script.md) 
 
 <div class="md1"></div>
 
@@ -52,3 +52,25 @@
     diskpart
     select disc 1
     active
+	
+	
+
+<div class="md1"></div>	
+	
+## Create EFI Partitions
+	open cmd run as administrator 
+	-----------------------------
+    diskpart	
+	list disk
+    select disk X
+	------
+    clean
+	convert gpt
+	select partition 1
+	delete partition override
+	------
+	CREATE PARTITION PRIMARY SIZE=50
+	format quick label=UEFI fs=fat32
+	assign letter=m
+	------
+	Copy EFI folder from linux iso file to this partition

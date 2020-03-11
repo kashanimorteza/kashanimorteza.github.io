@@ -6,7 +6,7 @@
 </style>
 
 # [<span style="color:black;">Linux Config</span>](Linux.md)
-[Basic](Linux-Basic.md) | [Structure](Linux-Structure.md) | [Components](Linux-Components.md) | [Requirement](Linux-Requirement.md) | [Command](Linux-Command.md) | [Config](Linux-Config.md)
+[Basic](Linux-Basic.md) | [Structure](Linux-Structure.md) | [Components](Linux-Components.md) | [Requirement](Linux-Requirement.md) | [Command](Linux-Command.md) | [Config](Linux-Config.md) | [Script](Linux-Script.md)
 
 <div class="md1"></div>
 
@@ -21,62 +21,6 @@
 
 
 ## Boot
-
-#### Create efi booting partition
-	open cmd run as administrator 
-	-----------------------------
-    diskpart	
-	list disk
-    select disk X
-	------
-    clean
-	convert gpt
-	select partition 1
-	delete partition override
-	------
-	CREATE PARTITION PRIMARY SIZE=50
-	format quick label=EFI fs=fat32
-	assign letter=m
-	------
-	Copy EFI folder from linux iso file to this partition
-
-#### Create partition for iso files
-	open cmd run as administrator 
-	-----------------------------
-    diskpart
-	list disk
-    select disk X
-	------
-	CREATE PARTITION PRIMARY SIZE=2300
-	format quick label=Fedora-Server-ISO fs=ntfs
-	assign letter=n
-	------
-	CREATE PARTITION PRIMARY SIZE=2100
-	format quick label=Fedora-Workstation-ISO fs=ntfs
-	assign letter=p
-	------
-	CREATE PARTITION PRIMARY SIZE=1600
-	format quick label=Fedora-Xfce-ISO fs=ntfs
-	assign letter=q
-	------
-	CREATE PARTITION PRIMARY SIZE=7300
-	format quick label=CentOS-ISO fs=ntfs
-	assign letter=r
-	------
-	CREATE PARTITION PRIMARY SIZE=2100
-	format quick label=Ubuntu-ISO fs=ntfs
-	assign letter=s
-	------
-	CREATE PARTITION PRIMARY SIZE=1700
-	format quick label=Ubuntu-Xfce-ISO fs=ntfs
-	assign letter=t
-	------
-	CREATE PARTITION PRIMARY SIZE=5900
-	format quick label=Windows-10-ISO fs=ntfs
-	assign letter=u
-
-
-
 #### Add Menu to grub
 	Add these lines to filr /etc/grub.d/40_custom :
 	---------------------------------------------------
