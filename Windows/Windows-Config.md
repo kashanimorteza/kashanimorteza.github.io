@@ -26,14 +26,14 @@
 	------
     CREATE PARTITION PRIMARY SIZE=6144    
     format quick fs=ntfs
-	assign letter=i	
+	assign letter=w
 	-------
 	exit	
 	------
     extract windows image to partition i
 	copy efi folder fro, rufus to s partition
     ------
-	for mbr system
+	for mbr partition table
     open cmd with administrator 
     i:
     cd boot 

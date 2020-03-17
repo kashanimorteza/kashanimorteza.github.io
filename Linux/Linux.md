@@ -43,6 +43,11 @@
 
 
 
+<div class="md3"></div>
+
+[Install](Linux-Install.md)
+
+
 
 <div class="md3"></div>
 
