@@ -5,8 +5,8 @@
 .tbl1 td#header{background-color: D1ECCF}
 </style>
 
-# [<span style="color:black;">Linux Structure</span>](Linux.md)
-[Basic](Linux-Basic.md) | [Structure](Linux-Structure.md) | [Components](Linux-Components.md) | [Requirement](Linux-Requirement.md) | [Command](Linux-Command.md) | [Config](Linux-Config.md) | [Install](Linux-Install.md) | [Script](Linux-Script.md)
+# [<span style="color:black;">Python Structure</span>](Python.md)
+[Basic](Python-Basic.md) | [Structure](Python-Structure.md) | [Components](Python-Components.md) | [Requirement](Python-Requirement.md) | [Command](Python-Command.md) | [Config](Python-Config.md) | [Install](Python-Install.md) | [Script](Python-Script.md)
 <div class="md1"></div>
 
 
@@ -44,17 +44,17 @@
 <tr>
 <td rowspan="2">Layer 1</td>
 <td rowspan="1">Other Subsystems: </td>
-<td rowspan="1">ALSA, DRI, evdev, LVM, Device mapper, Linux Network Scheduler, Netfilter</td>
+<td rowspan="1">ALSA, DRI, evdev, LVM, Device mapper, Python Network Scheduler, Netfilter</td>
 </tr>
 <tr>
 <td rowspan="1">Security Modules</td>
-<td rowspan="1"> SELinux, TOMOYO, AppArmor, Smack</td>
+<td rowspan="1"> SEPython, TOMOYO, AppArmor, Smack</td>
 </tr>
 </tbody></table>
 <table><tbody>
 <tr>
 <td rowspan="1">/etc/fstab</td>
-<td>kernel linux read this file at the first</td>
+<td>kernel Python read this file at the first</td>
 </tr>
 </tbody></table>
 

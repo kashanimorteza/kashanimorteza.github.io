@@ -5,57 +5,57 @@
 .tbl1 td#header{background-color: D1ECCF}
 </style>
 
-# [<span style="color:black;">Linux</span>](../index.md) 
+# [<span style="color:black;">Python</span>](../index.md) 
 
 <div class="md3"></div>
 
-[Basic](Linux-Basic.md)
-
-
-
-
-<div class="md3"></div>
-
-[Structure](Linux-Structure.md)
+[Basic](Python-Basic.md)
 
 
 
 
 <div class="md3"></div>
 
-[Components](Linux-Components.md)
+[Structure](Python-Structure.md)
 
 
 
 
 <div class="md3"></div>
 
-[Requirement](Linux-Requirement.md)
+[Components](Python-Components.md)
 
 
 
 
 <div class="md3"></div>
 
-[Command](Linux-Command.md)
+[Requirement](Python-Requirement.md)
 
 
 
 
 <div class="md3"></div>
 
-[Config](Linux-Config.md)
+[Command](Python-Command.md)
 
 
 
 
 <div class="md3"></div>
 
-[Install](Linux-Install.md)
+[Config](Python-Config.md)
 
 
 
 
 <div class="md3"></div>
 
-[Script](Linux-Script.md)
+[Install](Python-Install.md)
+
+
+
+
+<div class="md3"></div>
+
+[Script](Python-Script.md)

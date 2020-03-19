@@ -12,15 +12,30 @@ version 1
 
 # Computer
 
+<div class="md3"></div>
+
+[Linux](Linux/Linux.md)
+
+
+
+
+<div class="md3"></div>
+
+[Python](Python/Python.md)
+
+
+
+<div class="md3"></div>
+
+[Linux](Postgress/Postgress.md)
+
+
+
 
 <div class="md3"></div>
 
 [Windows](Windows/Windows.md)
 
-
-<div class="md3"></div>
-
-[Linux](Linux/Linux.md)
 
 
 
@@ -30,13 +45,14 @@ version 1
 
 
 
+
 <div class="md3"></div>
 
 [Git](Git/0-Git.md)
 
 
 
+
 <div class="md3"></div>
 
 [Go](Go/Go.md)
-

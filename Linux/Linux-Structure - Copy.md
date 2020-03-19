@@ -104,6 +104,51 @@
 
 
 
+<div class="md1"></div>
+
+## Other
+System daemons - Windowing system - Other libraries - GUI(Gnome)
+* [Init] - 
+* [Hal] - 
+* [debus] - 
+* [udev] - 
+* [UUID] - 
+* [Folders] - 
+* [Runlevel] - 
+* [Variables] - 
+
+
+
+<div class="md1"></div>
+
+## Process
+| Process | E |
+| ------ | ------ |
+| Hal | مثلا کارت شبکه اول رو eth0 قرار میده، فارق از اینکه مدلش چیه و یا برای چه کارخانه ای اس |
+| dbus | یک باس زیر نرم افزارهااست، مثلا وقتی موس به سیستم وصل شد به برنامه X بگو یه کارایی انجام بده  |
+| udev | یه سری اتفاق رو هندل میکنه، مثلا وقتی فلش دیسک رو زدم بیا یه سری کار انجام بد |
+| init | مادر تمام پروسه ها |
+| LVM | چند تا هارد رو بوسیله LVM بصورت یک هارد به سیستم عامل نشان بده |
+| UUID |  |
+
+
+
+
+
+<div class="md1"></div>
+
+## Script
+
+
+<div class="md1"></div>
+
+## Bash
+
+
+<div class="md1"></div>
+
+## Reqular expression
+
 
 <div class="md1"></div>
 
