@@ -168,3 +168,12 @@
 		linuxefi (loop5)/casper/vmlinuz boot=casper iso-scan/filename=${isofile} quiet splash
 		initrdefi (loop5)/casper/initrd
 	}
+
+
+
+## openvpn
+
+	#!/bin/bash
+	
+	sudo openvpn --config /home/morteza/Downloads/vpnbook/vpnbook-us2-udp25000.ovpn --auth-user-pass /home/morteza/Downloads/vpnbook/login.conf
+

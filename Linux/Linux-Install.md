@@ -16,6 +16,11 @@
 	dnf update
 	dnf upgrade
 
+	dnf clean all
+	rm -fr /var/cache/dnf
+	dnf -y upgrade
+	dnf -y update
+
 
 
 
@@ -25,17 +30,31 @@
 
 
 ## Tools
-#### Network
-	sudo apt install -f
-	sudo apt install net-tools	
+#### EPEL
+	dnf -y install epel-release
+	yum config-manager --set-enabled PowerTools
+
+	dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+
+#### Network	
+	dnf install net-tools
+	
 #### ntfs
-	yum install epel-release
-	yum install ntfs-3g
-	mkdir /mnt/win
-	mount -t ntfs-3g /dev/sdb1 /mnt/win
-	umount /mnt/win
-	nano /etc/fstab
-	/dev/sdb1 /mnt/win ntfs-3g defaults 0 0
+	dnf -y install ntfs-3g	
+	
+	wget https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2017.3.23.tgz
+	tar -zxvf ntfs-3g_ntfsprogs-2017.3.23.tgz
+	cd ntfs-3g_ntfsprogs-2017.3.23
+	./configure --prefix=/usr/local --disable-static
+	make
+	make install
+
+	mkdir /media/sda1
+	mount -t ntfs-3g /dev/sd11 /media/sda1
+	umount /media/sda1
+
+	vim /etc/fstab
+	/dev/sda1 /media/sda1 ntfs-3g defaults 0 0
 
 
 
@@ -46,38 +65,35 @@
 
 
 ## Software
-#### Chrome
-	su
-    
-	[Method 1]
-	dnf install fedora-workstation-repositories
-	dnf config-manager --set-enabled google-chrome
-	dnf install google-chrome-stable
-	google-chrome
-	
-	[Method 2]
-	sudo dnf install https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-	google-chrome
-	
-#### Notepad++
-	dnf install notepadqq 
-	
+#### Chrome		
+	curl -SLo chrome.rpm https://dl.google.com/linux/direct/google-chrome-		stable_current_x86_64.rpm
+	dnf localinstall chrome.rpm
+
+#### Telegram
+	Download from telegram.com
+
+	dnf config-manager --add-repo ppa:atareao/telegram
+	dnf update 
+	dnf install telegram
+
 #### Xdman
-	wget https://datapacket.dl.sourceforge.net/project/xdman/xdm-2018-x64.tar.xz
-	tar -xvf xdm-2018-x64.tar.xz
-	sudo ./install.sh
+	curl -SLo xdm.xz https://github.com/subhra74/xdm/releases/download/7.2.10/xdm-setup-7.2.10.tar.xz
+	tar -xvf xdm.xz
+	./install.sh
 	
 #### Openvpn
-	sudo apt install network-manager-openvpn-gnome
-	sudo openvpn --config /path/to/config.ovpn
+	dnf install openvpn
+
+	git clone https://github.com/Nyr/openvpn-install.git
+	cd ./openvpn-install
+	chmod +x ./openvpn-install.sh
+	./openvpn-install.sh
+
+	sudo openvpn --config /home/morteza/Downloads/vpnbook/vpnbook-us2-udp25000.ovpn --auth-user-pass login.conf
 	
-#### Git
-	sudo apt install git
-	
-#### Atom
-	sudo add-apt-repository ppa:webupd8team/atom
-	sudo apt update
-	sudo apt install atom
+#### Atom	
+	curl -SLo atom.rpm https://atom.io/download/rpm
+	dnf localinstall atom.rpm
 	
 #### f.lux
 	sudo add-apt-repository ppa:nathan-renniewaldock/flux
@@ -98,15 +114,16 @@
 	sudo apt-get update
 	sudo apt-get install grub-customizer
 	
-#### Telegram
-	sudo add-apt-repository ppa:atareao/telegram 
-	sudo apt-get update 
-	sudo apt-get install telegram
+
 	
 #### unetbootin
 	sudo add-apt-repository ppa:gezakovacs/ppa 
 	sudo apt-get update 
 	sudo apt-get install unetbootin
+
+
+#### Git
+	dnf --enablerepo="epel" install git
 
 
 
