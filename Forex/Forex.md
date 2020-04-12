@@ -2,71 +2,60 @@
 .md1{margin-top: 75px;}
 .md2{margin-top: 50px;}
 .md3{margin-top: 25px;}
+.tbl1 td#header{background-color: D1ECCF}
 </style>
 
-
-
-version 1
-
-
-
-# Computer
+# [<span style="color:black;">Forex</span>](../index.md) 
 
 <div class="md3"></div>
 
-[Linux](Linux/Linux.md)
+[Basic](Forex-Basic.md)
 
 
 
 
 <div class="md3"></div>
 
-[Python](Python/Python.md)
+[Structure](Forex-Structure.md)
 
 
 
 
 <div class="md3"></div>
 
-[Postgress](Postgress/Postgress.md)
+[Components](Forex-Components.md)
 
 
 
 
 <div class="md3"></div>
 
-[Forex](Forex/Forex.md)
+[Requirement](Forex-Requirement.md)
 
 
 
 
 <div class="md3"></div>
 
-[Windows](Windows/Windows.md)
+[Command](Forex-Command.md)
 
 
 
 
 <div class="md3"></div>
 
-[Atom](Atom/0-Atom.md)
+[Config](Forex-Config.md)
 
 
 
 
 <div class="md3"></div>
 
-[Git](Git/0-Git.md)
+[Install](Forex-Install.md)
 
 
 
 
 <div class="md3"></div>
 
-[Go](Go/Go.md)
-
-
-
-<div class="md3"></div>
-
-[Rhino](Rhino/Rhino.md)
+[Script](Forex-Script.md)

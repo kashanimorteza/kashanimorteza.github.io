@@ -90,12 +90,6 @@
 	./openvpn-install.sh
 
 	sudo openvpn --config /home/morteza/Downloads/vpnbook/vpnbook-us2-udp25000.ovpn --auth-user-pass login.conf
-
-#### VirtualBox	
-	dnf config-manager --add-repo=https://download.virtualbox.org/virtualbox/rpm/el/virtualbox.repo
-	rpm --import https://www.virtualbox.org/download/oracle_vbox.asc
-	dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
-	dnf install -y VirtualBox-6.1
 	
 #### Atom	
 	curl -SLo atom.rpm https://atom.io/download/rpm
