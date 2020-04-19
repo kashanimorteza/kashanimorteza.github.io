@@ -82,13 +82,10 @@
 
 	hdd="sdd"
 
-	cp -r /media/sda4/Users/Morteza/Desktop/Computer/. /media/"$hdd"1
+	sudo cp -r /media/sda4/Users/Morteza/Desktop/Computer/. /media/"$hdd"1
 
-	cp -r /media/"$hdd"1/NewGrub/EFI /media/"$hdd"2
+	sudo cp -r /media/"$hdd"1/NewGrub/EFI /media/"$hdd"2
 
-	mount -t iso9660 /media/"$hdd"1/Linux-Fedora-Server.iso /media/iso -o loop
-	cp -r /media/iso/. /media/"$hdd"3/
-	rm -fr /media/"$hdd"3/EFI/
 	
 	
 	
@@ -114,8 +111,41 @@
 	insmod gzio
 	insmod part_gpt
 	insmod ext2
+
 	set timeout=60
+
 	search --no-floppy --set=root -l 'Fedora-S-dvd-x86_64-31'
+
+
+
+	menuentry "Install --- Centos" {
+
+		set isofile=/linux-centos.iso
+		loopback loop3 (hd0,5)$isofile
+		linuxefi (loop3)/images/pxeboot/vmlinuz inst.repo=hd:sda5 quiet
+		initrdefi (loop3)/images/pxeboot/initrd.img
+	}
+	menuentry "Install --- Ubuntu" {
+		
+		set isofile=/linux-ubuntu.iso
+		loopback loop4 (hd0,5)$isofile
+		linuxefi (loop4)/casper/vmlinuz boot=casper iso-scan/filename=${isofile} quiet splash
+		initrdefi (loop4)/casper/initrd
+	}
+	menuentry "Install --- Ubuntu Xfce" {
+		
+		set isofile=/linux-ubuntu-xfce.iso
+		loopback loop5 (hd0,5)$isofile
+		linuxefi (loop5)/casper/vmlinuz boot=casper iso-scan/filename=${isofile} quiet splash
+		initrdefi (loop5)/casper/initrd
+	}
+	menuentry "Install --- Minit" {
+		
+		set isofile=/linux-mint.iso
+		loopback loop6 (hd0,5)$isofile
+		linuxefi (loop6)/casper/vmlinuz boot=casper iso-scan/filename=${isofile} quiet splash
+		initrdefi (loop6)/casper/initrd
+	}
 
 
 	menuentry 'Windows' --class windows --class os $menuentry_id_option 'osprober-efi-38A7-4966' {
@@ -138,35 +168,6 @@
 		set root='hd1,4'
 		linux	/boot/vmlinuz-4.18.0-15-generic root=UUID=bd950b68-33f3-45ac-922e-e2f9770abd46 ro quiet splash
 		initrd	/boot/initrd.img-4.18.0-15-generic
-	}
-	menuentry 'Ubuntu Xfce' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-simple-bd950b68-33f3-45ac-922e-e2f9770abd46' {
-
-		set root='hd1,5'
-		linux	/boot/vmlinuz-4.18.0-15-generic root=UUID=bd950b68-33f3-45ac-922e-e2f9770abd46 ro quiet splash
-		initrd	/boot/initrd.img-4.18.0-15-generic
-	}
-
-
-	menuentry "Install --- Centos" {
-
-		set isofile=/linux-centos.iso
-		loopback loop3 (hd1,1)$isofile
-		linuxefi (loop3)/images/pxeboot/vmlinuz inst.repo=hd:sdb1 quiet
-		initrdefi (loop3)/images/pxeboot/initrd.img
-	}
-	menuentry "Install --- Ubuntu" {
-		
-		set isofile=/linux-ubuntu.iso
-		loopback loop4 (hd1,1)$isofile
-		linuxefi (loop4)/casper/vmlinuz boot=casper iso-scan/filename=${isofile} quiet splash
-		initrdefi (loop4)/casper/initrd
-	}
-	menuentry "Install --- Ubuntu Xfce" {
-		
-		set isofile=/linux-ubuntu-xfce.iso
-		loopback loop5 (hd1,1)$isofile
-		linuxefi (loop5)/casper/vmlinuz boot=casper iso-scan/filename=${isofile} quiet splash
-		initrdefi (loop5)/casper/initrd
 	}
 
 
