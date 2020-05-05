@@ -7,7 +7,7 @@
 </style>
 
 # [<span style="color:black;">Rhino Concept</span>](Rhino.md)
-[Basic](Rhino-Basic.md) | [Concept](Rhino-Concept.md) | [Setting](Rhino-Setting.md) | [Command](Rhino-Command.md) | [Note](Rhino-Note.md)
+[Basic](Rhino-Basic.md) | [Concept](Rhino-Concept.md) | [Setting](Rhino-Setting.md) | [Note](Rhino-Note.md) | [Create](Rhino-Command-Create.md) | [Change Position](Rhino-Command-ChangePosition.md) | [Change Object](Rhino-Command-ChangeObject.md) | [Analyze](Rhino-Command-Analyze.md)
 <div class="md1"></div>
 
 
