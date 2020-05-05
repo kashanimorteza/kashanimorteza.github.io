@@ -28,17 +28,38 @@
 
 
 
-<div class="md3"></div>
-
-[Command](Rhino-Command.md)
-
-
 
 
 <div class="md3"></div>
 
 [Note](Rhino-Note.md)
 
+
+
+
+
+
+<div class="md3"></div>
+
+[Create](Rhino-Command-Create.md)
+
+
+
+<div class="md3"></div>
+
+[Change Position](Rhino-Command-ChangePosition.md)
+
+
+
+<div class="md3"></div>
+
+[Change Object](Rhino-Command-ChangeObject.md)
+
+
+
+<div class="md3"></div>
+
+[Analyze](Rhino-Command-Analyze.md)
 
 
 
