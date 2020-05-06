@@ -7,7 +7,7 @@
 </style>
 
 # [<span style="color:black;">Rhino Basic</span>](Rhino.md)
-[Basic](Rhino-Basic.md) | [Interface](Rhino-Interface.md) | [CMD(Create)](Rhino-Command-Create.md) | [CMD(Change Position)](Rhino-Command-ChangePosition.md) | [CMD(Change Object)](Rhino-Command-ChangeObject.md) | [CMD(Analyze)](Rhino-Command-Analyze.md)
+[Basic](Rhino-Basic.md) | [Interface](Rhino-Interface.md) | [Create](Rhino-Command-Create.md) | [Position](Rhino-Command-ChangePosition.md) | [Object](Rhino-Command-ChangeObject.md) | [Analyze](Rhino-Command-Analyze.md)
 <div class="md1"></div>
 
 
