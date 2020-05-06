@@ -7,7 +7,7 @@
 </style>
 
 # [<span style="color:black;">Rhino Basic</span>](Rhino.md)
-[Basic](Rhino-Basic.md) | [Concept](Rhino-Concept.md) | [Setting](Rhino-Setting.md) | [Note](Rhino-Note.md) | [Create](Rhino-Command-Create.md) | [Change Position](Rhino-Command-ChangePosition.md) | [Change Object](Rhino-Command-ChangeObject.md) | [Analyze](Rhino-Command-Analyze.md)
+[Basic](Rhino-Basic.md) | [Interface](Rhino-Interface.md) | [CMD(Create)](Rhino-Command-Create.md) | [CMD(Change Position)](Rhino-Command-ChangePosition.md) | [CMD(Change Object)](Rhino-Command-ChangeObject.md) | [CMD(Analyze)](Rhino-Command-Analyze.md)
 <div class="md1"></div>
 
 
@@ -16,6 +16,24 @@
 ![](Rhino.jpeg)
 
 
+
+
 <div class="md0"></div>
 
-## Info
+
+
+
+## Design
+<table><tbody>
+<tr><td rowspan="1">Point</td><td> ----- </td></tr>
+<tr><td rowspan="1">Curve</td><td> ----- </td></tr>
+<tr><td rowspan="1">Surface</td><td> ----- </td></tr>
+<tr><td rowspan="1">Solid</td><td> ----- </td></tr>
+<tr><td rowspan="1">Mesh</td><td> ----- </td></tr>
+</tbody></table>
+
+<div class="md2"></div>
+
+<table><tbody>
+<tr><td rowspan="100">Line</td><td rowspan="1">Polyline</td><td>خطوطی که بهم رسده اند و همچنین چسبیده اند</td></tr>
+</tbody></table>
