@@ -7,7 +7,7 @@
 </style>
 
 # [<span style="color:black;">Rhino Command Analyze</span>](Rhino.md)
-[Basic](Rhino-Basic.md) | [Interface](Rhino-Interface.md) | [CMD(Create)](Rhino-Command-Create.md) | [CMD(Change Position)](Rhino-Command-ChangePosition.md) | [CMD(Change Object)](Rhino-Command-ChangeObject.md) | [CMD(Analyze)](Rhino-Command-Analyze.md)
+[Basic](Rhino-Basic.md) | [Interface](Rhino-Interface.md) | [Create](Rhino-Command-Create.md) | [Edit](Rhino-Command-ChangeObject.md) | [Analyze](Rhino-Command-Analyze.md) | [Object](Rhino-Command-ChangePosition.md)
 <div class="md1"></div>
 
 
@@ -19,7 +19,13 @@
 <tr align="center"><td>1</td><td>2</td><td>3</td></tr>
 </tbody></table>
 
-<div class="md2"></div>
+
+
+
+<div class="md0"></div>
+
+
+
 
 ## Point
 <table><tbody>

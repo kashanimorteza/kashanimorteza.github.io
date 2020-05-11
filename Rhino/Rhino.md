@@ -32,19 +32,21 @@
 
 <div class="md3"></div>
 
-[Change Position](Rhino-Command-ChangePosition.md)
+[Edit](Rhino-Command-ChangeObject.md)
 
 
-
-<div class="md3"></div>
-
-[Change Object](Rhino-Command-ChangeObject.md)
 
 
 
 <div class="md3"></div>
 
 [Analyze](Rhino-Command-Analyze.md)
+
+
+
+<div class="md3"></div>
+
+[Object](Rhino-Command-ChangePosition.md)
 
 
 

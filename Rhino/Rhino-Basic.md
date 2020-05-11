@@ -7,7 +7,7 @@
 </style>
 
 # [<span style="color:black;">Rhino Basic</span>](Rhino.md)
-[Basic](Rhino-Basic.md) | [Interface](Rhino-Interface.md) | [Create](Rhino-Command-Create.md) | [Position](Rhino-Command-ChangePosition.md) | [Object](Rhino-Command-ChangeObject.md) | [Analyze](Rhino-Command-Analyze.md)
+[Basic](Rhino-Basic.md) | [Interface](Rhino-Interface.md) | [Create](Rhino-Command-Create.md) | [Edit](Rhino-Command-ChangeObject.md) | [Analyze](Rhino-Command-Analyze.md) | [Object](Rhino-Command-ChangePosition.md)
 <div class="md1"></div>
 
 
@@ -23,7 +23,7 @@
 
 
 
-## Design
+## Concept
 <table><tbody>
 <tr><td rowspan="1">Point</td><td> ----- </td></tr>
 <tr><td rowspan="1">Curve</td><td> ----- </td></tr>
