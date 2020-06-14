@@ -7,14 +7,28 @@
 .tbl1 tr#header{background-color: D1ECCF}
 </style>
 
-# [<span style="color:black;">Dart Basic</span>](Dart.md)
+# [<span style="color:black;">Dart Structure</span>](Dart.md)
 [Basic](Dart-Basic.md) | [Structure](Dart-Structure.md) | [Programming](Dart-Programming.md) | [Library](Dart-Library.md) | [Packages](Dart-Packages.md) | [Debugging](Dart-Debugging.md) | [Command](Dart-Command.md) | [Script](Dart-Script.md)
 <div class="md1"></div>
 
 
 
 
-![](Dart.jpeg)
+## Data types
+
+
+
+	
+<div class="md0"></div>
+
+
+
+
+## Variable
+	var name = 'Smith';
+	String name = 'Smith'; 
+	dynamic x = "tom"; 
+	
 
 
 
@@ -24,8 +38,7 @@
 
 
 
-## Download
-<a href="https://dart.dev/tools/sdk/archive" target="_blank">SDK</a>
+## Operators
 
 
 
@@ -35,11 +48,39 @@
 
 
 
-## Resource
-#### General
-<a href="https://dart.dev/" target="_blank">Dart</a> - <a href="https://github.com/dart-lang" target="_blank">Github</a> - <a href="https://pub.dev" target="_blank">Pub</a> - 
+## Loops
 
 
-#### Learn
-<a href="https://welearn.site/course/flutter-video-tutorial/" target="_blank">welearn.site</a>
 
+
+<div class="md0"></div>
+
+
+
+
+## Decision Making
+
+
+
+
+<div class="md0"></div>
+
+
+
+
+## Data structures
+
+
+
+
+<div class="md0"></div>
+
+
+
+
+## OOP
+
+
+
+
+<div class="md0"></div>
