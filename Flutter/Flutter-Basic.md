@@ -1,12 +1,14 @@
 <style>
+.md0{margin-top: 150px;}
 .md1{margin-top: 75px;}
 .md2{margin-top: 50px;}
 .md3{margin-top: 25px;}
 .tbl1 td#header{background-color: D1ECCF}
+.tbl1 tr#header{background-color: D1ECCF}
 </style>
 
 # [<span style="color:black;">Flutter Basic</span>](Flutter.md)
-[Basic](Flutter-Basic.md) | [Structure](Flutter-Structure.md) | [Package](Flutter-Package.md) | [Command](Flutter-Command.md) | [Script](Flutter-Script.md)
+[Basic](Flutter-Basic.md) | [Widget](Flutter-Widget.md) | [Package](Flutter-Package.md) | [Command](Flutter-Command.md) | [Script](Flutter-Script.md)
 <div class="md1"></div>
 
 
@@ -17,7 +19,10 @@
 
 
 
-<div class="md1"></div>
+<div class="md0"></div>
+
+
+
 
 ## Download
 <a href="https://git-scm.com/downloads" target="_blank">Git</a>
@@ -32,13 +37,15 @@
 <br>
 <a href="https://java.com/en/download/" target="_blank">Java JRE</a>
 <br>
+<a href="https://www.oracle.com/java/technologies/javase-jdk11-downloads.html" target="_blank">Java JDK</a>
 
 
 
 
 
 
-<div class="md1"></div>
+
+<div class="md0"></div>
 
 
 
@@ -60,7 +67,7 @@ Install Flutter plugin for Visual Studio Code, Extenstions
 
 
 
-<div class="md1"></div>
+<div class="md0"></div>
 
 
 
@@ -83,7 +90,7 @@ Run command : flutter doctoru
 
 
 
-<div class="md1"></div>
+<div class="md0"></div>
 
 
 
