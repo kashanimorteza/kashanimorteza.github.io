@@ -7,8 +7,8 @@
 .tbl1 tr#header{background-color: D1ECCF}
 </style>
 
-# [<span style="color:black;">Flutter Script</span>](Flutter.md)
-[Basic](Flutter-Basic.md) | [Script](Flutter-Script.md)
+# [<span style="color:black;">Flutter Basic</span>](Flutter.md)
+[Basic](Flutter-Basic.md) | [Script](Flutter-Script.md) | [My Library](Flutter-MyLibrary.md) | [My Program](Flutter_MyProgram.md)
 <div class="md1"></div>
 
 
@@ -212,6 +212,49 @@
 	  }
 	}
 	
+	-------------------------------------------------------------
+	
+	import 'package:flutter/material.dart';
+
+	void main() => runApp(MyApp());
+
+	class MyApp extends StatelessWidget {
+	  @override
+	  Widget build(BuildContext context) {
+		return MaterialApp(
+		  title: 'Flutter App',
+		  home: MyHomePage(),
+		);
+	  }
+	}
+
+	class MyHomePage extends StatelessWidget {
+	  @override
+	  Widget build(BuildContext context) {
+		return Scaffold(
+		  appBar: AppBar(
+			title: Text('Flutter App'),
+		  ),
+		  body: Column(
+			children: <Widget>[
+			  Container(
+				width: double.infinity,
+				child: Card(
+				  color: Colors.blue,
+				  child: Text('CHART!'),
+				  elevation: 5,
+				),
+			  ),
+			  Card(
+				child: Text('LIST OF TX'),
+			  ),
+			],
+		  ),
+		);
+	  }
+	}
+
+	
 	
 	
 	
@@ -331,5 +374,159 @@
 			onPressed: selectHandler,
 		  ),
 		);
+	  }
+	}
+	
+
+
+
+	
+<div class="md0"></div>
+
+
+
+
+
+	
+## Example 1
+#### main.dart
+	import 'package:flutter/material.dart';
+	import './transaction.dart';
+	import './myclass.dart';
+
+	void main() => runApp(MyApp());
+
+	class MyApp extends StatelessWidget {
+	  @override
+	  Widget build(BuildContext context) {
+		return MaterialApp(
+		  title: 'Flutter App',
+		  home: MyHomePage(),
+		);
+	  }
+	}
+
+	class MyHomePage extends StatelessWidget {
+	  
+	  MyClass m = new MyClass();
+
+	  final List<Transaction> transactions = [
+		Transaction(
+		  id: 't1',
+		  title: 'New Shoes',
+		  amount: 69.99,
+		  date: DateTime.now(),
+		),
+		Transaction(
+		  id: 't2',
+		  title: 'Weekly Groceries',
+		  amount: 16.53,
+		  date: DateTime.now(),
+		),
+	  ];
+
+	  @override
+	  Widget build(BuildContext context) {
+		return Scaffold(
+		  appBar: AppBar(
+			title: Text('Flutter App'),
+		  ),
+		  body: Column(
+			mainAxisAlignment: MainAxisAlignment.spaceAround,
+			crossAxisAlignment: CrossAxisAlignment.stretch,
+			children: <Widget>[
+			  Column(
+				children: transactions.map((lits_item) {
+				  return Card(
+					color: Color.fromARGB(0xFF, 0x42, 0xA5, 0xF5),
+					child: Row(
+					  children: <Widget>[
+						Container(
+						  margin: EdgeInsets.symmetric(
+							vertical: 10,
+							horizontal: 15,
+						  ),
+						  decoration: BoxDecoration(
+							border: Border.all(
+							  color: Colors.purple,
+							  width: 2,
+							),
+						  ),
+						  padding: EdgeInsets.all(10),
+						  child: m.myText(
+							  id: 1, text: lits_item.amount.toString(), style: 3),
+						),
+						Column(
+						  crossAxisAlignment: CrossAxisAlignment.start,
+						  children: <Widget>[
+							m.myText(id: 1, text: lits_item.title, style: 2),
+							m.myText(
+								id: 1, text: lits_item.date.toString(), style: 1),
+						  ],
+						),
+					  ],
+					),
+				  );
+				}).toList(),
+			  ),
+			],
+		  ),
+		);
+	  }
+	}
+
+
+#### transaction.dart
+	import 'package:flutter/foundation.dart';
+
+	class Transaction {
+	  final String id;
+	  final String title;
+	  final double amount;
+	  final DateTime date;
+
+	  Transaction({
+		@required this.id,
+		@required this.title,
+		@required this.amount,
+		@required this.date,
+	  });
+	}
+
+
+#### myclass.dart
+	import 'package:flutter/cupertino.dart';
+	import 'package:flutter/material.dart';
+
+	class MyClass {
+	  
+	  Text myText({int id, String text, int style}) {
+		switch (id) {
+		  case 1:
+			return Text(
+			  text,
+			  style: myTextStyle(style),
+			);
+		}
+	  }
+
+	  TextStyle myTextStyle(int id) {
+		switch (id) {
+		  case 1:
+			return TextStyle(
+			  color: Colors.red,
+			);
+		  case 2:
+			return TextStyle(
+			  fontSize: 16,
+			  fontWeight: FontWeight.bold,
+			);
+		  case 3:
+			return TextStyle(
+			  fontWeight: FontWeight.bold,
+			  fontSize: 20,
+			  color: Colors.purple,
+			);
+		}
 	  }
 	}

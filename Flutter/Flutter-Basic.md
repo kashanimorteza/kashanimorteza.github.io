@@ -8,7 +8,7 @@
 </style>
 
 # [<span style="color:black;">Flutter Basic</span>](Flutter.md)
-[Basic](Flutter-Basic.md) | [Script](Flutter-Script.md)
+[Basic](Flutter-Basic.md) | [Script](Flutter-Script.md) | [My Library](Flutter-MyLibrary.md) | [Flutter_MyProgram](Flutter_MyProgram.md)
 <div class="md1"></div>
 
 
@@ -130,11 +130,11 @@ Run command : flutter doctoru
 
 
 
+## Question
+1 - evrery class as a key inpiut, whats that?
+<br>
+2 - transactions.map((tx) {}); --- dar morede list --- map<T>(T f(E e)) → Iterable<T>
 
-## Command
-1 - override method of class when inisialz a object of class
-2 - something about statelesswidget
-3 - different between const and final
 
 
 
