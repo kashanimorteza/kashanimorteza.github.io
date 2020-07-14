@@ -3,20 +3,35 @@
 .md1{margin-top: 75px;}
 .md2{margin-top: 50px;}
 .md3{margin-top: 25px;}
+.md4{margin-top: 5px;}
 .tbl1 td#header{background-color: D1ECCF}
 .tbl1 tr#header{background-color: D1ECCF}
 </style>
 
+
 # [<span style="color:black;">Python Basic</span>](Python.md)
 [Basic](Python-Basic.md) |
- [Structure](Python-Structure.md) | 
- [Script](Python-Script.md)
+[Structure](Python-Structure.md) | 
+[Script](Python-Script.md)
+
+
+<div class="md3"></div>
+<a href="#Resource">Resource</a> - 
+<a href="#Setup">Setup</a> - 
+<a href="#Interpretation">Interpretation</a> - 
+<a href="#package-manager">Package manager</a> - 
+<a href="#Question">Question</a>  
+
+
+
 
 
 
 <div class="md1"></div>
 
 ![](Python.jpeg)
+
+
 
 
 
@@ -42,9 +57,6 @@
 
 <div class="md0"></div>
 
-
-
-
 ## Setup
 	Install Python	
 	Install Visual Studio Code		
@@ -54,19 +66,24 @@
 
 
 
+
+
+
+
+
 <div class="md0"></div>
-
-
 
 ## Interpretation
 
 
 
 
+
+
+
+
+
 <div class="md0"></div>
-
-
-
 
 ## Package manager
 	python -m pip install --upgrade pip
@@ -78,11 +95,10 @@
 
 
 
+
+
+
 <div class="md0"></div>
-
-
-
-
 
 ## Question
 1 - فانکشنی هست که object بصورت ورودی میگیرد این یعنی چی؟

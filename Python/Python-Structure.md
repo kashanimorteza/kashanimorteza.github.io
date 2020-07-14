@@ -24,10 +24,9 @@
 <a href="#loop">Loop</a> - 
 <a href="#Function">Function</a> - 
 <a href="#OOP">OOP</a>
-<div class="md4"></div>
 <a href="#Iterator">Iterator</a> - 
 <a href="#Generator">Generator</a> - 
-<a href="#decorator">Decorator</a> -
+<a href="#decorator">Decorator</a>
 
 
 
@@ -164,7 +163,7 @@
 #### Method, Constructor
 #### Attribute, Property , Setter  , Getter
 #### Inheritance , Super , multiple inheritance, Method resolution order
-#### Polymorphism
+#### Polymorphisms
 
 
 
