@@ -346,16 +346,19 @@
 		print('callme')
 
 	Callme()
+	
 #### function With Return Value	
 	def Callme(name):    
 		return name
 
 	print(Callme('morteza'))
+	
 #### function With parameters	
 	def Callme(name):    
 		print(name)
 
 	Callme('morteza')
+	
 #### function With Default parameter values	
 	def Callme(name,family='kashani'):    
 		print(name + ' '+ family)
@@ -367,6 +370,7 @@
 		print(name + ' '+ family)
 
 	Callme(family="kashani",name="morteza")
+	
 #### function With dynamic parameters
 	def sum_all_numbers(*args):
 		print(type(args))
@@ -403,13 +407,15 @@
 	def display_info(a, b, *args, defPara="defalut", **kwargs):
     return [a, b, args, defPara, kwargs]
 
-	print(display_info(1, 2, 6, first_name="mohammad", last_name="ordookhani"))		
+	print(display_info(1, 2, 6, first_name="mohammad", last_name="ordookhani"))	
+	
 #### Anonymous functions
 	myFuction1 = lambda name: print(name)
 	myFuction1('morteza')
 
 	myFuction2 = lambda a,b: a+b
 	print(myFuction2(1,4))
+	
 #### Built-in function(Map, filter, all, any, sort, reversed, max-min , Len , Abs , Sum و Round , zip)	
 	---------------------------------------------[map]
 	names = ["mohammad", "sara", "iman", "ali"]
