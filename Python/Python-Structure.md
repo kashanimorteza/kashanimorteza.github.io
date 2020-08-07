@@ -22,11 +22,13 @@
 <a href="#Operators">Operators</a> - 
 <a href="#Conditions">Conditions</a> - 
 <a href="#loop">Loop</a> - 
-<a href="#Function">Function</a> - 
-<a href="#OOP">OOP</a>
+<a href="#Function">Function</a>
+<div class="md4"></div>
+<a href="#OOP">OOP</a> - 
 <a href="#Iterator">Iterator</a> - 
 <a href="#Generator">Generator</a> - 
-<a href="#decorator">Decorator</a>
+<a href="#decorator">Decorator</a> - 
+<a href="#Multi-threading">Multi-threading</a> 
 
 
 
@@ -39,11 +41,12 @@
 <div class="md1"></div>
 
 ## Data types
-#### Text
-#### Numeric
+#### String
+#### Numeric : Integer , Float 
 #### Boolean
-#### Binary
 #### Complex
+#### Binary
+#### Convert Data Type
 
 
 
@@ -54,6 +57,7 @@
 <div class="md0"></div>
 
 ## Variable
+#### Variable Assignment
 #### Name mangling 
 
 
@@ -68,10 +72,20 @@
 
 ## Data structures 
 #### List	
-#### Tuple	
-#### Range
 #### Dictionary
-#### set
+#### Tuple	
+<div align="right" dir="rtl">
+بعد از پیاده سازی دیگر قابل تغییر نیستند
+<br><br>
+سرعت بسیار بیشتری از لیست دارد
+</div>
+
+#### Set
+<div align="right" dir="rtl">
+آیتم تکراری نمی پذیرد و همچنین ترتیب ندارد و دسترسی بر اساس index امکانپذیر نیست 
+</div>
+
+#### Range
 #### frozenset	
 	
 	
@@ -104,6 +118,7 @@
 
 ## Conditions  
 #### IF Statement
+#### Expression
 #### Truthiness and Falsiness
 
 
@@ -239,3 +254,36 @@
  <br><br>
  decorator تابعی است، که تابع دیگر را دریافت می‌کند و رفتار آن را تغییر می‌دهد 
 </div>
+
+
+
+
+
+
+<div class="md0"></div>
+
+## Multi-threading
+
+
+
+
+
+
+
+
+
+<div class="md0"></div>
+
+## Error
+#### Debugging
+#### Return raise
+#### try except
+
+
+
+
+<div class="md0"></div>
+
+## API
+pip install request
+

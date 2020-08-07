@@ -50,7 +50,11 @@
 <a href="https://www.tutorialspoint.com/python/index.htm" target="_blank">tutorialspoint</a> - 
 <a href="https://www.w3schools.com/python/" target="_blank">w3schools</a> - 
 <a href="https://www.quackit.com/python/tutorial/" target="_blank">quackit</a> - 
-<a href="https://toplearn.com/courses/2150/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86-(-python-)" target="_blank">toplearn</a> - 
+<a href="https://toplearn.com/courses/2150/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86-(-python-)" target="_blank">toplearn</a>
+#### Tools
+<a href="https://jsonplaceholder.typicode.com/" target="_blank">jsonplaceholder</a>
+
+
 
 
 
@@ -60,7 +64,7 @@
 ## Setup
 	Install Python	
 	Install Visual Studio Code		
-	Install Python,autopep8,Material Icon Theme,Material Theme extension on Visual Studio Code
+	Install Python, autopep8, Material Icon Theme
 	Add This address into PATH user variable : D:\Programming\python_sdk\	
 	Add This address into PATH user variable : D:\Programming\python_sdk\Scripts\
 
@@ -87,9 +91,11 @@
 
 ## Package manager
 	python -m pip install --upgrade pip
+	pip install -U pylint --user
 	pip install fxcmpy	
 	pip install python-socketio
 	pip install python-dateutil	
+	pip install pyodbc 
 
 
 

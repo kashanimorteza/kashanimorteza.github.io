@@ -3,6 +3,7 @@
 .md1{margin-top: 75px;}
 .md2{margin-top: 50px;}
 .md3{margin-top: 25px;}
+.md4{margin-top: 5px;}
 .tbl1 td#header{background-color: D1ECCF}
 .tbl1 tr#header{background-color: D1ECCF}
 </style>
@@ -15,14 +16,24 @@
 
 
 <div class="md3"></div>
+<a href="#data-type" >Data Type</a> - 
 <a href="#Variable" >Variable</a> - 
 <a href="#data-structures" >Data structures</a> - 
-<a href="#function" >Function</a> - 
+<a href="#Operators">Operators</a> - 
+<a href="#Conditions">Conditions</a> - 
+<a href="#loop">Loop</a> - 
+<a href="#function" >Function</a>
+<div class="md4"></div>
 <a href="#oop" >OOP</a> -
 <a href="#Iterator">Iterator</a> - 
 <a href="#Generator">Generator</a> - 
 <a href="#decorator">Decorator</a> -
+<a href="#decorator">Decorator</a> -
+<a href="#Multi-threading">Multi-threading</a> - 
 <a href="#module">Module</a> -
+<a href="#Error">Error</a> -
+<a href="#API">API</a> -
+<a href="#Database">Database</a> -
 
 
 
@@ -32,22 +43,51 @@
 
 <div class="md1"></div>
 
+## Data Type
+#### String
+	item1 = "Mohammad"
+	print(type(item1))
+#### Numeric : Integer
+	item2 = 10
+	print(type(item2))
+#### Numeric : Float
+	item3 = 10.02
+	print(type(item3))
+#### Boolean
+	item4 = True
+	print(type(item4))
+#### Complex
+	item5 = 5j
+	print(type(item5))
+#### Convert Data Type
+	print(str(item2))
+	print(int(item3))
+	print(float(item2))	
+
+
+
+
+
+
+
+
+<div class="md0"></div>
+
 ## Variable
-	name = 'aaa'   # normal case definition
-	
-	Name = 'bbbb'  # case sensitive definition		
-	
-	my_age = 20    # snak case definition
-	
-	myAge = 20     # camel case definition	
-	
-	MyAge = 20     # upper camel case definition
-
-	_name = 'cccc' # no displey 	
-
+#### Variable Assignment
+	a = 1
+	b = 2
+	c = "Hey"
+	a, b, c = 1, 2, "Hey"
+	a = b = c = "Hey"
+#### Name mangling
+	name = 'aaa'    # normal case definition	
+	Name = 'bbbb'   # case sensitive definition			
+	my_age = 20     # snak case definition	
+	myAge = 20      # camel case definition		
+	MyAge = 20      # upper camel case definition
+	_name = 'cccc'  # no displey 	
 	__name = 'cccc' # private
-	
-	
 	
 
 
@@ -59,42 +99,243 @@
 	
 ## Data structures 
 #### List	
-	person_info = ['sara','majd',11,True]	
+	person_info = ['sara','majd',11,True]
+
+	#-----Example 1
+	person_info.append('yahoo')
+
+	#-----Example 2
+	print(person_info)
+
+	#-----Example 3
+	print(person_info[0])
+	print(len(person_info))
+	print("majd" in person_info )
+
+	#-----Example 4
+	for item in person_info:
+		print(item)
+<span><span>
+
+	#---------------------------------------------[Comprehension List]
+	#-----Example 1
+	myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+	print(myNumbers)
+	doubled_numbers = [num * 2 for num in myNumbers]
+	print(doubled_numbers)
 	
-	Comprehension List
-	---------------------
+	#-----Example 2
+	myName = "Mohammad"
+	namesCharacters = [char.upper() for char in myName]
+	print(namesCharacters)
+
+	#-----Example 3
+	myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+	even = [num for num in myNumbers if num % 2 == 0]
+	print(even)
+	odd = [num for num in myNumbers if num % 2 != 0]
+	print(odd)
+
+	#-----Example 4
 	myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]	
 	newList = [num * 2 if num % 2 == 0 else num * 3 for num in myNumbers]
 	print(newList)
-	
-	Nested List
-	---------------------
+<span><span>
+
+	#---------------------------------------------[Nested List]
 	myList = [[1, 2, 3], [4, 5, 6]]
+
+	#-----Example 1
 	print(myList[1][1])
+
+	#-----Example 2
+	for li in myList:
+		for num in li:
+			print(num)
+
+	#-----Example 3
+	copyList = [li for li in myList]
+	print(copyList)	
+	
+	#-----Example 4	
+	copyList = [[print(l) for l in li] for li in myList]		
+
+	#-----Example 5
+	myList = [num for num in range(1, 4)]
+	print(myList)
+	myNestedList = [['X' if newNum % 2 == 0 else 'O' for newNum in range(1, 4)] for num in range(1, 4)]
+	print(myNestedList)
+#### Dictionary
+	myDictionary = {"name": 'sara', "family": 'majd', "age": 11, "active": True}
+	
+	#-----Example 1
+	print(myDictionary)
+	print(myDictionary["name"])
+	print(myDictionary.get("name"))
+	print(len(myDictionary))
+	print("sara" in myDictionary["family"])
+
+	#-----Example 2
+	for item in myDictionary.values():
+		print(item)
+
+	#-----Example 3
+	myDictionary  = dict.fromkeys(["name","family"], "unknown")
+	print(myDictionary )
+	
+	#-----Example 4	
+	MyDic = {num: num*2 for num in [1, 2, 3, 4, 5]}
+	print(MyDic)
+
+	#-----Example 5
+	myDictionary1 = dict(first=1, second=2, third=3)
+	myDictionary2 = {key: value ** 2 for key, value in myDictionary1.items()}
+	print(myDictionary2)
+	
+	#-----Example 6
+	myDictionary = {num: ("even" if num % 2 == 0 else "odd") for num in [1, 2, 3, 4, 5]}
+	print(myDictionary)
 #### Tuple	
-	myTuple = (1, 2, 3, 4, 5, 2, (4, 5, 3), 3, 3)	
+	myTuple1 = tuple([1, 2, 3, 4, 5])
+	myTuple2 = (1, 2, 3, 4, 5, 2, (4, 5, 3), 3, 3)
+	
+	#-----Example 1
+	print(myTuple1)
+	print(myTuple2)
+
+	#-----Example 2
+	locations = {
+    (35.67, 45.78): "Tehran",
+    (40.30, 69.92): "Shiraz"
+	}
+	print(locations[(35.67, 45.78)])
+
+	#-----Example 3	
+	myTuple = (1, 2, 3, 4, 5, 2, (4, 5, 3), 3, 3)
+	for num in myTuple2:
+		print(num)
+#### Set
+	mySet = {1, 2, 3, 4, 4, 4, 4, 4, 2, 2, 5}
+
+	#-----Example 1
+	print(mySet)
+	print(1 in mySet)
+
+	#-----Example 2	
+	for item in mySet:
+		print(item)
 #### Range
 	myRange = range(0, 15, 2)
 	myList = list(range(0, 15, 2))
-	print(myList)  # [0, 2, 4, 6, 8, 10, 12, 14]	
-#### Dictionary
-	person_info = {"name": 'sara', "family": 'majd', "age": 11, "active": True}
-			
-	Comprehension List
-	---------------------
-	MyDic = {num: num*2 for num in [1, 2, 3, 4, 5]}
-	print(MyDic)
-#### set
-	mySet = {1, 2, 3, 4, 4, 4, 4, 4, 2, 2, 5}
+	print(myList)	
 #### frozenset	
 	.
 	
 
 
 
+<div class="md0"></div>
+	
+## Operators 
 
+
+
+
+
+
+<div class="md0"></div>
+
+## Conditions  
+#### IF Statement
+	userRank = 1
+
+	if userRank == 1:
+		print("you got GOLD medal")
+	elif userRank == 2:
+		print("you got SILVER medal")
+	elif userRank == 3:
+		print("you got BRONZE medal")
+	else:
+		print("you got no medal")
+
+#### Expression
+	userRank = 1
+	print("you got GOLD medal") if userRank == 1 else print("no medal")
+
+#### Truthiness Falsiness	
+	number = 3
+
+	if type(number) is int:
+		print('this is true')
+	else:
+		print('this is false')
+<span><span>
+
+	list_1 = ['a', 'b', 'c']
+	list_2 = list_1
+	list_3 = list(list_1)
 	
-	
+	print(list_1)
+	print(list_2)
+	print(list_3)
+
+	print('----------------')
+	print(list_1 == list_2)
+	print(list_1 == list_3)
+	print('----------------')
+	print(list_1 is list_2)
+	print(list_1 is list_3)
+<span ><span>
+
+	if 1:
+		print('this is true')
+	else:
+		print('this is false')
+
+	print('----------------')
+
+	if 0:
+		print('this is true')
+	else:
+		print('this is false')
+
+	print('----------------')
+
+	if "":
+		print('this is true')
+	else:
+		print('this is false')
+
+	print('----------------')
+
+	if "a":
+		print('this is true')
+	else:
+		print('this is false')
+
+	print('----------------')
+
+	print('enter your favorite car')
+	car = input()
+	if car:
+		print(f"your favorite car is {car}")
+
+
+
+
+
+
+
+
+<div class="md0"></div>
+
+## Loop 
+
+
+
+
+
+
 	
 	
 <div class="md0"></div>
@@ -180,7 +421,7 @@
 		{'name': 'sara', 'family': 'moradi', 'age': 25},
 	]
 	print(list(map(lambda person: person['family'], people)))
-<span style="color:white">.<span>
+<span><span>
 
 	---------------------------------------------[filter]
 
@@ -196,20 +437,20 @@
 	]
 	result = filter(lambda user: not user['shopCart'], users)
 	print(list(result))
-<span style="color:white">.<span>
+<span><span>
 
 	---------------------------------------------[all]
 
 	numbers = [2, 4, 6, 7]
 	print(all([num % 2 == 0 for num in numbers]))
-<span style="color:white">.<span>
+<span><span>
 
 	---------------------------------------------[any]
 
 	numbers = [2, 4, 6, 8]
 	results = [False, False, False, True]
 	print(any([num % 2 != 0 for num in numbers]))
-<span style="color:white">.<span>
+<span><span>
 
 	---------------------------------------------[sorted]
 
@@ -230,7 +471,7 @@
 	]
 
 	print(sorted(users, key=lambda user: user['age'], reverse=True))
-<span style="color:white">.<span>
+<span><span>
 
 	---------------------------------------------[min max]
 	
@@ -251,7 +492,7 @@
 	names = ['mohammad', 'milad', 'akbar', 'sara', 'iman','ali']
 	print(max(names, key=lambda n: len(n)))
 	print(min(names, key=lambda n: len(n)))
-<span style="color:white">.<span>
+<span><span>
 
 	---------------------------------------------[reverse]
 	
@@ -267,7 +508,7 @@
 	#----example 3
 	print(list(reversed("hello")))
 	print("hell0"[::-1])
-<span style="color:white">.<span>
+<span><span>
 
 	---------------------------------------------[len]
 	
@@ -294,13 +535,13 @@
 
 	test = MyList([23, 4, 5, 6, 7, 4, 3])
 	print(len(test))
-<span style="color:white">.<span>
+<span><span>
 
 	---------------------------------------------[abs]
 	number = -5
 
 	print(abs(number))
-<span style="color:white">.<span>
+<span><span>
 
 	---------------------------------------------[sum]
 	numbers = [1, 2, 3]
@@ -308,13 +549,13 @@
 	numbers = (1, 2)
 
 	print(sum(numbers, 10))
-<span style="color:white">.<span>
+<span><span>
 
 	---------------------------------------------[round]
 	number = 4.56330480
 
 	print(round(number,2))
-<span style="color:white">.<span>
+<span><span>
 
 	---------------------------------------------[zip]
 	#----example 1
@@ -398,7 +639,7 @@
 	print(morteza.say())
 
 	print(User.run())
-<span style="color:white">.<span>
+<span><span>
 
 	class User:
 
@@ -416,7 +657,7 @@
 
 	ins = User.run("morteza,kashani")
 	print(ins.name, ins.family)
-<span style="color:white">.<span>
+<span><span>
 
 	class User:
 
@@ -483,7 +724,7 @@
 	sara = User('sara', 'moradi', 24)
 	print(sara.name)
 	print(sara.classAttribute)
-<span style="color:white">.<span>
+<span><span>
 
 	---------------------------------------------[super]
 	class Person:
@@ -504,7 +745,7 @@
 	sara = User('sara', 'moradi', 'test@test.com')
 
 	print(sara.fullName)
-<span style="color:white">.<span>
+<span><span>
 
 	---------------------------------------------[Multi Inheritance]
 	class Person:
@@ -540,7 +781,7 @@
 	print(isinstance(person_1, Person))
 	print(isinstance(person_1, User))
 	print(isinstance(person_1, Admin))
-<span style="color:white">.<span>
+<span><span>
 
 	---------------------------------------------[Method resolution order]
 	class A:
@@ -589,7 +830,7 @@
 	print(cat.makeSound())
 	print(dog.makeSound())
 	print(worm.makeSound())
-<span style="color:white">.<span>
+<span><span>
 
 	class IUserService:
 		def getAllUsers(self): raise NotImplementedError
@@ -618,7 +859,7 @@
 
 	userService_by_oracle = UserServiceByOracle()
 	userService.getAllUsers() # Error 
-<span style="color:white">.<span>
+<span><span>
 
 	class Person:
 		def __init__(self, name, family, age, money):
@@ -971,6 +1212,20 @@
 
 
 
+<div class="md0"></div>
+
+## Multi-threading
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div class="md0"></div>
@@ -981,6 +1236,131 @@
 	
 	from random import randint, choice
 	from random import randint as ri, choice as rch
+
+
+
+
+
+
+
+
+
+
+<div class="md0"></div>
+
+## Error 
+#### Return raise
+	raise IndexError('throw index error')
+	raise ValueError('invalid value')
+<span></span>
+
+	def colorize(text, color):
+
+		colors = ('red', 'green', 'blue')
+
+		if type(text) is not str:
+			raise TypeError("text must be a string")
+		elif color not in colors:
+			raise ValueError(f"{color} is not in colors")
+		else:
+			print(f"printed {text} in {color}")
+
+	colorize('mohammad', 'yellow')
+
+#### try except
+	def get(d, key):
+		try:
+			return d[key]
+		except KeyError:
+			return "no key found"
+		except IndexError:
+			return "index error"
+
+	person = {'name': 'mohammad','family': 'ordookhani'}
+
+	print(get(person, 'age'))
+<span></span>
+
+	try:
+		num = int(input("plese enter a number: "))
+	except ValueError:
+		print('thats not a number! please enter another one :')
+	else:
+		print('you have entered a number')
+	finally:
+		print('this is finally section')
+<span></span>
+ 		
+	def divide(first, second):
+		try:
+			return first / second
+		except ZeroDivisionError:
+			return "Dont Divide By Zero Please !!!"
+		except TypeError as error:
+			print(error)
+			return "first and second must be numbers !!!"
+
+	print(divide(1, 'skjdf'))
+
+
+
+
+
+
+
+
+
+<div class="md0"></div>
+
+## API
+	import requests
+
+	response = requests.get("https://barnamenevisan.info/api/courses/getactivecourses")
+	jsonData = response.json()
+
+	for course in jsonData:
+		print(f"{course['title']} مدرس : {course['teacher']}")
+
+	res = requests.post("https://jsonplaceholder.typicode.com/posts")
+	print(res.json())
+
+	res = requests.get("https://jsonplaceholder.typicode.com/comments", params={'postId': 2})
+	print(res.json())
+
+	for data in res.json():
+		print(data)
+
+
+
+<div class="md0"></div>
+
+## Database		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1010,3 +1390,14 @@
 	miles = float(kms) / 1.60934
 	miles = round(miles, 3)
 	print(f"{kms} km is { miles } miles")
+	
+#### Convert Datetime	
+	def generalToStamp(date, datetime_fmt="%Y/%m/%d %H:%M:%S"): 
+	return int(time.mktime(parse(date).timetuple()))
+
+	def stampToGeneral(data, datetime_fmt="%Y/%m/%d %H:%M:%S:%f"):
+	return dt.fromtimestamp(data).strftime(datetime_fmt)  
+	
+	
+	        start_time = time.time()
+        print(f"-------------- Time(Connection):{time.time() - start_time}")
