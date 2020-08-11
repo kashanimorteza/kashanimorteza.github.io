@@ -22,18 +22,19 @@
 <a href="#Operators">Operators</a> - 
 <a href="#Conditions">Conditions</a> - 
 <a href="#loop">Loop</a> - 
-<a href="#function" >Function</a>
+<a href="#function" >Function</a> -
+<a href="#module">Module</a> -
+<a href="#API">API</a> -
+<a href="#Database">Database</a> -
+<a href="#Error">Error</a>
 <div class="md4"></div>
 <a href="#oop" >OOP</a> -
 <a href="#Iterator">Iterator</a> - 
 <a href="#Generator">Generator</a> - 
 <a href="#decorator">Decorator</a> -
-<a href="#decorator">Decorator</a> -
-<a href="#Multi-threading">Multi-threading</a> - 
-<a href="#module">Module</a> -
-<a href="#Error">Error</a> -
-<a href="#API">API</a> -
-<a href="#Database">Database</a> -
+<a href="#Multi-threading">Multi Threading</a> - 
+<a href="#Multi-Processing">Multi Processing</a> -
+<a href="#Example">Example</a>
 
 
 
@@ -44,22 +45,34 @@
 <div class="md1"></div>
 
 ## Data Type
+
 #### String
+
 	item1 = "Mohammad"
 	print(type(item1))
+
 #### Numeric : Integer
+
 	item2 = 10
 	print(type(item2))
+
 #### Numeric : Float
+
 	item3 = 10.02
 	print(type(item3))
+
 #### Boolean
+
 	item4 = True
 	print(type(item4))
+
 #### Complex
+
 	item5 = 5j
 	print(type(item5))
+
 #### Convert Data Type
+
 	print(str(item2))
 	print(int(item3))
 	print(float(item2))	
@@ -71,16 +84,25 @@
 
 
 
+
+
+
+
+
 <div class="md0"></div>
 
 ## Variable
+
 #### Variable Assignment
+
 	a = 1
 	b = 2
 	c = "Hey"
 	a, b, c = 1, 2, "Hey"
 	a = b = c = "Hey"
+
 #### Name mangling
+
 	name = 'aaa'    # normal case definition	
 	Name = 'bbbb'   # case sensitive definition			
 	my_age = 20     # snak case definition	
@@ -95,10 +117,17 @@
 
 	
 
+
+
+
+
 <div class="md0"></div>
 	
-## Data structures 
+## Data structures
+
 #### List	
+
+	#---------------------------------------------[Normal List]
 	person_info = ['sara','majd',11,True]
 
 	#-----Example 1
@@ -165,7 +194,9 @@
 	print(myList)
 	myNestedList = [['X' if newNum % 2 == 0 else 'O' for newNum in range(1, 4)] for num in range(1, 4)]
 	print(myNestedList)
+	
 #### Dictionary
+
 	myDictionary = {"name": 'sara', "family": 'majd', "age": 11, "active": True}
 	
 	#-----Example 1
@@ -195,7 +226,9 @@
 	#-----Example 6
 	myDictionary = {num: ("even" if num % 2 == 0 else "odd") for num in [1, 2, 3, 4, 5]}
 	print(myDictionary)
+	
 #### Tuple	
+
 	myTuple1 = tuple([1, 2, 3, 4, 5])
 	myTuple2 = (1, 2, 3, 4, 5, 2, (4, 5, 3), 3, 3)
 	
@@ -214,7 +247,9 @@
 	myTuple = (1, 2, 3, 4, 5, 2, (4, 5, 3), 3, 3)
 	for num in myTuple2:
 		print(num)
+
 #### Set
+
 	mySet = {1, 2, 3, 4, 4, 4, 4, 4, 2, 2, 5}
 
 	#-----Example 1
@@ -224,13 +259,22 @@
 	#-----Example 2	
 	for item in mySet:
 		print(item)
+
 #### Range
+
 	myRange = range(0, 15, 2)
 	myList = list(range(0, 15, 2))
 	print(myList)	
+
 #### frozenset	
 	.
 	
+
+
+
+
+
+
 
 
 
@@ -243,10 +287,16 @@
 
 
 
+
+
+
+
 <div class="md0"></div>
 
-## Conditions  
+## Conditions
+
 #### IF Statement
+
 	userRank = 1
 
 	if userRank == 1:
@@ -259,10 +309,12 @@
 		print("you got no medal")
 
 #### Expression
+
 	userRank = 1
 	print("you got GOLD medal") if userRank == 1 else print("no medal")
 
 #### Truthiness Falsiness	
+
 	number = 3
 
 	if type(number) is int:
@@ -1025,7 +1077,9 @@
 <div class="md0"></div>
 
 ## Generator  
+
 #### Example 1
+
 	def count_up_to(max):
 		count = 1
 		while count <= max:
@@ -1039,7 +1093,9 @@
 	print(next(counter))  # -> 3
 	print(next(counter))  # -> 4
 	print(next(counter))  # -> 5
+
 #### As a expression
+
 	myGenerator = (num for num in range(5))
 	print(myGenerator)
 
@@ -1052,6 +1108,7 @@
 	print(sum(num for num in range(100000000)))
 
 #### fibonacci with list
+
 	def fib_list(max):  # 10
 		nums = []  # [1,1]
 		a, b = 0, 1
@@ -1061,7 +1118,9 @@
 		return nums
 
 	fib_list(1000000)
+
 #### fibonacci with generator
+
 	def fib_generator(max):
 		x = 0
 		y = 1
@@ -1084,13 +1143,20 @@
 
 
 
+
+
+
 <div class="md0"></div>
 
 ## Decorator 
+
 #### Function
+
 	def func1(value):
 		return value
+
 #### Send function as a arguman
+
 	def func1(value):
 		return value
 
@@ -1098,7 +1164,9 @@
 		return function(num)
 
 	print(func2(func1,5))
+
 #### Nesting functions
+
 	def myFunction():
 		
 		def func1():
@@ -1110,8 +1178,10 @@
 		print(func1()) 
 		print(func2()) 
 
-	myFunction()	
+	myFunction()
+
 #### Return functions
+
 	def my_decorator(func):
 		def say():
 			print('say')
@@ -1123,7 +1193,9 @@
 
 	test = my_decorator(my_function)
 	test()
+
 #### Decorators 1
+
 	def my_decorator(func):
 		def say():
 			print('say')
@@ -1135,7 +1207,9 @@
 		print('hello')
 
 	my_function()
+
 #### Decorators 2
+
 	def my_decorator(func):
 		def say(name):
 			print('say')
@@ -1147,7 +1221,9 @@
 		print('hello ' + name)
 
 	my_function('Morteza')
+
 #### Decorators 3
+
 	def my_decorator(func):
 		def say(*args, **kwargs):
 			print('say')
@@ -1170,7 +1246,9 @@
 	my_function1('Morteza')
 	my_function2('Morteza', 'kashani')
 	my_function3('Morteza', 'kashani', "11")
+
 #### Decorators 4
+
 	from functools import wraps
 
 	def my_decorator(func):
@@ -1185,7 +1263,9 @@
 		print('hello')
 
 	print(my_function.__name__)	
+
 #### Decorators 5
+
 	def show_decorator(name):
 		def inner_decorator(func):
 			def say():
@@ -1199,7 +1279,9 @@
 		print('this is my_function')
 
 	my_function()
+	
 #### Decorators 6
+
 	from time import time
 
 	def speed_test_decorator(func):
@@ -1227,9 +1309,38 @@
 
 
 
+
+
+
+
 <div class="md0"></div>
 
-## Multi-threading
+## Multi Threading
+
+class myThread (threading.Thread):
+   def __init__(self, name, instrument, timeFrame, dateFrom, dateTo):
+      threading.Thread.__init__(self)
+      self.name = name
+      self.instrument = instrument
+      self.timeFrame = timeFrame
+      self.dateFrom = dateFrom
+      self.dateTo = dateTo
+   def run(self):      
+      threadLock.acquire()
+      fx.Update(self.instrument, self.timeFrame, self.dateFrom, self.dateTo)
+      threadLock.release()
+
+
+
+
+
+
+
+
+
+<div class="md0"></div>
+
+## Multi Processing
 
 
 
@@ -1246,6 +1357,7 @@
 <div class="md0"></div>
 
 ## Module 
+
 	import random	
 	import random as r
 	
@@ -1261,10 +1373,58 @@
 
 
 
+
+
+
+
+
+
+<div class="md0"></div>
+
+## API
+
+	import requests
+
+	response = requests.get("https://barnamenevisan.info/api/courses/getactivecourses")
+	jsonData = response.json()
+
+	for course in jsonData:
+		print(f"{course['title']} مدرس : {course['teacher']}")
+
+	res = requests.post("https://jsonplaceholder.typicode.com/posts")
+	print(res.json())
+
+	res = requests.get("https://jsonplaceholder.typicode.com/comments", params={'postId': 2})
+	print(res.json())
+
+	for data in res.json():
+		print(data)
+
+
+
+
+
+
+
+
+
+<div class="md0"></div>
+
+## Database		
+
+
+
+
+
+
+
+
 <div class="md0"></div>
 
 ## Error 
+
 #### Return raise
+
 	raise IndexError('throw index error')
 	raise ValueError('invalid value')
 <span></span>
@@ -1283,6 +1443,7 @@
 	colorize('mohammad', 'yellow')
 
 #### try except
+
 	def get(d, key):
 		try:
 			return d[key]
@@ -1319,86 +1480,31 @@
 
 
 
-
-
-
-
-
-
-<div class="md0"></div>
-
-## API
-	import requests
-
-	response = requests.get("https://barnamenevisan.info/api/courses/getactivecourses")
-	jsonData = response.json()
-
-	for course in jsonData:
-		print(f"{course['title']} مدرس : {course['teacher']}")
-
-	res = requests.post("https://jsonplaceholder.typicode.com/posts")
-	print(res.json())
-
-	res = requests.get("https://jsonplaceholder.typicode.com/comments", params={'postId': 2})
-	print(res.json())
-
-	for data in res.json():
-		print(data)
-
-
-
-<div class="md0"></div>
-
-## Database		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	
+
+
+
+
 
 <div class="md0"></div>
 
 ## Example
+
 #### Convert DataType
-	print(f"i am {20} years old")
-	
+
+	print(f"i am {20} years old")	
 	myAge=20
 	print("i am "+str(myAge)+" years old")
-	
-	
+		
 #### Get dara from user
+
 	name = input('Insert Your name:')
 	age = input('Insert Your Age:')
 	message=f"You are {name} and you are {age} years old"
 	print(message)
 	
 #### Convert kilometers to miles
+
 	print("how many kms do you want to convert?")
 	# kms / 1.60934  # "50" / 1.60934
 	kms = input('insert kilometers:')
@@ -1407,12 +1513,12 @@
 	print(f"{kms} km is { miles } miles")
 	
 #### Convert Datetime	
+
 	def generalToStamp(date, datetime_fmt="%Y/%m/%d %H:%M:%S"): 
 	return int(time.mktime(parse(date).timetuple()))
 
 	def stampToGeneral(data, datetime_fmt="%Y/%m/%d %H:%M:%S:%f"):
-	return dt.fromtimestamp(data).strftime(datetime_fmt)  
-	
-	
-	        start_time = time.time()
-        print(f"-------------- Time(Connection):{time.time() - start_time}")
+	return dt.fromtimestamp(data).strftime(datetime_fmt)  	
+
+	start_time = time.time()
+	print(f"-------------- Time(Connection):{time.time() - start_time}")

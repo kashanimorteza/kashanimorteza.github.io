@@ -134,6 +134,8 @@ Run command : flutter doctoru
 1 - evrery class as a key inpiut, whats that?
 <br>
 2 - transactions.map((tx) {}); --- dar morede list --- map<T>(T f(E e)) → Iterable<T>
+<br>
+vedeo 89 , makhsosa akharash
 
 
 

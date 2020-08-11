@@ -7,14 +7,64 @@
 .tbl1 tr#header{background-color: D1ECCF}
 </style>
 
-# [<span style="color:black;">Dart Programming</span>](Dart.md)
-[Basic](Dart-Basic.md) | [Programming](Dart-Programming.md) | [Script](Dart-Script.md)
+# [<span style="color:black;">Mysql Programming</span>](Mysql.md)
+[Basic](Mysql-Basic.md) | [Structure](Mysql-Structure.md) | [Script](Mysql-Script.md)
+
+
+
+
+
+
 <div class="md1"></div>
 
+## Data Type
 
 
 
-## Data types
+
+
+
+
+<div class="md0"></div>
+
+
+## Database
+	CREATE DATABASE Forex;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * Numbers
 
 * Strings
@@ -26,10 +76,7 @@
 
 <div class="md0"></div>
 
-
-
-
-## Variable
+## Data Type
 	var name = 'Smith';
 	
 	

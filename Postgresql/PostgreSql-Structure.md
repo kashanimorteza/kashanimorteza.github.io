@@ -7,14 +7,82 @@
 .tbl1 tr#header{background-color: D1ECCF}
 </style>
 
-# [<span style="color:black;">Dart Programming</span>](Dart.md)
-[Basic](Dart-Basic.md) | [Programming](Dart-Programming.md) | [Script](Dart-Script.md)
+# [<span style="color:black;"> Postgresql Programming</span>]( Postgresql.md)
+[Basic]( Postgresql-Basic.md) | [Structure]( Postgresql-Structure.md) | [Script]( Postgresql-Script.md)
+
+
+
+
+
+
 <div class="md1"></div>
 
+## Data Type
+Numeric 
+Monetary 
+Character 
+Binary 
+Date/Time
+Boolean 
+Enumerated 
+Geometric 
+Network Address
+Bit String
+Text Search
+UUID 
+XML 
+JSON 
+Array 
+Composite
+Range 
+Object Identifier 
+Pseudo 
 
 
 
-## Data types
+
+
+
+<div class="md0"></div>
+
+
+## Database
+	CREATE DATABASE Forex;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * Numbers
 
 * Strings
@@ -26,10 +94,7 @@
 
 <div class="md0"></div>
 
-
-
-
-## Variable
+## Data Type
 	var name = 'Smith';
 	
 	

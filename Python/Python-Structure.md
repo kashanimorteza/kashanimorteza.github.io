@@ -16,19 +16,26 @@
 
 
 <div class="md3"></div>
-<a href="#data-types">Data types</a> - 
-<a href="#Variable">Variable</a> - 
-<a href="#data-structures">Data structures</a> - 
+<a href="#data-type" >Data Type</a> - 
+<a href="#Variable" >Variable</a> - 
+<a href="#data-structures" >Data structures</a> - 
 <a href="#Operators">Operators</a> - 
 <a href="#Conditions">Conditions</a> - 
 <a href="#loop">Loop</a> - 
-<a href="#Function">Function</a>
+<a href="#function" >Function</a> -
+<a href="#module">Module</a> -
+<a href="#API">API</a> -
+<a href="#Database">Database</a> -
+<a href="#Error">Error</a>
 <div class="md4"></div>
-<a href="#OOP">OOP</a> - 
+<a href="#oop" >OOP</a> -
 <a href="#Iterator">Iterator</a> - 
 <a href="#Generator">Generator</a> - 
-<a href="#decorator">Decorator</a> - 
-<a href="#Multi-threading">Multi-threading</a> 
+<a href="#decorator">Decorator</a> -
+<a href="#Multi-threading">Multi Threading</a> - 
+<a href="#Multi-Processing">Multi Processing</a> -
+<a href="#Example">Example</a>
+
 
 
 
@@ -57,7 +64,9 @@
 <div class="md0"></div>
 
 ## Variable
+
 #### Variable Assignment
+
 #### Name mangling 
 
 
@@ -71,9 +80,13 @@
 <div class="md0"></div>
 
 ## Data structures 
+
 #### List	
+
 #### Dictionary
+
 #### Tuple	
+
 <div align="right" dir="rtl">
 بعد از پیاده سازی دیگر قابل تغییر نیستند
 <br><br>
@@ -81,11 +94,13 @@
 </div>
 
 #### Set
+
 <div align="right" dir="rtl">
 آیتم تکراری نمی پذیرد و همچنین ترتیب ندارد و دسترسی بر اساس index امکانپذیر نیست 
 </div>
 
 #### Range
+
 #### frozenset	
 	
 	
@@ -278,6 +293,12 @@
 #### Debugging
 #### Return raise
 #### try except
+
+
+
+
+
+
 
 
 

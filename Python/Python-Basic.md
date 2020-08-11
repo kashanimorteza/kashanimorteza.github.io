@@ -61,13 +61,37 @@
 
 <div class="md0"></div>
 
-## Setup
-	Install Python	
+## Install
+
+####  Windows
+	Download file and Install Python	
+
+#### Linux
+	--- [Ubuntu]
+	apt update
+	apt install software-properties-common
+	add-apt-repository ppa:deadsnakes/ppa
+	apt update
+	apt install python3.8
+	apt install python3-pip
+	python -m pip install --upgrade pip
+	sudo apt-get install unixodbc-dev
+	sudo apt-get install libpq-dev python-dev
+
+#### Config Editor
 	Install Visual Studio Code		
 	Install Python, autopep8, Material Icon Theme
 	Add This address into PATH user variable : D:\Programming\python_sdk\	
 	Add This address into PATH user variable : D:\Programming\python_sdk\Scripts\
 
+#### Install Package	
+	pip install -U pylint --user
+	pip install fxcmpy	
+	pip install python-socketio
+	pip install python-dateutil	
+	pip install pyodbc 
+	pip install mysql-connector-python
+	pip install psycopg2
 
 
 
@@ -78,29 +102,7 @@
 <div class="md0"></div>
 
 ## Interpretation
-
-
-
-
-
-
-
-
-
-<div class="md0"></div>
-
-## Package manager
-	python -m pip install --upgrade pip
-	pip install -U pylint --user
-	pip install fxcmpy	
-	pip install python-socketio
-	pip install python-dateutil	
-	pip install pyodbc 
-
-
-
-
-
+	python ––version
 
 
 
