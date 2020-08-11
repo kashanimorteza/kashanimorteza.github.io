@@ -41,7 +41,7 @@ version 1
 </td>
 
 <td align="center">
-<a href="Python/Python.md">Python</a>
+<a href="Python/Python-Basic.md">Python</a>
 <div class="md3"></div>
 <a href="Dart/Dart-Basic.md">Dart</a>
 <div class="md3"></div>
@@ -51,27 +51,27 @@ version 1
 </td>
 
 <td align="center">
-<a href="Mysql/Mysql.md">Mysql</a>
+<a href="Mysql/Mysql-Basic.md">Mysql</a>
 <div class="md3"></div>
-<a href="Postgresql/Postgresql.md">Postgresql</a>
+<a href="Postgresql/Postgresql-Basic.md">Postgresql</a>
 <div class="md3"></div>
-<a href="Sqllite/Sqllite.md">Sqllite</a>
+<a href="Sqllite/Sqllite-Basic.md">Sqllite</a>
 </td>
 
 <td align="center">
-<a href="Rhino/Rhino.md">Rhino</a>
+<a href="Rhino/Rhino-Basic.md">Rhino</a>
 </td>
 
 <td align="center">
-<a href="Atom/0-Atom.md">Atom</a>
+<a href="Atom/0-Atom-Basic.md">Atom</a>
 <div class="md3"></div>
-<a href="VsCode/0-VsCode.md">VS Code</a>
+<a href="VsCode/0-VsCode-Basic.md">VS Code</a>
 <div class="md3"></div>
 <a href="Git/0-Git.md">Git</a>
 </td>
 
 <td align="center">
-<a href="Forex/Forex.md">Forex</a>
+<a href="Forex/Forex-Basic.md">Forex</a>
 </td>
 
 </tr>
