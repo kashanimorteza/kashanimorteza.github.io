@@ -6,9 +6,6 @@
 .tbl1 td#header{background-color: D1ECCF}
 .tbl1 tr#header{background-color: D1ECCF}
 .tbl1 td {height: 50px;vertical-align: middle;}
-
-
-
 </style>
 
 
@@ -20,8 +17,7 @@ version 1
 # Document
 
 
-<table class="tbl1"><tr>
-
+<table class="tbl1">
 <tr>
 <td align="center" id="header">Language</td>
 <td align="center" id="header">OS</td>
