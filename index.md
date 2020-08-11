@@ -30,9 +30,7 @@ version 1
 
 <tr>
 <td align="center">
-
-[English] (English/English.md)
-
+[English](English/English.md)
 </td>
 
 
@@ -41,7 +39,9 @@ version 1
 
 <td align="center">
 
-[Linux](Linux/Linux.md)
+[Linux]
+
+(Linux/Linux.md)
 
 <div class="md3"></div>
 
