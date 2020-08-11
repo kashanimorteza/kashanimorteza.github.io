@@ -32,46 +32,46 @@ version 1
 <tr>
 
 <td align="center">
-<a href="English/English-Basic.md">English</a>
+<a href="English/English.html">English</a>
 </td>
 
 <td align="center">
-<a href="Linux/Linux-Basic.md">Linux</a><div class="md3"></div>
-<a href="Windows/Windows-Basic.md">Windows</a>
+<a href="Linux/Linux.html">Linux</a><div class="md3"></div>
+<a href="Windows/Windows.html">Windows</a>
 </td>
 
 <td align="center">
-<a href="Python/Python-Basic.md">Python</a>
+<a href="Python/Python.md">Python</a>
 <div class="md3"></div>
-<a href="Dart/Dart-Basic.md">Dart</a>
+<a href="Dart/Dart.html">Dart</a>
 <div class="md3"></div>
-<a href="Flutter/Flutter-Basic.md">Flutter</a>
+<a href="Flutter/Flutter.html">Flutter</a>
 <div class="md3"></div>
-<a href="Go/Go-Basic.md">Go</a>
+<a href="Go/Go.html">Go</a>
 </td>
 
 <td align="center">
-<a href="Mysql/Mysql-Basic.md">Mysql</a>
+<a href="Mysql/Mysql.md">Mysql</a>
 <div class="md3"></div>
-<a href="Postgresql/Postgresql-Basic.md">Postgresql</a>
+<a href="Postgresql/Postgresql.md">Postgresql</a>
 <div class="md3"></div>
-<a href="Sqllite/Sqllite-Basic.md">Sqllite</a>
+<a href="Sqllite/Sqllite.md">Sqllite</a>
 </td>
 
 <td align="center">
-<a href="Rhino/Rhino-Basic.md">Rhino</a>
+<a href="Rhino/Rhino.md">Rhino</a>
 </td>
 
 <td align="center">
-<a href="Atom/0-Atom-Basic.md">Atom</a>
+<a href="Atom/0-Atom.md">Atom</a>
 <div class="md3"></div>
-<a href="VsCode/0-VsCode-Basic.md">VS Code</a>
+<a href="VsCode/0-VsCode.md">VS Code</a>
 <div class="md3"></div>
 <a href="Git/0-Git.md">Git</a>
 </td>
 
 <td align="center">
-<a href="Forex/Forex-Basic.md">Forex</a>
+<a href="Forex/Forex.md">Forex</a>
 </td>
 
 </tr>
