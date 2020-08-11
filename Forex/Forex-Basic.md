@@ -51,74 +51,114 @@
 
 <table class="tbl1"><tbody>
 <tr><td colspan="4" align="center" id="header">Forex</td></tr>
-<tr><td>FX</td><td>Foreign Exchange</td><td>4/000/000/000/000</td><td>Trillion</td></tr>
-<tr><td>NYSE</td><td>New York Stock Exchange</td><td>74/000/000/000</td><td>Billion</td></tr>
+<tr>
+<td align="center">FX</td><td align="center">Foreign Exchange</td>
+<td align="center">4/000/000/000/000</td>
+<td align="center">Trillion</td>
+</tr>
+<tr>
+<td align="center">NYSE</td>
+<td align="center">New York Stock Exchange</td>
+<td align="center">74/000/000/000</td>
+<td align="center">Billion</td>
+</tr>
 </tbody></table>
 
 <div class="md3"></div>
+
 <table class="tbl1"><tbody>
-<tr><td align="center" id="header">Thousand</td><td align="center" id="header">Million</td><td align="center" id="header">Billion</td><td align="center" id="header">Trillion</td></tr>
-<tr><td>1/000</td><td>1/000/000</td><td>1/000/000/000</td><td>1/000/000/000/000</td></tr>
+<tr>
+<td align="center" id="header">Thousand</td>
+<td align="center" id="header">Million</td>
+<td align="center" id="header">Billion</td>
+<td align="center" id="header">Trillion</td>
+</tr>
+<tr>
+<td>1/000</td>
+<td>1/000/000</td>
+<td>1/000/000/000</td>
+<td>1/000/000/000/000</td>
+</tr>
 </tbody></table>
 
 <div class="md3"></div>
+
 <table class="tbl1"><tbody>
 <tr><td colspan="3" align="center" id="header">Currency</td></tr>
-<tr><td>USD</td><td>United States</td><td>Dollar</td></tr>
-<tr><td>EUR</td><td>Euro zone members</td><td>Euro</td></tr>
-<tr><td>JPY</td><td>Japan</td><td>Yen</td></tr>
-<tr><td>GBP</td><td>Great Britain</td><td>Pound</td></tr>
-<tr><td>CHF</td><td>Switzerland</td><td>Franc</td></tr>
-<tr><td>CAD</td><td>CANADA</td><td>Dollar</td></tr>
-<tr><td>AUD</td><td>Australia</td><td>Dollar</td></tr>
-<tr><td>NZD</td><td>New Zealand</td><td>Dollar</td></tr>
+<tr><td align="center">NZD</td><td align="center">New Zealand</td><td align="center">Dollar</td></tr>
+<tr><td align="center">AUD</td><td align="center">Australia</td><td align="center">Dollar</td></tr>
+<tr><td align="center">JPY</td><td align="center">Japan</td><td align="center">Yen</td></tr>
+<tr><td align="center">CHF</td><td align="center">Switzerland</td><td align="center">Franc</td></tr>
+<tr><td align="center">GBP</td><td align="center">Great Britain</td><td align="center">Pound</td></tr>
+<tr><td align="center">EUR</td><td align="center">Euro zone members</td><td align="center">Euro</td></tr>
+<tr><td align="center">USD</td><td align="center">United States</td><td align="center">Dollar</td></tr>
+<tr><td align="center">CAD</td><td align="center">CANADA</td><td align="center">Dollar</td></tr>
 </tbody></table>
 
-
 <div class="md3"></div>
+
 <table class="tbl1"><tbody>
-<tr><td  align="center" id="header">عرض پایه</td><td  align="center" id="header">عرض پشتیبان</td><td  align="center" id="header">جفت عرض</td></tr>
-<tr><td>EUR</td><td>USD</td><td>EURUSD</td></tr>
+<tr>
+<td align="center" id="header">عرض پایه</td>
+<td align="center" id="header">عرض پشتیبان</td>
+<td align="center" id="header">جفت عرض</td>
+</tr>
+<tr>
+<td align="center">EUR</td>
+<td align="center">USD</td>
+<td align="center">EURUSD</td>
+</tr>
 </tbody></table>
 
-
 <div class="md3"></div>
+
 <table class="tbl1"><tbody>
-<tr><td  align="center" id="header">عرض پایه</td><td  align="center" id="header">عرض پشتیبان</td><td  align="center" id="header">جفت عرض</td><td  align="center" id="header">نسبت</td><td  align="center" id="header">توضیح</td></tr>
-<tr><td>EUR</td><td>USD</td><td>EURUSD</td><td>1.4</td>
-<td>
-اگه 1 یورو بدی 1.4 دلار می گیری
-</td></tr>
-<tr><td>EUR</td><td>USD</td><td>EURUSD</td><td>خرید</td>
-<td>
-یورو میخری و دلار می فروشی
-</td></tr>
-<tr><td>EUR</td><td>USD</td><td>EURUSD</td><td>فروش</td>
-<td>
-یورو می فروشی و دلار می خری
-</td></tr>
-<tr><td>EUR</td><td>USD</td><td>EURUSD</td><td>افزایش</td>
-<td>
-افزایش قیمت یورو نسبت به دلار
-<br>
-کاهش قیمت دلار نسبت به یورو
-<br>
-اگه نداری بخر
-</td></tr>
-<tr><td>EUR</td><td>USD</td><td>EURUSD</td><td>کاهش</td>
-<td>
-کاهش قیمت یورو نسبت به دلار
-<br>
-افزایش قیمت دلار نسبت به یورو
-<br>
-اگه داری بفروش
-</td></tr>
+<tr>
+<td align="center" id="header">عرض پایه</td>
+<td align="center" id="header">عرض پشتیبان</td>
+<td align="center" id="header">جفت عرض</td>
+<td align="center" id="header">نسبت</td>
+<td  align="center" id="header">توضیح</td>
+</tr>
+<tr>
+<td align="center">EUR</td>
+<td align="center">USD</td>
+<td align="center">EURUSD</td>
+<td align="center">1.4</td>
+<td align="center">اگه 1 یورو بدی 1.4 دلار می گیری</td>
+</tr>
+<tr>
+<td align="center">EUR</td>
+<td align="center">USD</td>
+<td align="center">EURUSD</td>
+<td align="center">خرید</td>
+<td align="center">یورو میخری و دلار می فروشی</td>
+</tr>
+<tr>
+<td align="center">EUR</td>
+<td align="center">USD</td>
+<td align="center">EURUSD</td>
+<td align="center">فروش</td>
+<td align="center">یورو می فروشی و دلار می خری</td>
+</tr>
+<tr>
+<td align="center">EUR</td>
+<td align="center">USD</td>
+<td align="center">EURUSD</td>
+<td align="center">افزایش</td>
+<td align="center">افزایش قیمت یورو نسبت به دلار<br>کاهش قیمت دلار نسبت به یورو<br>اگه نداری بخر</td>
+</tr>
+<tr>
+<td align="center">EUR</td>
+<td align="center">USD</td>
+<td align="center">EURUSD</td>
+<td align="center">کاهش</td>
+<td align="center">کاهش قیمت یورو نسبت به دلار<br>افزایش قیمت دلار نسبت به یورو<br>اگه داری بفروش</td>
+</tr>
 </tbody></table>
 
-
-
-
 <div class="md3"></div>
+
 <table class="tbl1"><tbody>
 <tr><td  align="center" id="header">اصطلاح</td><td  align="center" id="header">توضیج</td></tr>
 <tr><td>Leverage</td><td>چند برابر پول واقعی امکان خرید می دهد</td></tr>
