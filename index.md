@@ -1,8 +1,8 @@
 <style>
-.md0{margin-top: 150px;}
-.md1{margin-top: 75px;}
-.md2{margin-top: 50px;}
-.md3{margin-top: 25px;}
+.html0{margin-top: 150px;}
+.html1{margin-top: 75px;}
+.html2{margin-top: 50px;}
+.html3{margin-top: 25px;}
 .tbl1 td#header{background-color: D1ECCF}
 .tbl1 tr#header{background-color: D1ECCF}
 .tbl1 td {height: 50px;vertical-align: middle;}
@@ -41,7 +41,7 @@ version 1
 </td>
 
 <td align="center">
-<a href="Python/Python.md">Python</a>
+<a href="Python/Python.html">Python</a>
 <div class="md3"></div>
 <a href="Dart/Dart.html">Dart</a>
 <div class="md3"></div>
@@ -51,27 +51,27 @@ version 1
 </td>
 
 <td align="center">
-<a href="Mysql/Mysql.md">Mysql</a>
+<a href="Mysql/Mysql.html">Mysql</a>
 <div class="md3"></div>
-<a href="Postgresql/Postgresql.md">Postgresql</a>
+<a href="Postgresql/Postgresql.html">Postgresql</a>
 <div class="md3"></div>
-<a href="Sqllite/Sqllite.md">Sqllite</a>
+<a href="Sqllite/Sqllite.html">Sqllite</a>
 </td>
 
 <td align="center">
-<a href="Rhino/Rhino.md">Rhino</a>
+<a href="Rhino/Rhino.html">Rhino</a>
 </td>
 
 <td align="center">
-<a href="Atom/0-Atom.md">Atom</a>
+<a href="Atom/0-Atom.html">Atom</a>
 <div class="md3"></div>
-<a href="VsCode/0-VsCode.md">VS Code</a>
+<a href="VsCode/0-VsCode.html">VS Code</a>
 <div class="md3"></div>
-<a href="Git/0-Git.md">Git</a>
+<a href="Git/0-Git.html">Git</a>
 </td>
 
 <td align="center">
-<a href="Forex/Forex.md">Forex</a>
+<a href="Forex/Forex.html">Forex</a>
 </td>
 
 </tr>
