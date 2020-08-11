@@ -18,6 +18,7 @@ version 1
 
 
 <table class="tbl1">
+
 <tr>
 <td align="center" id="header">Language</td>
 <td align="center" id="header">OS</td>
@@ -29,135 +30,49 @@ version 1
 </tr>
 
 <tr>
-<td align="center">
-<a href="English/English.md" >English</a>
-</td>
-
-
-
-
 
 <td align="center">
-
-[Linux]
-
-(Linux/Linux.md)
-
-<div class="md3"></div>
-
-[Windows](Windows/Windows.md)
-
+<a href="English/English-Basic.md">English</a>
 </td>
-
-
-
 
 <td align="center">
-
-[Python](Python/Python.md)
-
-<div class="md3"></div>
-
-[Dart](Dart/Dart.md)
-
-<div class="md3"></div>
-
-[Flutter](Flutter/Flutter.md)
-
-<div class="md3"></div>
-
-[Go](Go/Go.md)
-
+<a href="Linux/Linux-Basic.md">Linux</a><div class="md3"></div>
+<a href="Windows/Windows-Basic.md">Windows</a>
 </td>
-
-
-
-
 
 <td align="center">
-
-[Mysql](Mysql/Mysql.md)
-
+<a href="Python/Python.md">Python</a>
 <div class="md3"></div>
-
-[Postgresql](Postgresql/Postgresql.md)
-
+<a href="Dart/Dart-Basic.md">Dart</a>
 <div class="md3"></div>
-
-[Sqllite](Sqllite/Sqllite.md)
-
+<a href="Flutter/Flutter-Basic.md">Flutter</a>
+<div class="md3"></div>
+<a href="Go/Go-Basic.md">Go</a>
 </td>
-
-
-
-
-
-
-
 
 <td align="center">
-
-[Rhino](Rhino/Rhino.md)
-
+<a href="Mysql/Mysql.md">Mysql</a>
+<div class="md3"></div>
+<a href="Postgresql/Postgresql.md">Postgresql</a>
+<div class="md3"></div>
+<a href="Sqllite/Sqllite.md">Sqllite</a>
 </td>
-
-
-
-
-
-
-
 
 <td align="center">
-
-[Atom](Atom/0-Atom.md)
-
-<div class="md3"></div>
-
-[VS Code](VsCode/0-VsCode.md)
-
-<div class="md3"></div>
-
-[Git](Git/0-Git.md)
-
+<a href="Rhino/Rhino.md">Rhino</a>
 </td>
-
-
-
-
-
-
 
 <td align="center">
-
-[Forex](Forex/Forex.md)
-
+<a href="Atom/0-Atom.md">Atom</a>
+<div class="md3"></div>
+<a href="VsCode/0-VsCode.md">VS Code</a>
+<div class="md3"></div>
+<a href="Git/0-Git.md">Git</a>
 </td>
 
+<td align="center">
+<a href="Forex/Forex.md">Forex</a>
+</td>
 
-
-
-</tr></table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</tr>
+</table>
