@@ -30,9 +30,7 @@ version 1
 
 <tr>
 <td align="center">
-  
-[English](English/English.md)
-
+<a href="English/English.md" >English</a>
 </td>
 
 
