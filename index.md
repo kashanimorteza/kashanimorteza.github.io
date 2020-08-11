@@ -20,7 +20,7 @@ version 1
 <table class="tbl1">
 
 <tr>
-<td align="center" style="background-color: D1ECCF">Language</td>
+<td align="center" id="header">Language</td>
 <td align="center" id="header">OS</td>
 <td align="center" id="header">Programming</td>
 <td align="center" id="header">Database</td>
