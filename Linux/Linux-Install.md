@@ -1,18 +1,73 @@
 <style>
+.md0{margin-top: 150px;}
 .md1{margin-top: 75px;}
 .md2{margin-top: 50px;}
 .md3{margin-top: 25px;}
+.md4{margin-top: 10px;}
 .tbl1 td#header{background-color: D1ECCF}
+.tbl1 tr#header{background-color: D1ECCF}
 </style>
 
+
 # [<span style="color:black;">Linux Install</span>](Linux.md)
-[Basic](Linux-Basic.md) | [Structure](Linux-Structure.md) | [Components](Linux-Components.md) | [Requirement](Linux-Requirement.md) | [Command](Linux-Command.md) | [Config](Linux-Config.md) | [Install](Linux-Install.md) | [Script](Linux-Script.md)
+[Basic](Linux-Basic.md) | 
+[Structure](Linux-Structure.md) | 
+[Components](Linux-Components.md) | 
+[Requirement](Linux-Requirement.md) | 
+[Command](Linux-Command.md) | 
+[Config](Linux-Config.md) | 
+[Install](Linux-Install.md) | 
+[Script](Linux-Script.md)
+
+
+<div class="md3"></div>
+<a href="#Basic">Basic</a> - 
+<a href="#Tools">Tools</a> - 
+<a href="#Programming">Programming</a> - 
+<a href="#Software">Software</a>
+
+
+
+
+
 <div class="md1"></div>
 
+## Ubuntu
+
+#### Basic
+	sudo apt update
+
+#### Tools
+
+	sudo apt install software-properties-common
+	sudo apt install apt-transport-https
+	sudo apt install wget
+	sudo apt install ca-certificates
+	sudo apt-get install unixodbc-dev
+
+#### Network
+
+	sudo apt install net-tools
+	sudo apt install iputils-ping
+
+#### Software
+
+Chrome
+
+	cd ~/Downloads
+	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+	sudo apt install ./google-chrome-stable_current_amd64.deb
 
 
 
-## Basic
+
+
+<div class="md0"></div>
+
+## Centos
+
+#### Basic
+
 	dnf update
 	dnf upgrade
 
@@ -21,24 +76,17 @@
 	dnf -y upgrade
 	dnf -y update
 
-
-
-
-<div class="md1"></div>
-
-
-
-
-## Tools
 #### EPEL
+
 	dnf -y install epel-release
 	yum config-manager --set-enabled PowerTools
 
 	dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 
-#### Network	
+#### Network
+
 	dnf install net-tools
-	
+
 #### ntfs
 	dnf -y install ntfs-3g	
 	
@@ -56,18 +104,24 @@
 	vim /etc/fstab
 	/dev/sda1 /media/sda1 ntfs-3g defaults 0 0
 
+#### Software
+
+Chrome
+
+	curl -SLo chrome.rpm https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+	dnf localinstall chrome.rpm
 
 
 
-<div class="md1"></div>
 
 
 
+
+
+
+<div class="md0"></div>
 
 ## Software
-#### Chrome		
-	curl -SLo chrome.rpm https://dl.google.com/linux/direct/google-chrome-		stable_current_x86_64.rpm
-	dnf localinstall chrome.rpm
 
 #### Telegram
 	Download from telegram.com
@@ -91,9 +145,7 @@
 
 	sudo openvpn --config /home/morteza/Downloads/vpnbook/vpnbook-us2-udp25000.ovpn --auth-user-pass login.conf
 	
-#### Atom	
-	curl -SLo atom.rpm https://atom.io/download/rpm
-	dnf localinstall atom.rpm
+
 	
 #### f.lux
 	sudo add-apt-repository ppa:nathan-renniewaldock/flux
@@ -122,8 +174,27 @@
 	sudo apt-get install unetbootin
 
 
-#### Git
-	dnf --enablerepo="epel" install git
+
+
+
+#### Atom	
+	curl -SLo atom.rpm https://atom.io/download/rpm
+	dnf localinstall atom.rpm
+	
+	
+#### VS Code
+	---[ubuntu]
+	Way 1:
+	wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+	sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+	sudo apt update
+	sudo apt install code
+
+	Way 2:
+	cd ~/Downloads
+	wget https://az764295.vo.msecnd.net/stable/a0479759d6e9ea56afa657e454193f72aef85bd0/code_1.48.2-1598353430_amd64.deb	
+	sudo apt install ./code_1.48.2-1598353430_amd64.deb
+	
 
 
 

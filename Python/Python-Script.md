@@ -1522,3 +1522,10 @@ class myThread (threading.Thread):
 
 	start_time = time.time()
 	print(f"-------------- Time(Connection):{time.time() - start_time}")
+
+
+
+#### Write To File
+	f = open("log", "w")
+	f.write("Now the file has more content!")
+	f.close()

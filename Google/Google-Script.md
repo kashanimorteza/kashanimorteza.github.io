@@ -27,13 +27,19 @@
 
 <div class="md1"></div>
 
-## SDK
+## Cloud SDK 
+
+#### Update components
 
     gcloud components update
 
-    gcloud auth login
+#### Login 
 
-    gcloud config set project arched-jetty-276816
+    gcloud auth login
+	
+#### Set Project	
+
+    gcloud config set project light-trail-276918 
 
 
 
@@ -44,6 +50,35 @@
 
 ## Compute Engine
 
+#### Instances list
+	 
+	 gcloud compute instances list
+	 
+#### Connect to Instances with Cloud SDK 
+	
+	gcloud compute ssh linux1
+		
+#### Connect to Instances with SSH
+	
+	Download PuTTYgen
+
+	Run PuTTYgen and Generate
+		Key comment : morteza
+		Key passphrase : Morteza123456
+		Confirm passphrase : Morteza123456	
+	Save public key as : public_key
+	Save Private key as : private_key.ppk
+
+	Run PuTTYgen and load private_key.ppk
+	copy code from top
+	Go to Google cloud Console > Compute Engine > VM Instance > Select Instance
+	In instance page go to edit
+	finde "You have 0 SSH key" Option and go inside and paste the code
+	save changes	 
+
+	Open putty	
+	Add path of private_key.ppk into connection > ssh > auth > private key for authentication 
+	
 
 
 

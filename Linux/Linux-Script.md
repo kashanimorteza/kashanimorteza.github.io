@@ -1,8 +1,11 @@
 <style>
+.md0{margin-top: 150px;}
 .md1{margin-top: 75px;}
 .md2{margin-top: 50px;}
 .md3{margin-top: 25px;}
+.md4{margin-top: 10px;}
 .tbl1 td#header{background-color: D1ECCF}
+.tbl1 tr#header{background-color: D1ECCF}
 </style>
 
 # [<span style="color:black;">Linux Config</span>](Linux.md)
@@ -153,3 +156,57 @@
 	
 	sudo openvpn --config /home/morteza/Downloads/vpnbook/vpnbook-us2-udp25000.ovpn --auth-user-pass /home/morteza/Downloads/vpnbook/login.conf
 
+
+
+
+
+
+
+
+<div class="md0"></div>
+
+## Create Service
+
+sudo vim /etc/systemd/system/forex-downloaddata.service
+
+	[Unit]
+	Description=forex download data
+	[Service]
+	User=morteza
+	WorkingDirectory=/home/morteza/forex-download-data
+	ExecStart=/home/morteza/forex-download-data/linux-service
+	SuccessExitStatus=143
+	TimeoutStopSec=10
+	Restart=on-failure
+	RestartSec=60
+	[Install]
+	WantedBy=multi-user.target
+
+sudo vim /home/morteza/forex-download-data/linux-service
+
+	#!/bin/sh
+
+	python3.8 main.py
+
+sudo chmod 755 /home/morteza/forex-download-data/linux-service
+
+Start Service
+
+	sudo systemctl daemon-reload
+	
+	sudo systemctl enable forex-downloaddata
+	sudo systemctl disable forex-downloaddata
+	
+	sudo systemctl is-enabled forex-downloaddata
+	sudo systemctl is-active forex-downloaddata
+
+	sudo systemctl start forex-downloaddata
+	sudo systemctl stop forex-downloaddata
+	sudo systemctl restart forex-downloaddata
+	sudo systemctl status forex-downloaddata
+
+Check Service Log 
+
+	sudo journalctl --unit=forex-downloaddata
+	sudo journalctl -f -n 10 -u forex-downloaddata
+	sudo journalctl -f -u forex-downloaddata
