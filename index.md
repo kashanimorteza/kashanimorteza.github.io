@@ -24,9 +24,8 @@ version 2
 <td align="center" id="header">OS</td>
 <td align="center" id="header">Programming</td>
 <td align="center" id="header">Database</td>
-<td align="center" id="header">Graphic</td>
 <td align="center" id="header">Editor</td>
-<td align="center" id="header">Finance</td>
+<td align="center" id="header">Graphic</td>
 </tr>
 
 <tr>
@@ -66,15 +65,15 @@ version 2
 </td>
 
 <td align="center">
-<a href="Rhino/Rhino.html">Rhino</a>
-</td>
-
-<td align="center">
 <a href="Atom/0-Atom.html">Atom</a>
 <div class="md3"></div>
 <a href="VsCode/0-VsCode.html">VS Code</a>
 <div class="md3"></div>
 <a href="Git/Git.html">Git</a>
+</td>
+
+<td align="center">
+<a href="Rhino/Rhino.html">Rhino</a>
 </td>
 
 </tr>
