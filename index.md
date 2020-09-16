@@ -20,7 +20,7 @@ version 2
 <table class="tbl1">
 
 <tr>
-<td align="center" id="header">Language</td>
+<td align="center" id="header">General</td>
 <td align="center" id="header">OS</td>
 <td align="center" id="header">Programming</td>
 <td align="center" id="header">Database</td>
@@ -33,12 +33,18 @@ version 2
 
 <td align="center">
 <a href="English/English.html">English</a>
+<div class="md3"></div>
+<a href="Forex/Forex.html">Forex</a>
 </td>
 
 <td align="center">
 <a href="Linux/Linux.html">Linux</a>
 <div class="md3"></div>
 <a href="Windows/Windows.html">Windows</a>
+<div class="md3"></div>
+<a href="Google/Google.html">Google</a>  
+<div class="md3"></div>
+<a href="Docker/Docker.html">Docker</a>
 </td>
 
 <td align="center">
@@ -70,13 +76,6 @@ version 2
 <div class="md3"></div>
 <a href="Git/Git.html">Git</a>
 </td>
-
-<td align="center">
-<a href="Forex/Forex.html">Forex</a>
-<div class="md3"></div>
-<a href="Google/Google.html">Google</a>
-</td>
-
 
 </tr>
 </table>
