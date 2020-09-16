@@ -9,10 +9,10 @@
 </style>
 
 
-# [<span style="color:black;">Git Basic</span>](Git.md)
-[Basic](Git-Basic.md) | 
-[Structure](Git-Structure.md) | 
-[Script](Git-Script.md)
+# [<span style="color:black;">Docker Basic</span>](Docker.md)
+[Basic](Docker-Basic.md) | 
+[Structure](Docker-Structure.md) | 
+[Script](Docker-Script.md)
 
 
 <div class="md3"></div>
@@ -27,7 +27,7 @@
 
 <div class="md3"></div>
 
-![](Git.jpeg)
+![](Docker.jpeg)
 
 
 
@@ -39,7 +39,7 @@
 
 #### General
 
-<a href="http://git-scm.com" target="_blank">git-scm</a> - <a href="http://github.com" target="_blank">github</a> - <a href="http://gitlab.com" target="_blank">gitlab</a>
+<a href="http://Docker-scm.com" target="_blank">Docker-scm</a> - <a href="http://Dockerhub.com" target="_blank">Dockerhub</a> - <a href="http://Dockerlab.com" target="_blank">Dockerlab</a>
 
 #### Tutorial
 
@@ -58,13 +58,13 @@
 
 #### Ubuntu
 
-    sudo apt install git-core
+    sudo apt install Docker-core
 
-    sudo apt install git-all
+    sudo apt install Docker-all
 
 #### Centos
 
-    dnf --enablerepo="epel" install git
+    dnf --enablerepo="epel" install Docker
 
 
 
@@ -73,9 +73,9 @@
 <div class="md0"></div>
 
 ## Tools
-    Ohmyzsh  گرافیک git
+    Ohmyzsh  گرافیک Docker
 
-    git --version
+    Docker --version
 
 
 
