@@ -23,13 +23,13 @@
 
 
 <div class="md3"></div>
-<a href="#Platform">platform</a> - 
-<a href="#Accounting">accounting</a> - 
-<a href="#Producers">producers</a> - 
-<a href="#Delivery">delivery</a> - 
-<a href="#Report">report</a> - 
-<a href="#Advertising">advertising</a> -  
-<a href="#Fashion">fashion</a>
+<a href="#platform">Platform</a> - 
+<a href="#accounting">Accounting</a> - 
+<a href="#producers">Producers</a> - 
+<a href="#delivery">Delivery</a> - 
+<a href="#report">Report</a> - 
+<a href="#advertising">Advertising</a> -  
+<a href="#fashion">Fashion</a>
 
 
 
