@@ -9,7 +9,7 @@
 </style>
 
 
-# [<span style="color:black;">ManSin Subject</span>](ManSin.md)
+# [<span style="color:black;">ManSin Target</span>](ManSin.md)
 
 
 [Basic](ManSin-Basic.md) |
@@ -26,19 +26,10 @@
 
 <div align="right" dir="rtl">
 
- لباس
- 
+ایجاد یک ماهیت فروش آنلاین
+
 <div class="md3"><div>
- 
- مزون
- 
-<div class="md3"><div>
- 
- آنلاین
- 
-<div class="md3"><div>
- 
- دلیوری
-  
- 
+
+کسب درامد
+
 </div>

@@ -37,7 +37,7 @@
 
 <div class="md3"></div>
 
-[Politics](ManSin-Politics.md)
+[Strategy](ManSin-Strategy.md)
 
 
 
@@ -55,8 +55,7 @@
 
 
 
-
-
 <div class="md3"></div>
 
-[Structure](ManSin-Structure.md)
+[Scenario](ManSin-Scenario.md)
+

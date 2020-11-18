@@ -15,15 +15,21 @@
 [Basic](ManSin-Basic.md) |
 [Target](ManSin-Target.md) |
 [Subject](ManSin-Subject.md) | 
-[Politics](ManSin-Politics.md) |
+[Strategy](ManSin-Strategy.md) |
 [Resources](ManSin-Resources.md) | 
-[Requirement](ManSin-Requirement.md) | 
-[Structure](ManSin-Structure.md)
+[Requirement](ManSin-Requirement.md) |
+[Scenario](ManSin-Scenario.md)
 
 
 <div class="md1"></div>
 
 
 <div align="right" dir="rtl">
-فقط کسب درامد
+
+ایجاد یک ماهیت فروش آنلاین
+
+<div class="md3"><div>
+
+کسب درآمد
+
 </div>

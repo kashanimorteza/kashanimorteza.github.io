@@ -15,8 +15,8 @@
 [Basic](ManSin-Basic.md) |
 [Target](ManSin-Target.md) |
 [Subject](ManSin-Subject.md) | 
-[Politics](ManSin-Politics.md) |
+[Strategy](ManSin-Strategy.md) |
 [Resources](ManSin-Resources.md) | 
-[Requirement](ManSin-Requirement.md) | 
-[Structure](ManSin-Structure.md)
+[Requirement](ManSin-Requirement.md) |
+[Scenario](ManSin-Scenario.md)
 

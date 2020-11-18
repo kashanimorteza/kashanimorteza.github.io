@@ -9,7 +9,8 @@
 </style>
 
 
-# [<span style="color:black;">ManSin Subject</span>](ManSin.md)
+# [<span style="color:black;">ManSin Scenario</span>](ManSin.md)
+
 
 
 [Basic](ManSin-Basic.md) |
@@ -19,26 +20,3 @@
 [Resources](ManSin-Resources.md) | 
 [Requirement](ManSin-Requirement.md) |
 [Scenario](ManSin-Scenario.md)
-
-
-<div class="md1"></div>
-
-
-<div align="right" dir="rtl">
-
- لباس
- 
-<div class="md3"><div>
- 
- مزون
- 
-<div class="md3"><div>
- 
- آنلاین
- 
-<div class="md3"><div>
- 
- دلیوری
-  
- 
-</div>
