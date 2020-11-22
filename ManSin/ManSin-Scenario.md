@@ -25,7 +25,6 @@
 
 
 
- 
 ## کالا
 
 <div align="right" dir="rtl">
@@ -56,6 +55,7 @@
 
 
 
+
 <div class="md0"></div>
 
 
@@ -66,32 +66,20 @@
 
 ## دلیوری
 
+<div align="right" dir="rtl">
 بعد از فروش وارد می شود
-
 <div class="md3"></div>
-
 تهیه لیست اجناس آماده
-
 <div class="md3"></div>
-
 جمع آوری  اجناس طبق سفارش
-
 <div class="md3"></div>
-
  دریافت سفارشات توسط کنترل کیفیت
-
 <div class="md3"></div>
-
 پکیج بندی سفارشات
-
 <div class="md3"></div>
-
 تحویل پکیج به Routing
-
 <div class="md3"></div>
-
 تحویل به مشتری
-
 <div class="md3"></div>
-
 روشن شدن آلارم خدمات پس ار فروش
+</div>
