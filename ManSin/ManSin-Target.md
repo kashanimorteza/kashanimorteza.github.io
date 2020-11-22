@@ -14,7 +14,6 @@
 
 [Basic](ManSin-Basic.md) |
 [Target](ManSin-Target.md) |
-[Subject](ManSin-Subject.md) | 
 [Strategy](ManSin-Strategy.md) |
 [Resources](ManSin-Resources.md) | 
 [Requirement](ManSin-Requirement.md) |

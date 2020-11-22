@@ -14,7 +14,6 @@
 
 [Basic](ManSin-Basic.md) |
 [Target](ManSin-Target.md) |
-[Subject](ManSin-Subject.md) | 
 [Strategy](ManSin-Strategy.md) |
 [Resources](ManSin-Resources.md) | 
 [Requirement](ManSin-Requirement.md) |
@@ -25,7 +24,7 @@
 <a href="#مشتری">مشتری</a> - 
 <a href="#کالا">کالا</a> - 
 <a href="#دلیوری">دلیوری</a> - 
-<a href="#آنلاین">آنلاین</a> - 
+<a href="#فروش-آنلاین">فروش آنلاین</a> - 
 <a href="#تبلیغات">تبلیغات</a> -  
 <a href="#خدمات-پس-از-فروش">خدمات پس از فروش</a> -
 <a href="#انبار">انبار</a> -  
@@ -124,7 +123,7 @@
 
 <div class="md0"></div>
 
-## آنلاین
+## فروش آنلاین
 
 
 

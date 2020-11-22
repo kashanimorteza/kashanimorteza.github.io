@@ -27,13 +27,6 @@
 
 
 
-<div class="md3"></div>
-
-[Subject](ManSin-Subject.md)
-
-
-
-
 
 <div class="md3"></div>
 
