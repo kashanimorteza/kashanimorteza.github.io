@@ -20,10 +20,7 @@
 <div class="md3"></div>
 <a href="#کالا">کالا</a> - 
 <a href="#دلیوری">دلیوری</a>
-
 <div class="md1"></div>
-
-
 
 
 
@@ -81,7 +78,7 @@
 
 
 
-<div align="right" dir="rtl">
+
 
 ## دلیوری
 
@@ -114,5 +111,3 @@
 <div class="md3"><div>
 
 روشن شدن آلارم خدمات پس ار فروش
-
-</div>
