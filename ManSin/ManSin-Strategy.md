@@ -3,7 +3,7 @@
 .md1{margin-top: 75px;}
 .md2{margin-top: 50px;}
 .md3{margin-top: 25px;}
-.md4{margin-top: 5px;}
+.md4{margin-top: 10px;}
 .tbl1 td#header{background-color: D1ECCF}
 .tbl1 tr#header{background-color: D1ECCF}
 </style>
@@ -58,7 +58,9 @@
 #### تولید کننده ها
 
 تولید کننده کالا نیستیم
+<br>
 هم برند خارجی کار میکنیم هم برند ایرانی
+<br>
 امکان تغییر و مرجوعی داریم
 
 #### دسته بندی 
@@ -87,13 +89,13 @@
 #### سیاست
 
 خودمون انجام بدیم
-<div class="md4"><div>
+<br>
 دیگران انجام بدهند
    
 #### موقعیت
 
 تهران
-<div class="md4"><div>
+<br>
 شهرستان
 
 #### بسته بندی
