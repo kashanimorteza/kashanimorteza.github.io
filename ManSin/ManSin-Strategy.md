@@ -39,9 +39,8 @@
 
 ## مشتری
 
-<div align="right" dir="rtl">
 سرویس به مشتری بر اساس کالای ورودی است
-</div>
+
 
 
 
@@ -58,13 +57,11 @@
 
 #### تولید کننده ها
 
-<div align="right" dir="rtl">
 تولید کننده کالا نیستیم
-<div class="md3"><div>
+<div class="md4"><div>
 هم برند خارجی کار میکنیم هم برند ایرانی
-<div class="md3"><div>
+<div class="md4"><div>
 امکان تغییر و مرجوعی داریم
-</div>
 
 #### دسته بندی 
 
@@ -91,19 +88,15 @@
 
 #### سیاست
 
-<div align="right" dir="rtl">
 خودمون انجام بدیم
-<br>
+<div class="md4"><div>
 دیگران انجام بدهند
-</div>
    
 #### موقعیت
 
-<div align="right" dir="rtl">
 تهران
-<br>
+<div class="md4"><div>
 شهرستان
-</div>
 
 #### بسته بندی
 

@@ -8,9 +8,7 @@
 .tbl1 tr#header{background-color: D1ECCF}
 </style>
 
-
 # [<span style="color:black;">ManSin Target</span>](ManSin.md)
-
 
 [Basic](ManSin-Basic.md) |
 [Target](ManSin-Target.md) |
@@ -18,17 +16,11 @@
 [Resources](ManSin-Resources.md) | 
 [Requirement](ManSin-Requirement.md) |
 [Scenario](ManSin-Scenario.md)
-
-
 <div class="md1"></div>
 
 
-<div align="right" dir="rtl">
+
 
 ایجاد یک ماهیت فروش آنلاین
-
-<div class="md3"><div>
-
+<div class="md4"><div>
 کسب درآمد
-
-</div>
