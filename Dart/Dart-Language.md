@@ -280,11 +280,16 @@ Const
 ## Function 
 
 #### The main() function
+
+<span style="color:blue;">Way 1</span>
+
 	void main()
 	{
 		print('Function 1');
 	}
-		
+
+<span style="color:blue;">Way 2</span>
+
 	main() => print('Function 2');
 	
 	

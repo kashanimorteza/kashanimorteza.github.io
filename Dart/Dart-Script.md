@@ -21,4 +21,13 @@
 
 
 ## General
-	Test
+
+#### null safety
+
+	String x;
+
+	x = null;
+	print(x?.toUpperCase());
+
+	x = "asd";
+	print(x?.toUpperCase());
