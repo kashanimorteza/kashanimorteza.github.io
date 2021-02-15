@@ -279,7 +279,7 @@ Const
 
 ## Function 
 
-#### The main() function
+#### <span style="color:red;">The main() function</span>
 
 <span style="color:blue;">Way 1</span>
 
