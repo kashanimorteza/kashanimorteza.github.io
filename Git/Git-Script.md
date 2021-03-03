@@ -290,3 +290,35 @@
 | Git remote add origin [url]  | <span align="right" dir="rtl"> گرفتن یک ریپازیتوری از ریموت <span>  |
 | Git push Origin master  | <span align="right" dir="rtl"> یعنی اطلاعات رو بفرست به ریموت <span>  |
 | Git pull Origin master  | <span align="right" dir="rtl"> اطلاعات رو از ریپازیتوری بگیر <span>  |
+
+
+
+
+
+
+	Git global setup
+	git config --global user.name "morteza kashani"
+	git config --global user.email "kashani.morteza@gmail.com"
+
+	Create a new repository
+	git clone git@gitlab.com:kashani.morteza/morteza.git
+	cd morteza
+	touch README.md
+	git add README.md
+	git commit -m "add README"
+	git push -u origin master
+
+	Push an existing folder
+	cd existing_folder
+	git init
+	git remote add origin git@gitlab.com:kashani.morteza/morteza.git
+	git add .
+	git commit -m "Initial commit"
+	git push -u origin master
+
+	Push an existing Git repository
+	cd existing_repo
+	git remote rename origin old-origin
+	git remote add origin git@gitlab.com:kashani.morteza/morteza.git
+	git push -u origin --all
+	git push -u origin --tags

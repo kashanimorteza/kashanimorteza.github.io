@@ -6,6 +6,9 @@
 .md4{margin-top: 5px;}
 .tbl1 td#header{background-color: D1ECCF}
 .tbl1 tr#header{background-color: D1ECCF}
+.red{color:#E74C3C;font-size: 20px;}
+.blue{color:#3498DB}
+.green{color:##28B463}
 </style>
 
 
@@ -20,10 +23,315 @@
 
 
 <div class="md3"></div>
+<a href="#1">1</a> - 
+<a href="#2">2</a> - 
+<a href="#3">3</a> - 
+<a href="#4">4</a> - 
+<a href="#5">5</a> - 
+<a href="#6">6</a> - 
+<a href="#7">7</a> - 
+<a href="#8">8</a> - 
+<a href="#9">9</a> - 
+<a href="#10">10</a> - 
 <a href="#general">General</a>
 
 
+
+
+
 <div class="md1"></div>
+
+#### <span class="red">1</span>
+
+	import 'package:flutter/material.dart';
+
+	void main() 
+	{
+		runApp(Text("Welcome", textDirection: TextDirection.ltr,));
+	}
+
+
+
+<div class="md1"></div>
+
+#### <span class="red">2</span>
+	
+	import 'package:flutter/material.dart';
+
+	void main() 
+	{
+		runApp(MyApp());
+	}
+
+	class MyApp extends StatelessWidget 
+	{
+		@override
+		Widget build(BuildContext context) 
+		{
+			return MaterialApp(home: Text('hello'),);
+		}
+	}
+
+
+<div class="md1"></div>
+
+#### <span class="red">3</span>
+
+	import 'package:flutter/material.dart';
+
+	void main() 
+	{
+		runApp(MyApp());
+	}
+
+	class MyApp extends StatelessWidget 
+	{
+		@override
+		Widget build(BuildContext context) 
+		{
+			return MaterialApp(
+				home: Scaffold(
+				appBar: AppBar(title: Text("My First Application 1")),
+				body: Text('welcome to the flutter'),
+				)
+			);
+		}
+	}
+
+
+<div class="md1"></div>
+
+#### <span class="red">4</span>
+
+<span class="blue">Adding Layout Widgets</span>
+
+	import 'package:flutter/material.dart';
+
+	void main() 
+	{
+		runApp(MyApp());
+	}
+
+	class MyApp extends StatelessWidget 
+	{
+		@override
+		Widget build(BuildContext context) 
+		{
+			return MaterialApp(
+				home: Scaffold(
+					appBar: AppBar(title: Text("My First Application 1")),
+					body: Column(
+						children: [
+						Text('This is a seccond text'),
+						RaisedButton(child: Text('btn 1'), onPressed: null),
+						Text('This is a first text'),
+						RaisedButton(child: Text('btn 2'), onPressed: null),
+						],
+					),
+				)
+			);
+		}
+	}
+
+
+<div class="md1"></div>
+
+#### <span class="red">5</span>
+
+<span class="blue">Connecting Functions & Buttons</span>
+
+	import 'package:flutter/material.dart';
+
+	void main() 
+	{
+		runApp(MyApp());
+	}
+
+	class MyApp extends StatelessWidget 
+	{
+		void answer() 
+		{
+			print('button 1 is clicked');
+		}
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return MaterialApp(
+				home: Scaffold(
+					appBar: AppBar(title: Text("My First Application 1")),
+					body: Column(
+						children: [
+						Text('This is text 1'),
+						RaisedButton(child: Text('btn 1'), onPressed: answer),
+						Text('This is text 2'),
+						RaisedButton(child: Text('btn 2'),onPressed: () => print('button 2 is clicked')),
+						Text('This is text 3'),
+						RaisedButton(child: Text('btn 3'),onPressed: () {print('button 3 is clicked');}),
+						],
+					),
+				)
+			);
+		}
+	}
+
+
+<div class="md1"></div>
+
+#### <span class="red">6</span>
+
+<span class="blue">Updating Correctly with Stateful Widgets</span>
+
+	import 'package:flutter/material.dart';
+
+	void main() 
+	{
+		runApp(MyApp());
+	}
+
+	class MyApp extends StatefulWidget 
+	{
+		@override
+		_MyAppState createState() => _MyAppState();
+	}
+
+	class _MyAppState extends State<MyApp> 
+	{
+		var item = 0;
+
+		void answer() 
+		{
+			setState(() {item = item + 1;});
+
+			print(item.toString());
+		}
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return MaterialApp(
+				home: Scaffold(
+			appBar: AppBar(title: Text("My First Application 1")),
+			body: Column(
+				children: [
+				Text(item.toString()),
+				RaisedButton(child: Text('add item'), onPressed: answer),
+				],
+			),
+			));
+		}
+	}
+
+
+
+<div class="md1"></div>
+
+#### <span class="red">7</span>
+
+<span class="blue">Creating a New, Custom Widget</span>
+
+item.dart
+
+	import 'package:flutter/material.dart';
+
+	class MyItem extends StatelessWidget 
+	{
+		int item;
+
+		MyItem(this.item);
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Text(item.toString());
+		}
+	}
+
+main.dart
+
+	import 'package:flutter/material.dart';
+	import './item.dart';
+
+	void main() 
+	{
+		runApp(MyApp());
+	}
+
+	class MyApp extends StatefulWidget 
+	{
+		@override
+		_MyAppState createState() => _MyAppState();
+		}
+
+		class _MyAppState extends State<MyApp> 
+		{
+		var item = 0;
+
+		void answer() 
+		{
+			setState(() {item = item + 1;});
+
+			print(item.toString());
+		}
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return MaterialApp(
+				home: Scaffold(
+			appBar: AppBar(title: Text("My First Application 1")),
+			body: Column(children: 
+			[
+				MyItem(item),ElevatedButton(child: Text('add item'), onPressed: answer),
+			],
+			),
+			));
+		}
+	}
+
+
+
+<div class="md1"></div>
+
+#### <span class="red">8</span>
+
+<span class="blue">First Styling & Layouting Steps</span>
+
+	import 'package:flutter/material.dart';
+
+	void main() 
+	{
+		runApp(MyApp());
+	}
+
+	class MyApp extends StatelessWidget 
+	{
+		@override
+		Widget build(BuildContext context) 
+		{
+			return MaterialApp(
+				home: Scaffold(
+			appBar: AppBar(title: Text("My First Application 1")),
+			body: Container(
+				margin: EdgeInsets.all(100.0),
+				width: double.infinity,
+				child: Text('Hello Flutter',
+					style: TextStyle(fontSize: 33), 
+					textAlign: TextAlign.center),
+			),
+			));
+		}
+	}
+
+
+
+
+
+
+
+
+
+<div class="md0"></div>
 
 ## General
 

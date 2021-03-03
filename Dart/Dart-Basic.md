@@ -6,6 +6,9 @@
 .md4{margin-top: 5px;}
 .tbl1 td#header{background-color: D1ECCF}
 .tbl1 tr#header{background-color: D1ECCF}
+.red{color:#E74C3C}
+.blue{color:#3498DB}
+.green{color:##28B463}
 </style>
 
 
@@ -13,6 +16,7 @@
 [Diagram](Dart-Diagram.md) | 
 [Basic](Dart-Basic.md) | 
 [Language](Dart-Language.md) | 
+[OOP](Dart-Language-OOP.md) | 
 [Development](Dart-Development.md) | 
 [Script](Dart-Script.md)
 
@@ -49,7 +53,12 @@ Persian :
 <a href="https://faradars.org/search_gcse?q=dart&cse_blog=1" target="_blank">faradars</a> -
 
 English : 
+<a href="https://www.tutorialspoint.com/dart_programming/index.htm" target="_blank">tutorialspoint</a> -
 <a href="https://www.tutorialkart.com/dart/" target="_blank">tutorialkart</a> -
+<a href="https://www.javatpoint.com/dart-interfaces" target="_blank">javatpoint</a>
+
+
+
 
 
 
@@ -61,11 +70,35 @@ English :
 
 ## Setup
 
+#### Windows
+
 Download dart sdk and extract into C:\Programming\dart-sdk
 
 Add dart_sdk adress "C:\Programming\dart-sdk" into PATH system variable
 
 Run dart command in command-line and test it
+
+#### Linux
+
+
+
+
+
+<div class="md0"></div>
+
+## Notic
+
+ <div align="right" dir="rtl">
+  یک کلاس میتواند فقط از یک کلاس ارث بری کند ولی میتواند چندین Interface را پیاده سازی کند.
+  <br>
+  دارت از _ برای پرایویت کردن کلاس یا متد یا فیلد استفاده میکند
+  <br>
+  Synchronous یعنی کدها پشت سر هم اجرا می‌شوند
+  <br>
+  Asynchronous  یعنی کدهای ما پشت سر هم اجرا نمی‌شوند و به اصطلاح ترتیب کدها غیرخطی است
+</div>
+
+
 
 
 

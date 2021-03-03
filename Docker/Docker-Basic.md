@@ -12,7 +12,9 @@
 # [<span style="color:black;">Docker Basic</span>](Docker.md)
 [Basic](Docker-Basic.md) | 
 [Structure](Docker-Structure.md) | 
+[Command](Docker-Command.md) |
 [Script](Docker-Script.md)
+
 
 
 <div class="md3"></div>
@@ -39,11 +41,12 @@
 
 #### General
 
-<a href="http://Docker-scm.com" target="_blank">Docker-scm</a> - <a href="http://Dockerhub.com" target="_blank">Dockerhub</a> - <a href="http://Dockerlab.com" target="_blank">Dockerlab</a>
+<a href="https://www.docker.com/" target="_blank">docker</a> - 
+<a href="https://hub.docker.com/" target="_blank">docker hub</a> - 
 
 #### Tutorial
 
-<a href="http://faradars.org" target="_blank">faradars</a> - <a href="http://roocket.ir" target="_blank">roocket</a> - <a href="http://clicksite.org" target="_blank">clicksite</a> - <a href="http://faranesh.com" target="_blank">faranesh</a> -
+<a href="https://dockerme.ir/" target="_blank">dockerme</a> -
 
 
 
@@ -57,14 +60,24 @@
 ## Install
 
 #### Ubuntu
+    
+    sudo apt remove docker docker-engine docker.io containerd runc
 
-    sudo apt install Docker-core
+    sudo apt update
+    sudo apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    sudo apt update
+    sudo apt install docker-ce docker-ce-cli containerd.io
 
-    sudo apt install Docker-all
-
+    sudo usermod -aG docker morteza
+    
 #### Centos
 
-    dnf --enablerepo="epel" install Docker
+
+
+
+
 
 
 
@@ -73,10 +86,38 @@
 <div class="md0"></div>
 
 ## Tools
-    Ohmyzsh  گرافیک Docker
 
-    Docker --version
 
+<table class="tbl1"><tbody>
+<tr>
+<td align="center" id="header">Tools</td>
+<td align="center" id="header">Description</td>
+</tr>
+<tr>
+<td align="center">Compose</td>
+<td align="center">با این ابزار میتوان چندین کانتینر را اجرا کرد</td>
+</tr>
+<tr>
+<td align="center">Swarm</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Kubernetes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Toolbax</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Machin</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Kitematic</td>
+<td align="center">Graphic Tools</td>
+</tr>
+</tbody></table>
 
 
 
@@ -86,17 +127,7 @@
 ## Concept
 
 <div align="right" dir="rtl">
-گیت یک مخزن (repository) می سازه که از سه لایه منطقی به فایل ها نگاه میکنه :
 <br>
-1 – لایه اول یا همان (working tree) که هنوز اقدامی برای ثبت تغییرات انجام نشده و فایل ها در حال تغییر هستند 
 <br>
-2 – لایه دوم یا همان (stage)که با وارد کردن فایل ها به این لایه، آنها آماده ثبت تغییر می شوند
 <br>
-3 – لایه سوم (Repository) که تمام تغییرات فایل ها ثبت می شوند
-</div>
-<br>
-<div align="right" dir="rtl">
-fork کردن در واقع یعنی یه کپی از پروژه گرفتن و تغییر دادنش
-<br>
-میشود از سازندش در خواست کرد تغیییرات رو ببینه و با پروژه اصلی خودش مرج کنه
 </div>

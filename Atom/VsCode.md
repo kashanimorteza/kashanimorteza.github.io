@@ -12,43 +12,35 @@
 </style>
 
 
-# [<span style="color:black;">Dart</span>](../index.md) 
+# [<span style="color:black;">VsCode</span>](../index.md) 
 
 
 
 
 <div class="md3"></div>
 
-[Diagram](Dart-Diagram.md)
+[Diagram](VsCode-Diagram.md)
 
 
 
 <div class="md3"></div>
 
-[Basic](Dart-Basic.md)
+[Basic](VsCode-Basic.md)
 
 
 
 <div class="md3"></div>
 
-[Language](Dart-Language.md)
-
-
-
-
-<div class="md3"></div>
-
-[Language OOP](Dart-Language-OOP.md)
-
+[Language](VsCode-Language.md)
 
 
 
 <div class="md3"></div>
 
-[Development](Dart-Development.md) 
+[Development](VsCode-Development.md) 
 
 
 
 <div class="md3"></div>
 
-[Script](Dart-Script.md)
+[Script](VsCode-Script.md)

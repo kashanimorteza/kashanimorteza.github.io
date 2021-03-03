@@ -6,8 +6,9 @@
 .md4{margin-top: 5px;}
 .tbl1 td#header{background-color: D1ECCF}
 .tbl1 tr#header{background-color: D1ECCF}
-.red{color:#E74C3C}
-.blue{color:#3498DB }
+.red{color:#E74C3C;font-size: 16px;}
+.blue{color:#3498DB}
+.green{color:##28B463}
 </style>
 
 
@@ -15,6 +16,7 @@
 [Diagram](Dart-Diagram.md) | 
 [Basic](Dart-Basic.md) | 
 [Language](Dart-Language.md) | 
+[OOP](Dart-Language-OOP.md) | 
 [Development](Dart-Development.md) | 
 [Script](Dart-Script.md)
 
@@ -22,16 +24,14 @@
 <div class="md3"></div>
 <a href="#data-type">Data Type</a> - 
 <a href="#variable">Variable</a> - 
-<a href="#define-variable">Define Variable</a> - 
-<a href="#generics">Generics </a> - 
-<a href="#conditions">Conditions</a> - 
-<a href="#loop">Loop</a> - 
-<a href="#operators">Operators</a> - 
-<a href="#function">Function</a>
-<div class="md4"></div>
-<a href="#oop">OOP</a> -
+<a href="#enum">Enum</a> - 
+<a href="#generic">Generic</a> - 
+<a href="#operator">Operator</a> - 
+<a href="#control-flow">Control flow</a> - 
+<a href="#function">Function</a> -
 <a href="#libraries">Libraries</a> -
-<a href="#packages">Packages</a> -
+<a href="#packages">Packages</a>
+<div class="md4"></div>
 <a href="#asynchronous">Asynchronous</a> -
 <a href="#generators">Generators</a> -
 <a href="#debugging">Debugging</a> -
@@ -40,25 +40,20 @@
 
 
 
+
+
+
 <div class="md1"></div>
 
 ## Data type
 
-numbers
+String
 
-strings
+Number
 
-booleans
+Boolean
 
-lists (also known as arrays)
 
-sets
-
-maps
-
-runes (for expressing Unicode characters in a string)
-
-symbols
 
 
 
@@ -67,51 +62,61 @@ symbols
 
 ## Variable
 
-General
+#### <span class="red">General</span>
 
-Dynamic
+	var name = 'morteza'
 
-Final
+	String name = 'morteza';  
 
-Const
+	String name, familt, job;  
+	
+#### <span class="red">Dynamic</span>
+
+	dynamic x;
+
+	x = "tom";
+	print(x);
+	print(x.runtimeType);
+
+	print("----------------");
+
+	x = 1;
+	print(x);
+	print(x.runtimeType);
+
+	print("----------------");
+
+	x = true;
+	print(x);
+	print(x.runtimeType);
+
+	print("----------------");
+
+#### <span class="red">Constant</span>
+
+<span class="blue">Final</span>
+
+	final name = 'morteza';
+
+	final String name = 'morteza';
+
+<span class="blue">Const</span>
+
+	const name = 'morteza';
+
+	const String name = 'morteza';
+
+
+
 
 
 
 
 <div class="md0"></div>
 
-## Define Variable
+## Collection
 
-#### General
-
-	var name = 'Smith';	
-	String name = 'Smith';
-	
-#### Dynamic
-
-	dynamic x;
-	x = "tom";
-	print(x);
-	print(x.runtimeType);
-	print("----------------");
-	x = 1;
-	print(x);
-	print(x.runtimeType);
-	print("----------------");
-	x = true;
-	print(x);
-	print(x.runtimeType);
-	print("----------------");
-
-#### Final
-
-	final name = 'Bob';
-
-#### Const
-
-	const bar = 1000000;
-
-#### List
+#### <span class="red">List</span>
 
 	List list = new List(3); 
 		list[0] = 'a'; 
@@ -145,7 +150,7 @@ Const
 	List list2 = ['#0',for (var i in list1) '#$i'];
 
 
-#### Set
+#### <span class="red">Set</span>
 
 	Set set = {};
 		set.add('a'); 
@@ -165,7 +170,7 @@ Const
 	print(set);
 	
 	
-#### Map
+#### <span class="red">Map</span>
 	Map map = new Map();
 	map['Usrname'] = 'u'; 
     map['Password'] = 1; 
@@ -176,20 +181,30 @@ Const
 	print(map);	
 	
 
-#### Runes
+#### <span class="red">Runes</span>
 	.
 	
-#### Symbol 
+#### <span class="red">Symbol</span> 
 	.
-	
+
 
 
 
 
 <div class="md0"></div>
 
-## Generics 
-#### List
+## Enum
+
+
+
+
+
+<div class="md0"></div>
+
+## Generic
+
+#### <span class="red">List</span>
+
 	List<String> list = new List<String>(3);
 		list[0] = 'a'; 
 		list[1] = 'b'; 
@@ -201,10 +216,10 @@ Const
 		list.add('a'); 
 		list.add('b'); 	
 		list.add('c'); 
-	print(list);
+	print(list);	
 	
-	
-#### Set
+#### <span class="red">Set</span>
+
 	Set set = <String>{};
 		set.add('a'); 
 		set.add('a'); 
@@ -213,10 +228,10 @@ Const
 
 	
 	Set set = <String>{'a','a','a'};
-	print(set);
+	print(set);	
 	
-	
-#### Map
+#### <span class="red">Map</span>
+
 	Map<String,int> map = new Map();
 	map['Usrname'] = 1; 
     map['Password'] = 2;
@@ -233,45 +248,55 @@ Const
 
 <div class="md0"></div>
 
-## Conditions
-
-#### If / else
-
-#### Switch
-
-
-
-
-
-
-<div class="md0"></div>
-
-## Loop
-
-#### for
-
-#### while
-
-#### do ... while
-
-
-
-
-<div class="md0"></div>
-
-## Operators
+## Operator
 
 #### Arithmetic 
+
+#### Assignment 
 
 #### Relational 
 
 #### Type test 
 
+#### Logical 
+
 #### Bitwise 
 
-#### Assignment 
+#### Conditional 
 
-#### Logical 
+#### Casecade notation(..) Operators
+
+
+
+
+
+
+
+
+
+
+<div class="md0"></div>
+
+## Control Flow
+
+#### <span class="red">Conditions</span>
+
+<span class="blue"> If / else</span>
+
+<span class="blue"> Switch</span>
+
+#### <span class="red">Loop</span>
+
+<span class="blue">for</span>
+
+<span class="blue">while</span>
+
+<span class="blue">do ... while</span>
+
+
+
+
+
 
 
 
@@ -292,21 +317,47 @@ Const
 
 <span class="blue">Way 2</span>
 
-	main() => print('Function 2');
-	
-	
-#### Get Parameter
-	main() => MyFunction('Function 3');	
-	void MyFunction(String name)
+	main() => print('Function 2');	
+
+#### <span class="red">Get Parameter</span>
+
+<span class="blue">General</span>
+
+	void main() 
 	{
-		print(name);
-	}	
-	
-	main() => MyFunction('Function 3');	
-	MyFunction(String name) => print(name);		
+		MyFunction('morteza', 'kashani');
+	}
 
+	void MyFunction(String name, String family) 
+	{
+		print(name + " " + family);
+	}		
 
-#### Return Value	
+<span class="blue">Positional parameters</span>
+
+	void main() 
+	{
+		MyFunction(name: 'morteza', family: 'kashani');
+	}
+
+	void MyFunction({String name, String family}) 
+	{
+		print(name + " " + family);
+	}
+
+<span class="blue">Default parameter values</span>
+
+	void main() 
+	{
+		MyFunction(name: 'morteza');
+	}
+
+	void MyFunction({String name, String family = 'kashani'}) 
+	{
+		print(name + ' ' + family);
+	}
+
+#### <span class="red">Return Value</span>
 	main() => print(MyFunction('Morteza'));	
 	String MyFunction(String name)
 	{
@@ -316,24 +367,7 @@ Const
 	main() => print(MyFunction('Morteza'));	
 	MyFunction(String name) => 'Hello ' +name;	
 	
-	
-#### Positional parameters	
-	main() => MyFunction(name:'Morteza',family:'Kashani');	
-	String MyFunction({String name,String family})
-	{
-		print(name + ' '+ family);
-	}
-	
-	
-#### Default parameter values
-	main() => MyFunction(family:'Kashani');	
-	String MyFunction({String name='ali',String family})
-	{
-		print(name + ' '+ family);
-	}
-	
-	
-#### Pass a function as a parameter to another function		
+#### <span class="red">Pass a function as a parameter to another function</span>	
 	main() {	
 		var list = [1, 2, 3];
 		list.forEach(printElement);
@@ -342,24 +376,23 @@ Const
 	void printElement(int element) {
 		print(element);
 	}
-	
-	
-#### Anonymous functions
+		
+##### <span class="red">Anonymous functions</span>
 	main() {	
 		var list = ['apples', 'bananas', 'oranges'];
 		list.forEach((item) {
 			print('${list.indexOf(item)}: $item');
 		});
 	}	
-	
-	
-	
 
-<div class="md0"></div>
 
-## OOP
 
-#### Inheritance
+
+
+
+
+
+
 
 
 

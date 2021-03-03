@@ -6,6 +6,9 @@
 .md4{margin-top: 5px;}
 .tbl1 td#header{background-color: D1ECCF}
 .tbl1 tr#header{background-color: D1ECCF}
+.red{color:#E74C3C;font-size: 20px;}
+.blue{color:#3498DB}
+.green{color:##28B463}
 </style>
 
 
@@ -23,6 +26,7 @@
 <a href="#setup">Setup</a> - 
 <a href="#tools">Tools</a> - 
 <a href="#first-app">First App</a> - 
+<a href="#notic">Notic</a> - 
 <a href="#question">Question</a>
 
 
@@ -37,6 +41,7 @@
 <a href="https://skia.org/" target="_blank">Skia</a> - 
 <a href="https://flutter.dev/" target="_blank">Flutter</a> - 
 <a href="https://dart.dev/" target="_blank">Dart</a> - 
+<a href="https://github.com/flutter" target="_blank">github</a> - 
 <a href="hhttps://gradle.org/" target="_blank">Gradle</a>
 
 
@@ -148,6 +153,16 @@ Run project from top of the main.dart file
 Whatch android emulator
 
 
+
+
+
+<div class="md0"></div>
+
+## Notic
+
+ <div align="right" dir="rtl">
+  
+</div>
 
 
 

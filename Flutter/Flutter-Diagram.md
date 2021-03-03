@@ -6,6 +6,9 @@
 .md4{margin-top: 5px;}
 .tbl1 td#header{background-color: D1ECCF}
 .tbl1 tr#header{background-color: D1ECCF}
+.red{color:#E74C3C;font-size: 20px;}
+.blue{color:#3498DB}
+.green{color:##28B463}
 </style>
 
 

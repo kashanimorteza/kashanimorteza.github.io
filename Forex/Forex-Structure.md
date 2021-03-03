@@ -12,12 +12,20 @@
 # [<span style="color:black;">Forex Structure</span>](Forex.md)
 [Basic](Forex-Basic.md) | 
 [Structure](Forex-Structure.md) | 
-[Script](Forex-Script.md)
+[Script](Forex-Script.md) |
 
 
 <div class="md3"></div>
-<a href="#Basic">Basic</a> -
-<a href="#Currency">Currency</a> -
+<a href="#basic">Basic</a> -
+<a href="#currency">Currency</a> -
+<a href="#time">Time</a> -
+<a href="#trading-unit">Trading unit</a> -
+<a href="#concept">Concept</a> -
+<a href="#pending-order">Pending Order</a> -
+<a href="#time-frame">Time Frame</a> -
+<a href="#analysis">Analysis</a> -
+<a href="#symbol">Symbol</a>
+
 
 
 
@@ -59,6 +67,19 @@
 </tr>
 </tbody></table>
 
+<div class="md3"></div>
+
+<table class="tbl1"><tbody>
+<tr>
+<td align="center" id="header">Account type :</td>
+<td align="center" id="header">CDF</td>
+<td align="center" id="header">spread betting</td>
+</tr>
+</tbody></table>
+
+
+
+
 
 
 
@@ -75,8 +96,9 @@
 <tr><td align="center">GBP</td><td align="center">Great Britain</td><td align="center">Pound</td></tr>
 <tr><td align="center">EUR</td><td align="center">Euro zone members</td><td align="center">Euro</td></tr>
 <tr><td align="center">USD</td><td align="center">United States</td><td align="center">Dollar</td></tr>
-<tr><td align="center">CAD</td><td align="center">CANADA</td><td align="center">Dollar</td></tr>
 </tbody></table>
+
+
 
 
 
@@ -84,17 +106,17 @@
 
 <div class="md0"></div>
 
-## Market Time on London Time
+## Time
 
 <table class="tbl1"><tbody>
-<tr><td align="center" >New zealand</td><td>12:00</td></tr>
-<tr><td align="center" >Australia</td><td>23:00</td></tr>
-<tr><td align="center" >Japan</td><td>24:00</td></tr>
-<tr><td align="center" >Switzerland</td><td>07:00</td></tr>
-<tr><td align="center" >London</td><td>08:00</td></tr>
-<tr><td align="center" >EUR</td><td>09:00</td></tr>
-<tr><td align="center" >Usa</td><td>13:00</td></tr>
-<tr><td align="center" >Canada</td><td>13:00</td></tr>
+<tr><td align="center" >New zealand</td><td>+13</td></tr>
+<tr><td align="center" >Australia</td><td>+11</td></tr>
+<tr><td align="center" >Japan</td><td>+9</td></tr>
+<tr><td align="center" >China</td><td>+8</td></tr>
+<tr><td align="center" >Iran</td><td>+3.5</td></tr>
+<tr><td align="center" >EUR</td><td>+1</td></tr>
+<tr><td align="center" >England</td><td>0</td></tr>
+<tr><td align="center" >Usa</td><td>-5</td></tr>
 </tbody></table>
 
 
@@ -107,7 +129,7 @@
 ## Trading unit
 
 <table class="tbl1"><tbody>
-<tr><td align="center" >لات</td><td align="center" >100/000</td></tr>
+<tr><td align="center" >لات</td><td align="center" >100/000</td><td rowspan="4">دلار</td></tr>
 <tr><td align="center" >مینی</td><td align="center" >10/000</td></tr>
 <tr><td align="center" >میکرو</td><td align="center" >1/000</td></tr>
 <tr><td align="center" >نانو</td><td align="center" >100</td></tr>
@@ -148,10 +170,7 @@
 <tr><td align="center">Market sentiment</td><td align="center">تمایل بازار</td></tr>
 <tr><td align="center">Pip</td><td align="center">کوچکترین واحد تغییر قیمت</td></tr>
 <tr><td align="center">Spread</td><td align="center">اختلاف قیمت بین خرید و فروش</td></tr>
-<tr><td align="center">Swap</td><td align="center">ه مبلغی گفته می‌شود که در صورت باز ماندن معامله در روز بعد بر اساس تفاوت نرخ بهره ارز یا دارایی پایه، به حساب شما واریز یا از حسابتان کسر خواهد شد.</td></tr>
-<tr><td align="center">aaaaaaa</td><td align="center">aaaaaaaa</td></tr>
-<tr><td align="center">aaaaaaa</td><td align="center">aaaaaaaa</td></tr>
-<tr><td align="center">aaaaaaa</td><td align="center">aaaaaaaa</td></tr>
+<tr><td align="center">Swap</td><td align="center"></td></tr>
 </tbody></table>
 
 <div class="md3"></div>
@@ -169,16 +188,21 @@
 <td align="center">USD</td>
 <td align="center">EURUSD</td>
 <td align="center">خرید</td>
-<td align="center">یورو میخری و دلار می فروشی</td>
+<td align="center">EUR << USD<br>یورو میخری / دلار میفروشی</td>
 </tr>
 <tr>
 <td align="center">EUR</td>
 <td align="center">USD</td>
 <td align="center">EURUSD</td>
 <td align="center">فروش</td>
-<td align="center">یورو می فروشی و دلار می خری</td>
+<td align="center">EUR >> USD<br>یورو میفروشی / دلار میخری</td>
 </tr>
-<tr>
+</tbody></table>
+
+
+<div class="md3"></div>
+
+<table class="tbl1"><tbody>
 <td align="center">EUR</td>
 <td align="center">USD</td>
 <td align="center">EURUSD</td>
@@ -193,9 +217,6 @@
 <td align="center">کاهش قیمت یورو نسبت به دلار<br>افزایش قیمت دلار نسبت به یورو<br>اگه داری بفروش</td>
 </tr>
 </tbody></table>
-
-
-
 
 
 
@@ -222,15 +243,19 @@
 
 <div class="md0"></div>
 
-## TimeFrame
+## Time Frame
 
 <table class="tbl1"><tbody>
 <tr><td colspan="2" align="center" id="header">Time Frame</td></tr>
 <tr><td>M1</td><td>هر یک ماه</td></tr>
 <tr><td>W1</td><td>هر یک هفته</td></tr>
 <tr><td>D1</td><td>هر یک روز</td></tr>
+<tr><td>H4</td><td>هر 4 ساعت</td></tr>
 <tr><td>H1</td><td>هر یک ساعت</td></tr>
-<tr><td>m1</td><td>هر یک دقیقه</td></tr>
+<tr><td>m30</td><td>هر 30 دقیقه</td></tr>
+<tr><td>m15</td><td>هر 15 دقیقه</td></tr>
+<tr><td>m5</td><td>هر 5 دقیقه</td></tr>
+<tr><td>m1</td><td>هر 1 دقیقه</td></tr>
 <tr><td>Tick</td><td>لحظه ای</td></tr>
 </tbody></table>
 

@@ -15,11 +15,6 @@
 [Script](Forex-Script.md)
 
 
-<div class="md3"></div>
-<a href="#Resource">Resource</a> - 
-<a href="#Question">Question</a>
-
-
 
 
 <div class="md3"></div>
