@@ -24,6 +24,7 @@
 <div class="md3"></div>
 <a href="#data-type">Data Type</a> - 
 <a href="#variable">Variable</a> - 
+<a href="#collection">Collection</a> - 
 <a href="#enum">Enum</a> - 
 <a href="#generic">Generic</a> - 
 <a href="#operator">Operator</a> - 
@@ -96,15 +97,38 @@ Boolean
 
 <span class="blue">Final</span>
 
-	final name = 'morteza';
-
-	final String name = 'morteza';
+	void main() 
+	{
+		final String name = 'morteza';
+		print(name);
+	}
 
 <span class="blue">Const</span>
 
-	const name = 'morteza';
+	void main() 
+	{
+		const String name = 'morteza';
+		print(name);
+	}
 
-	const String name = 'morteza';
+
+<span class="blue">???</span>
+
+	final questions = const 
+	[
+		{
+		'questionText': 'What\'s your favorite color?',
+		'answers': ['Black', 'Red', 'Green', 'White'],
+		},
+		{
+		'questionText': 'What\'s your favorite animal?',
+		'answers': ['Rabbit', 'Snake', 'Elephant', 'Lion'],
+		},
+		{
+		'questionText': 'Who\'s your favorite instructor?',
+		'answers': ['Max', 'Max', 'Max', 'Max'],
+		},
+ 	 ];
 
 
 
@@ -171,14 +195,41 @@ Boolean
 	
 	
 #### <span class="red">Map</span>
-	Map map = new Map();
-	map['Usrname'] = 'u'; 
-    map['Password'] = 1; 
-	print(map);
-	
-	
-	Map map = {'Usrname':'u','Password':1};
-	print(map);	
+
+	void main() 
+	{
+		Map map1 = new Map();
+		map1['Usrname'] = 'ali';
+		map1['Password'] = '123456';
+		print(map1);
+		print(map1['Usrname']);
+
+
+		Map map2 = {'Usrname': 'ali', 'Password': '123456'};
+		print(map2);
+
+		
+		var map3 = 
+		[
+			{'Usrname': 'ali', 'Password': '123456'},
+			{'Usrname': 'msa', 'Password': '123456'},
+			{'Usrname': 'upp', 'Password': '123456'}
+		];
+		print(map3[2]);
+		
+
+		var map4  = {'name': 'ali', 'family': ['kashani','moradi','farhadi']};
+		print(map4);
+
+
+		var map5 = 
+		[
+			{'object': 'car', 'model':  ['benz','bmw','ferari']},
+			{'object': 'color', 'model':  ['red','blue','pink']},
+			{'object': 'company', 'model':  ['google','ibm','microsoft']}
+		];
+		print(map5);
+
 	
 
 #### <span class="red">Runes</span>
@@ -281,9 +332,79 @@ Boolean
 
 #### <span class="red">Conditions</span>
 
-<span class="blue"> If / else</span>
+<span class="blue">If</span>
 
-<span class="blue"> Switch</span>
+	void main() 
+	{
+		var x = 10;
+
+		if (x > 1) 
+		{
+			print('value is > 1');
+		}
+
+		x > 10 ? print('value is > 10') : print('value is < 10');
+	}
+
+<span class="blue">If-else</span>
+
+	void main() 
+	{
+		var x = 10;
+
+		if (x > 1) 
+		{
+			print('value is > 1');
+		}
+		else
+		{
+			print('value is < 1');
+		}
+	}
+
+
+
+<span class="blue">If else if</span>
+
+	void main() 
+	{
+		var x = 10;
+
+		if (x > 10) 
+		{
+			print('value is > 10');
+		}
+		else if (x == 10) 
+		{
+			print('value is == 10');
+		}
+		else
+		{
+			print('value is < 1');
+		}
+	}
+
+
+<span class="blue">Switch</span>
+
+	void main() 
+	{
+		var x = 3;
+
+		switch (x) 
+		{
+			case 1:
+			print("Value is 1");
+			break;
+			case 2:
+			print("Value is 2");
+			break;
+			case 3:
+			print("Value is 3");
+			break;
+		}
+	}
+
 
 #### <span class="red">Loop</span>
 

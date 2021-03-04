@@ -6,8 +6,8 @@
 .md4{margin-top: 5px;}
 .tbl1 td#header{background-color: D1ECCF}
 .tbl1 tr#header{background-color: D1ECCF}
-.red{color:#E74C3C;font-size: 20px;}
-.blue{color:#3498DB}
+.red{color:#E74C3C;font-size: 16px;}
+.blue{color:#3498DB;font-size: 14px;}
 .green{color:##28B463}
 </style>
 
@@ -24,7 +24,7 @@
 <div class="md3"></div>
 <a href="#class">Class</a> - 
 <a href="#object">Object</a> - 
-<a href="#static">Static</a> - 
+<a href="#field ">Field</a> - 
 <a href="#this">This</a> - 
 <a href="#constructor">Constructor</a> - 
 <a href="#setter--getter">Setter/Getter</a> - 
@@ -51,12 +51,12 @@
 
 
 
-
 <div class="md0"></div>
 
 ## Object
 
-#### General
+#### <span class="red">General</span>
+
 	void main() 
 	{
 		User morteza = new User();
@@ -66,7 +66,7 @@
 		morteza.say();
 	}
 
-#### The Cascade operator
+#### <span class="red">The Cascade operator</span>
 
 	class Student 
 	{
@@ -91,24 +91,66 @@
 
 <div class="md0"></div>
 
-## Static
+## Field
+
+#### <span class="red">General</span>
+
+#### <span class="blue">lib.dart</span>
+
 	class User 
 	{
-		static String msg;
-
-		void say() 
-		{
-			print('hello $msg');
-		}
+		String name;
 	}
+
+#### <span class="blue">main.dart</span>
+
+	import './lib.dart';
 
 	void main() 
 	{
-		User.msg = 'User class';
-		print(User.msg);
+		User u =new User();
+		u.name='morteza';
+		print(u.name);
 	}
 
+#### <span class="red">Private</span>
 
+#### <span class="blue">lib.dart</span>
+
+	class User 
+	{
+		String _name;
+	}
+
+#### <span class="blue">main.dart</span>
+
+	import './lib.dart';
+
+	void main() 
+	{
+		User u =new User();
+		u.
+	}
+
+#### <span class="red">Static</span>
+
+#### <span class="blue">lib.dart</span>
+
+	class User 
+	{
+		static String name;
+	}
+
+#### <span class="blue">main.dart</span>
+
+	import './lib.dart';
+
+	void main() 
+	{
+		User.name='morteza';
+		print(User.name);
+	}
+	
 
 
 
@@ -116,11 +158,14 @@
 <div class="md0"></div>
 
 ## This
+
+#### <span class="blue">lib.dart</span>
+
 	class User 
 	{
 		String msg;
 
-		User(msg) 
+		void Say(msg) 
 		{
 			this.msg = msg + '-' + msg;
 			print(msg);
@@ -128,9 +173,15 @@
 		}
 	}
 
+
+#### <span class="blue">main.dart</span>
+
+	import './lib.dart';
+
 	void main() 
 	{
-		User u = new User('test');
+		User morteza = new User();
+		morteza.Say('morteza');
 	}
 
 
@@ -141,7 +192,7 @@
 
 ## Constructor
 
-#### Example 1
+#### <span class="red">Example 1</span>
 
 	class User 
 	{
@@ -163,7 +214,7 @@
 		print(morteza.name);
 	}
 
-#### Example 2
+#### <span class="red">Example 2</span>
 
 	class User 
 	{
@@ -180,7 +231,7 @@
 		print(morteza.name);
 	}
 
-##### Named Constructors
+#### <span class="red">Named Constructors</span>
 
 	class User 
 	{
@@ -204,31 +255,37 @@
 
 
 
+
+
 <div class="md0"></div>
 
 ## Setter / Getter
 
+#### <span class="blue">lib.dart</span>
+
 	class User 
 	{
-		String name;
-		String family;
-		int age;
+		int _age;
 
 		void set usr_age(int age)
 		{
-			this.age = age;
+			this._age = age+1;
 		}
 
 		int get usr_age 
 		{
-			return age;
+			return _age;
 		}
 	}
+
+#### <span class="blue">main.dart</span>
+
+	import './lib.dart';
 
 	void main() 
 	{
 		User morteza = new User();
-		morteza.usr_age = 11;
+		morteza.usr_age = 10;
 		print(morteza.usr_age);
 	}
 

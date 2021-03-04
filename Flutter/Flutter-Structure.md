@@ -66,7 +66,7 @@
 </tr>
 <tr>
 <td rowspan="1">Container</td>
-<td rowspan="1">A convenience widget that combines common painting, positioning, and sizing widgets</td>
+<td rowspan="1"></td>
 </tr>
 </tbody></table>
 

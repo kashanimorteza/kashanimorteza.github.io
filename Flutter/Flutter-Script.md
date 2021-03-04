@@ -1,16 +1,15 @@
 <style>
-.md0{margin-top: 150px;}
-.md1{margin-top: 75px;}
-.md2{margin-top: 50px;}
-.md3{margin-top: 25px;}
-.md4{margin-top: 5px;}
-.tbl1 td#header{background-color: D1ECCF}
-.tbl1 tr#header{background-color: D1ECCF}
-.red{color:#E74C3C;font-size: 20px;}
-.blue{color:#3498DB}
-.green{color:##28B463}
+	.md0{margin-top: 150px;}
+	.md1{margin-top: 75px;}
+	.md2{margin-top: 50px;}
+	.md3{margin-top: 25px;}
+	.md4{margin-top: 5px;}
+	.tbl1 td#header{background-color: D1ECCF}
+	.tbl1 tr#header{background-color: D1ECCF}
+	.red{color:#E74C3C;font-size: 16px;}
+	.blue{color:#3498DB}
+	.green{color:#28B463}
 </style>
-
 
 # [<span style="color:black;">Flutter Script</span>](Flutter.md)
 [Diagram](Flutter-Diagram.md) |
@@ -33,9 +32,11 @@
 <a href="#8">8</a> - 
 <a href="#9">9</a> - 
 <a href="#10">10</a> - 
-<a href="#general">General</a>
-
-
+<a href="#11">11</a> - 
+<a href="#12">12</a> - 
+<a href="#13">13</a> - 
+<a href="#14">14</a> - 
+<a href="#15">15</a>
 
 
 
@@ -329,6 +330,356 @@ main.dart
 
 
 
+<div class="md0"></div>
+	
+#### <span class="red">9</span>
+	
+<span class="blue">Passing Callback Functions Around</span>
+
+main.dart
+
+	import 'package:flutter/material.dart';
+	import './answer.dart';
+
+	void main() 
+	{
+		runApp(MyApp());
+	}
+
+	class MyApp extends StatefulWidget 
+	{
+		@override
+		State<StatefulWidget> createState() 
+		{
+			return _MyAppState();
+		}
+	}
+
+	class _MyAppState extends State<MyApp> 
+	{
+		var _item = 0;
+
+		void _addItem() 
+		{
+			setState(() {_item = _item + 1;});
+			if (_item == 3) {_item = 0;}
+
+			print(_item);
+		}
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return MaterialApp(
+			home: Scaffold(
+			appBar: AppBar(title: Text("Passing Callback Functions Around"),),
+			body: Column(children: [Text(_item.toString(),), Answer(_addItem),],),
+			),
+			);
+		}
+	}
+
+
+answer.dart
+
+	import 'package:flutter/material.dart';
+
+	class Answer extends StatelessWidget 
+	{
+		final Function selectHandler;
+
+		Answer(this.selectHandler);
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Container(child: ElevatedButton(child: Text('Add Item'),onPressed: selectHandler,),);
+		}
+	}
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="md0"></div>
+	
+#### <span class="red">10</span>
+	
+<span class="blue">Mapping Lists to Widgets</span>
+
+main.dart
+
+	import 'package:flutter/material.dart';
+
+	import './question.dart';
+	import './answer.dart';
+
+	void main() 
+	{
+		runApp(MyApp());
+	}
+
+	class MyApp extends StatefulWidget 
+	{
+		@override
+		State<StatefulWidget> createState() 
+		{
+			return _MyAppState();
+		}
+	}
+
+	class _MyAppState extends State<MyApp> 
+	{
+		var _questionIndex = 0;
+
+		void _answerQuestion() 
+		{
+			setState(() {_questionIndex = _questionIndex + 1; });
+			print(_questionIndex);
+		}
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			var questions = 
+			[
+			{'questionText': 'What\'s your favorite color?','answers': ['Black', 'Red', 'Green', 'White'],},
+			{'questionText': 'What\'s your favorite animal?','answers': ['Rabbit', 'Snake', 'Elephant', 'Lion'],},
+			{'questionText': 'Who\'s your favorite instructor?','answers': ['Max', 'Max', 'Max', 'Max'],},
+			];
+
+			var materialApp = MaterialApp(
+			home: Scaffold(
+				appBar: AppBar(title: Text("Passing Callback Functions Around"),),
+				body: Column(
+				children: [
+					Question(questions[_questionIndex]['questionText'],),
+					...(questions[_questionIndex]['answers'] as List<String>).map((answer) 
+					{
+					return Answer(_answerQuestion, answer);
+					}).toList()
+				],
+				),
+			),
+			);
+			
+			return materialApp;
+		}
+	}
+
+
+question.dart
+
+	import 'package:flutter/material.dart';
+
+	class Question extends StatelessWidget 
+	{
+		final String questionText;
+
+		Question(this.questionText);
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Container(child: Text(questionText,),);
+		}
+	}
+
+answer.dart
+
+	import 'package:flutter/material.dart';
+
+	class Answer extends StatelessWidget 
+	{
+		final Function selectHandler;
+		final String answerText;
+
+		Answer(this.selectHandler, this.answerText);
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Container(child: ElevatedButton(child: Text(answerText),onPressed: selectHandler,),);
+		}
+	}
+
+	
+
+
+
+
+
+
+<div class="md0"></div>
+	
+#### 11
+	
+<span class="red">Splitting the App Into Widgets</span>
+
+<span class="blue">main.dart</span>
+
+	import 'package:flutter/material.dart';
+
+	import './quiz.dart';
+	import './result.dart';
+
+	void main() 
+	{
+		runApp(MyApp());
+	}
+
+	class MyApp extends StatefulWidget 
+	{
+		@override
+		State<StatefulWidget> createState() 
+		{
+			return _MyAppState();
+		}
+	}
+
+	class _MyAppState extends State<MyApp> 
+	{
+		final _questions = const 
+		[
+			{'questionText': 'What\'s your favorite color?','answers': ['Black', 'Red', 'Green', 'White'],},
+			{'questionText': 'What\'s your favorite animal?','answers': ['Rabbit', 'Snake', 'Elephant', 'Lion'],},
+			{'questionText': 'Who\'s your favorite instructor?','answers': ['Max', 'Max', 'Max', 'Max'],},
+		];
+
+		var _questionIndex = 0;
+
+		void _answerQuestion() 
+		{
+			setState(() { _questionIndex = _questionIndex + 1;});
+
+			print(_questionIndex);
+
+			if (_questionIndex < _questions.length) 
+			{
+				print('We have more questions!');
+			} 
+			else 
+			{
+				print('No more questions!');
+			}
+		}
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return MaterialApp(
+			home: Scaffold(
+				appBar: AppBar(title: Text('Splitting the App Into Widgets'),),
+				body: _questionIndex < _questions.length
+					? Quiz(answerQuestion: _answerQuestion, questionIndex: _questionIndex, questions: _questions,)
+					: Result(),
+			),
+			);
+		}
+	}
+
+<span class="blue">quiz.dart</span>
+
+	import 'package:flutter/material.dart';
+
+	import './question.dart';
+	import './answer.dart';
+
+	class Quiz extends StatelessWidget 
+	{
+		final List<Map<String, Object>> questions;
+		final int questionIndex;
+		final Function answerQuestion;
+
+		Quiz({
+			@required this.questions,
+			@required this.answerQuestion,
+			@required this.questionIndex,
+		});
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Column(
+			children: [
+				Question(questions[questionIndex]['questionText'],),
+				...(questions[questionIndex]['answers'] as List<String>).map((answer) {
+				return Answer(answerQuestion, answer);
+				}).toList()
+			],
+			);
+		}
+	}
+
+
+<span class="blue">answer.dart</span>
+
+	import 'package:flutter/material.dart';
+
+	class Answer extends StatelessWidget 
+	{
+		final Function selectHandler;
+		final String answerText;
+
+		Answer(this.selectHandler, this.answerText);
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Container(
+			width: double.infinity,
+			child: ElevatedButton(child: Text(answerText),onPressed: selectHandler,),
+			);
+		}
+	}
+
+
+<span class="blue">question.dart</span>
+
+	import 'package:flutter/material.dart';
+
+	class Question extends StatelessWidget 
+	{
+		final String questionText;
+
+		Question(this.questionText);
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Container(child: Text(questionText,),);
+		}
+	}
+
+<span class="blue">result.dart</span>
+
+	import 'package:flutter/material.dart';
+
+	class Result extends StatelessWidget 
+	{
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Center(child: Text('You did it!'),);
+		}
+	}
+
+
+
+
+
+
+
+
 
 
 <div class="md0"></div>
@@ -576,126 +927,6 @@ main.dart
 	
 	
 	
-	
-<div class="md0"></div>
-	
-	
-	
-	
-## Passing Callback Functions Around	
-#### main.dart
-	import 'package:flutter/material.dart';
-
-	import './question.dart';
-	import './answer.dart';
-
-	// void main() {
-	//   runApp(MyApp());
-	// }
-
-	void main() => runApp(MyApp());
-
-	class MyApp extends StatefulWidget {
-	  @override
-	  State<StatefulWidget> createState() {
-		// TODO: implement createState
-		return _MyAppState();
-	  }
-	}
-
-	class _MyAppState extends State<MyApp> {
-	  var _questionIndex = 0;
-
-	  void _answerQuestion() {
-		setState(() {
-		  _questionIndex = _questionIndex + 1;
-		});
-		print(_questionIndex);
-	  }
-
-	  @override
-	  Widget build(BuildContext context) {
-		var questions = [
-		  {
-			'questionText': 'What\'s your favorite color?',
-			'answers': ['Black', 'Red', 'Green', 'White'],
-		  },
-		  {
-			'questionText': 'What\'s your favorite animal?',
-			'answers': ['Rabbit', 'Snake', 'Elephant', 'Lion'],
-		  },
-		  {
-			'questionText': 'Who\'s your favorite instructor?',
-			'answers': ['Max', 'Max', 'Max', 'Max'],
-		  },
-		];
-		return MaterialApp(
-		  home: Scaffold(
-			appBar: AppBar(
-			  title: Text('My First App'),
-			),
-			body: Column(
-			  children: [
-				Question(
-				  questions[_questionIndex]['questionText'],
-				),
-				...(questions[_questionIndex]['answers'] as List<String>)
-					.map((answer) {
-				  return Answer(_answerQuestion, answer);
-				}).toList()
-			  ],
-			),
-		  ),
-		);
-	  }
-	}
-
-#### question.dart
-	import 'package:flutter/material.dart';
-
-	class Question extends StatelessWidget {
-	  final String questionText;
-
-	  Question(this.questionText);
-
-	  @override
-	  Widget build(BuildContext context) {
-		return Container(
-		  width: double.infinity,
-		  margin: EdgeInsets.all(10),
-		  child: Text(
-			questionText,
-			style: TextStyle(fontSize: 28),
-			textAlign: TextAlign.center,
-		  ),
-		);
-	  }
-	}
-
-#### answer.dart
-
-	import 'package:flutter/material.dart';
-
-	class Answer extends StatelessWidget {
-	  final Function selectHandler;
-	  final String answerText;
-
-	  Answer(this.selectHandler, this.answerText);
-
-	  @override
-	  Widget build(BuildContext context) {
-		return Container(
-		  width: double.infinity,
-		  child: RaisedButton(
-			color: Colors.blue,
-			textColor: Colors.white,
-			child: Text(answerText),
-			onPressed: selectHandler,
-		  ),
-		);
-	  }
-	}
-	
 
 
 
@@ -849,3 +1080,6 @@ main.dart
 		}
 	  }
 	}
+
+</body>
+</html>
