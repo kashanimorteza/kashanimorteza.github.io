@@ -645,239 +645,288 @@
 		runApp(MyApp());
 	}
 
-	class MyApp extends StatelessWidget {
-	@override
-	Widget build(BuildContext context) {
-		return MaterialApp(
-		title: 'flutter_01',
-		home: MyHomePage(),
-		);
-	}
-	}
-
-	class MyHomePage extends StatefulWidget {
-	@override
-	_MyHomePageState createState() => _MyHomePageState();
+	class MyApp extends StatelessWidget 
+	{
+		@override
+		Widget build(BuildContext context) 
+		{
+			return MaterialApp
+			(
+			title: 'flutter_01',
+			home: MyHomePage(),
+			);
+		}
 	}
 
-	class _MyHomePageState extends State<MyHomePage> {
-	//Field
-	final List<Model> modelList = [
-		Model(id: '1', title: 'MHU', amount: '200', date: DateTime.now()),
-		Model(
-			id: '2',
-			title: 'AAu',
-			amount: '400',
-			date: DateTime.now().subtract(Duration(days: 1))),
-		Model(
-			id: '3',
-			title: 'BBU',
-			amount: '600',
-			date: DateTime.now().subtract(Duration(days: 2))),
-		Model(
-			id: '4',
-			title: 'CCU',
-			amount: '800',
-			date: DateTime.now().subtract(Duration(days: 3))),
-		Model(
-			id: '5',
-			title: 'DDU',
-			amount: '1000',
-			date: DateTime.now().subtract(Duration(days: 4))),
-		Model(
-			id: '6',
-			title: 'EEU',
-			amount: '1200',
-			date: DateTime.now().subtract(Duration(days: 5))),
-		Model(
-			id: '7',
-			title: 'FFU',
-			amount: '1400',
-			date: DateTime.now().subtract(Duration(days: 6))),
-		Model(
-			id: '8',
-			title: 'GGU',
-			amount: '1600',
-			date: DateTime.now().subtract(Duration(days: 7))),
-		Model(
-			id: '9',
-			title: 'HHU',
-			amount: '1800',
-			date: DateTime.now().subtract(Duration(days: 8))),
-	];
-
-	//Property
-	List<Model> get recentModelList {
-		return modelList.where((model) {
-		return model.date.isAfter(DateTime.now().subtract(
-			Duration(days: 7),
-		));
-		}).toList();
+	class MyHomePage extends StatefulWidget 
+	{
+		@override
+		_MyHomePageState createState() => _MyHomePageState();
 	}
 
-	//Method
-	void modelAddFunction(String title, String amount) {
-		final model = Model(
-			id: DateTime.now().toString(),
+	class _MyHomePageState extends State<MyHomePage> 
+	{
+		//Field
+		final List<Model> modelList = 
+		[
+			Model(id: '1', title: 'AAA', amount: 100, date: DateTime.now()),
+			Model(id: '2', title: 'BBB', amount: 200, date: DateTime.now().subtract(Duration(days: 1))),
+			Model(id: '3', title: 'CCC', amount: 300, date: DateTime.now().subtract(Duration(days: 2))),
+		];
+
+		//Property
+		List<Model> get recentModelList 
+		{
+			return modelList.where((model) 
+			{
+			return model.date.isAfter(DateTime.now().subtract(Duration(days: 7),));
+			}).toList();
+		}
+
+		//Method
+		void modelAddFunction(String title, double amount, DateTime date) 
+		{
+			final model = Model
+			(
+			id: date.toString(),
 			title: title,
 			amount: amount,
-			date: DateTime.now());
+			date: date
+			);
 
-		setState(() {
-		modelList.add(model);
-		});
-	}
-
-	void startAddNewModel(BuildContext ctx) {
-		showModalBottomSheet(
-		context: ctx,
-		builder: (_) {
-			return SingleChildScrollView(
-				child: GestureDetector(
-			onTap: () {},
-			child: ModelAdd(modelAddFunction, true),
-			behavior: HitTestBehavior.opaque,
-			));
-		},
-		);
-	}
-
-	@override
-	Widget build(BuildContext context) {
-		return Scaffold(
-		appBar: AppBar(
-			title: Text('My First Application'),
-			actions: [
-			IconButton(
-				icon: Icon(Icons.add),
-				onPressed: () => startAddNewModel(context),
-			)
-			],
-		),
-		body: SingleChildScrollView(
-			child: Column(
-			crossAxisAlignment: CrossAxisAlignment.stretch,
-			children: [Chart(recentModelList), ModelList(modelList)],
-			),
-		),
-		floatingActionButton: FloatingActionButton(
-			child: Icon(Icons.add),
-			onPressed: () => startAddNewModel(context),
-		),
-		floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-		);
-	}
-	}
-
-	class ModelAdd extends StatefulWidget {
-	//Field
-	final Function modelAddFunction;
-	final bool buttonType;
-
-	//Constructor
-	ModelAdd(this.modelAddFunction, this.buttonType);
-
-	@override
-	_ModelAddState createState() => _ModelAddState();
-	}
-
-	class _ModelAddState extends State<ModelAdd> {
-	//Field
-	final titleController = TextEditingController();
-	final amountController = TextEditingController();
-
-	void submitData() {
-		final String title = titleController.text;
-		final String amount = amountController.text;
-
-		if (title.isEmpty || amount.isEmpty) {
-		return;
+			setState(() 
+			{
+			modelList.add(model);
+			});
 		}
-		widget.modelAddFunction(title, amount);
 
-		if (widget.buttonType == true) {
-		Navigator.of(context).pop();
+		void modelRemoveFunction(String id) 
+		{
+
+			setState(() 
+			{
+			modelList.removeWhere((element) {
+				return element.id==id;
+			});
+			});
 		}
-	}
 
-	@override
-	Widget build(BuildContext context) {
-		return Card(
-		elevation: 5,
-		child: Container(
-			padding: EdgeInsets.all(10),
-			child: Column(
-			crossAxisAlignment: CrossAxisAlignment.end,
-			children: [
-				TextField(
-				decoration: InputDecoration(labelText: 'Title'),
-				controller: titleController,
-				),
-				TextField(
-				decoration: InputDecoration(labelText: 'Amount'),
-				controller: amountController,
-				keyboardType: TextInputType.number,
-				),
-				TextButton(
-				child: Text('Add Transaction'),
-				onPressed: submitData,
+		void startAddNewModel(BuildContext ctx) 
+		{
+			showModalBottomSheet
+			(
+			context: ctx,
+			builder: (_) 
+			{
+				return SingleChildScrollView
+				(
+				child: GestureDetector
+				(
+					onTap: () {},
+					child: ModelAdd(modelAddFunction, true),
+					behavior: HitTestBehavior.opaque,
 				)
-			],
-			),
-		),
-		);
-	}
-	}
-
-	class ModelList extends StatelessWidget {
-	final List<Model> modelList;
-
-	ModelList(this.modelList);
-
-	@override
-	Widget build(BuildContext context) {
-		return Container(
-			height: 600,
-			child: ListView.builder(
-			itemCount: modelList.length,
-			itemBuilder: (ctx, index) {
-				return Card(
-				elevation: 5,
-				margin: EdgeInsets.symmetric(vertical: 8, horizontal: 5),
-				child: ListTile(
-					leading: CircleAvatar(
-						radius: 30,
-						child: Padding(
-						padding: EdgeInsets.all(6),
-						child: FittedBox(
-							child: Text('\$${modelList[index].amount}')),
-						)),
-					title: Text(modelList[index].title),
-					subtitle:
-						Text(DateFormat.yMMMd().format(modelList[index].date)),
-				),
 				);
 			},
-			));
-	}
+			);
+		}
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Scaffold
+			(
+			appBar: AppBar
+			(
+				title: Text('My First Application'),
+				actions: 
+				[
+				IconButton
+				(
+					icon: Icon(Icons.add),
+					onPressed: () => startAddNewModel(context),
+				)
+				],
+			),
+			body: SingleChildScrollView
+			(
+				child: Column
+				(
+				crossAxisAlignment: CrossAxisAlignment.stretch,
+				children: [Chart(recentModelList), ModelList(modelList, modelRemoveFunction)],
+				),
+			),
+			floatingActionButton: FloatingActionButton
+			(
+				child: Icon(Icons.add),
+				onPressed: () => startAddNewModel(context),
+			),
+			floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+			);
+		}
 	}
 
-	class Model {
-	//Field
-	String id;
-	String title;
-	String amount;
-	DateTime date;
+	class ModelAdd extends StatefulWidget 
+	{
+		//Field
+		final Function modelAddFunction;
+		final bool buttonType;
 
-	//Constructor
-	Model(
-		{@required this.id,
-		@required this.title,
-		@required this.amount,
-		@required this.date});
+		//Constructor
+		ModelAdd(this.modelAddFunction, this.buttonType);
+
+		@override
+		_ModelAddState createState() => _ModelAddState();
+		}
+
+		class _ModelAddState extends State<ModelAdd> 
+		{
+		//Field
+		final titleController = TextEditingController();
+		final amountController = TextEditingController();
+		DateTime selectedDate;
+
+		void submitData() 
+		{
+			final String title = titleController.text;
+			final double amount = double.parse(amountController.text);
+
+			if (title.isEmpty || amount <=0 || selectedDate == null) {return;}
+
+			widget.modelAddFunction(title, amount, selectedDate);
+
+			if (widget.buttonType == true) 
+			{
+			Navigator.of(context).pop();
+			}
+		}
+
+		void datePicker() 
+		{
+			showDatePicker
+			(
+			context: context,
+			initialDate: DateTime.now(),
+			firstDate: DateTime(2019),
+			lastDate: DateTime.now()
+			).then((data) 
+			{
+			if (data == null) 
+			{
+				return;
+			}
+			setState(() 
+			{
+				selectedDate = data;
+			});
+			});
+		}
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Card
+			(
+			elevation: 5,
+			child: Container
+			(
+				padding: EdgeInsets.all(10),
+				child: Column
+				(
+				crossAxisAlignment: CrossAxisAlignment.end,
+				children: 
+				[
+					TextField
+					(
+					decoration: InputDecoration(labelText: 'Title'),
+					controller: titleController,
+					),
+					TextField
+					(
+					decoration: InputDecoration(labelText: 'Amount'),
+					controller: amountController,
+					keyboardType: TextInputType.number,
+					),
+					Column
+					(
+					crossAxisAlignment: CrossAxisAlignment.end, 
+					children: 
+					[
+						Container
+						(
+						height: 70,
+						child: Row
+						(
+							children: 
+							[
+							Text(selectedDate == null? 'No Date': DateFormat.yMd().format(selectedDate)),
+							TextButton(child: Text('Choose Date'), onPressed: datePicker)
+							],
+						),
+						)
+					]
+					),
+					ElevatedButton(child: Text('Add'),onPressed: submitData,)
+				],
+				),
+			),
+			);
+		}
 	}
 
-	class Chart extends StatelessWidget {
+	class ModelList extends StatelessWidget 
+	{
+		final Function modelRemoveFunction;
+		final List<Model> modelList;
+
+		ModelList(this.modelList, this.modelRemoveFunction);
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Container
+			(
+			height: 300,
+			child: ListView.builder
+			(
+				itemCount: modelList.length,
+				itemBuilder: (ctx, index) 
+				{
+				return Card
+				(
+					elevation: 5,
+					margin: EdgeInsets.symmetric(vertical: 8, horizontal: 5),
+					child: ListTile
+					(
+					leading: CircleAvatar
+					(
+						radius: 30,
+						child: Padding
+						(
+						padding: EdgeInsets.all(6),
+						child: FittedBox
+						(
+							child: Text('\$${modelList[index].amount}')
+						),
+						)
+					),
+					title: Text(modelList[index].title),
+					subtitle:Text(DateFormat.yMMMd().format(modelList[index].date)),
+					trailing: IconButton
+					(
+						icon: Icon(Icons.delete),
+						onPressed: () => modelRemoveFunction(modelList[index].id),
+					),
+					),
+				);
+				},
+			)
+			);
+		}
+	}
+
+	class Chart extends StatelessWidget 
+	{
 	//Field
 	final List<Model> recentModelList;
 	double totalSpending = 0;
@@ -900,7 +949,7 @@
 			if (recentModelList[i].date.day == weekDay.day &&
 				recentModelList[i].date.month == weekDay.month &&
 				recentModelList[i].date.year == weekDay.year) {
-			totalSum += double.parse(recentModelList[i].amount);
+			totalSum += recentModelList[i].amount;
 			}
 		}
 		return {'day': DateFormat.E().format(weekDay), 'amount': totalSum};
@@ -957,7 +1006,7 @@
 			height: 5,
 			),
 			Container(
-			height: 200,
+			height: 100,
 			width: 10,
 			child: Stack(
 				children: <Widget>[
@@ -987,4 +1036,24 @@
 		],
 		);
 	}
+	}
+
+	class Model 
+	{
+	//Field
+	String id;
+	String title;
+	double amount;
+	DateTime date;
+
+	//Constructor
+	Model
+	(
+		{
+		@required this.id,
+		@required this.title,
+		@required this.amount,
+		@required this.date
+		}
+	);
 	}

@@ -19,21 +19,19 @@
 [Application](Flutter-Application.md) |
 [My Library](Flutter-MyLibrary.md)
 
-
-
 <div class="md3"></div>
-<a href="#1">1 : Basic</a><br>
-<a href="#2">2 : Basic</a><br>
-<a href="#3">3 : Basic</a><br>
-<a href="#4">4 : Button</a><br>
-<a href="#5">5 : Input</a><br>
-<a href="#6">6 : Mapping Lists to Widgets</a><br>
-<a href="#7">7 : ListView</a><br>
-<a href="#8">8 : ListTile</a><br>
-<a href="#9">9 : AppBar IconButton / Floating Action Button</a><br>
+<a href="#1">1   : Basic</a><br>
+<a href="#2">2   : Basic</a><br>
+<a href="#3">3   : Basic</a><br>
+<a href="#4">4   : Button</a><br>
+<a href="#5">5   : Input</a><br>
+<a href="#6">6   : Mapping Lists to Widgets</a><br>
+<a href="#7">7   : ListView</a><br>
+<a href="#8">8   : ListTile</a><br>
+<a href="#9">9   : AppBar IconButton / Floating Action Button</a><br>
 <a href="#10">10 : Chart</a><br>
-
-
+<a href="#11">11 : Date Picker</a><br>
+<a href="#12">12 : Remove item from list</a><br>
 
 
 
@@ -1287,8 +1285,232 @@
 <div class="md1"></div>
 	
 #### 11
+		
+<span class="red">Date Picker</span>
+
+	import 'package:flutter/material.dart';
+	import 'package:intl/intl.dart';
+	import 'package:flutter/cupertino.dart';
+
+	void main() {
+	runApp(MaterialApp(
+		home: Scaffold(
+		body: ModelAdd(),
+		),
+	));
+	}
+
+	class ModelAdd extends StatefulWidget {
+	@override
+	_ModelAddState createState() => _ModelAddState();
+	}
+
+	class _ModelAddState extends State<ModelAdd> {
+	DateTime selectedDate;
+
+	void datePicker() {
+		showDatePicker(
+				context: context,
+				initialDate: DateTime.now(),
+				firstDate: DateTime(2019),
+				lastDate: DateTime.now())
+			.then((data) {
+		if (data == null) {
+			return;
+		}
+		setState(() {
+			selectedDate = data;
+		});
+		});
+	}
+
+	@override
+	Widget build(BuildContext context) {
+		return Card(
+		elevation: 5,
+		child: Container(
+			padding: EdgeInsets.all(10),
+			child: Column(
+			crossAxisAlignment: CrossAxisAlignment.end,
+			children: [
+				Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
+				Container(
+					height: 70,
+					child: Row(
+					children: [
+						Text(selectedDate == null
+							? 'No Date'
+							: DateFormat.yMd().format(selectedDate)),
+						TextButton(
+							child: Text('Choose Date'), onPressed: datePicker)
+					],
+					),
+				)
+				]),
+			],
+			),
+		),
+		);
+	}
+	}
+
+
+
+
+
+
+
+
+
+
+<div class="md1"></div>
 	
-<span class="red">aaa</span>
+#### 12
+		
+<span class="red">Remove item from list</span>
+
+	import 'package:flutter/material.dart';
+	import 'package:intl/intl.dart';
+	import 'package:flutter/cupertino.dart';
+
+	void main() 
+	{
+		runApp(MyApp());
+	}
+
+	class MyApp extends StatelessWidget 
+	{
+		@override
+		Widget build(BuildContext context) 
+		{
+			return MaterialApp
+			(
+				title: 'Remove item from list',
+				home: MyHomePage(),
+			);
+		}
+	}
+
+	class MyHomePage extends StatefulWidget 
+	{
+		@override
+		_MyHomePageState createState() => _MyHomePageState();
+	}
+
+	class _MyHomePageState extends State<MyHomePage> 
+	{
+		final List<Model> modelList = 
+		[
+			Model(id: '1', title: 'AAA', amount: 100, date: DateTime.now()),
+			Model(id: '2', title: 'BBB', amount: 200, date: DateTime.now().subtract(Duration(days: 1))),
+			Model(id: '3', title: 'CCC', amount: 300, date: DateTime.now().subtract(Duration(days: 2))),
+		];
+
+		void modelRemoveFunction(String id) 
+		{
+			setState(() 
+			{
+			modelList.removeWhere((element) {return element.id==id;});
+			});
+		}
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Scaffold
+			(
+			appBar: AppBar(title: Text('Remove item from list'),),
+			body: SingleChildScrollView
+			(
+				child: Column
+				(
+				crossAxisAlignment: CrossAxisAlignment.stretch,
+				children: 
+				[
+					ModelList(modelList, modelRemoveFunction)
+				],
+				),
+			),
+			);
+		}
+	}
+
+	class ModelList extends StatelessWidget 
+	{
+		final Function modelRemoveFunction;
+		final List<Model> modelList;
+
+		ModelList(this.modelList, this.modelRemoveFunction);
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Container
+			(
+			height: 300,
+			child: ListView.builder
+			(
+				itemCount: modelList.length,
+				itemBuilder: (ctx, index) 
+				{
+				return Card
+				(
+					elevation: 5,
+					margin: EdgeInsets.symmetric(vertical: 8, horizontal: 5),
+					child: ListTile
+					(
+					leading: CircleAvatar
+					(
+						radius: 30,
+						child: Padding
+						(
+						padding: EdgeInsets.all(6),
+						child: FittedBox
+						(
+							child: Text('\$${modelList[index].amount}')
+						),
+						)
+					),
+					title: Text(modelList[index].title),
+					subtitle:Text(DateFormat.yMMMd().format(modelList[index].date)),
+					trailing: IconButton
+					(
+						icon: Icon(Icons.delete),
+						onPressed: () => modelRemoveFunction(modelList[index].id),
+					),
+					),
+				);
+				},
+			)
+			);
+		}
+	}
+
+	class Model 
+	{
+		//Field
+		String id;
+		String title;
+		double amount;
+		DateTime date;
+
+		//Constructor
+		Model
+		(
+			{
+			@required this.id,
+			@required this.title,
+			@required this.amount,
+			@required this.date
+			}
+		);
+	}
+
+
+
+
+
+
 
 
 
