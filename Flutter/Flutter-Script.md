@@ -16,47 +16,56 @@
 [Basic](Flutter-Basic.md) |
 [Structure](Flutter-Structure.md) |
 [Script](Flutter-Script.md) |
-[My Library](Flutter-MyLibrary.md) |
-[My Program](Flutter_MyProgram.md)
+[Application](Flutter-Application.md) |
+[My Library](Flutter-MyLibrary.md)
 
 
 
 <div class="md3"></div>
-<a href="#1">1</a> - 
-<a href="#2">2</a> - 
-<a href="#3">3</a> - 
-<a href="#4">4</a> - 
-<a href="#5">5</a> - 
-<a href="#6">6</a> - 
-<a href="#7">7</a> - 
-<a href="#8">8</a> - 
-<a href="#9">9</a> - 
-<a href="#10">10</a> - 
-<a href="#11">11</a> - 
-<a href="#12">12</a> - 
-<a href="#13">13</a> - 
-<a href="#14">14</a> - 
-<a href="#15">15</a>
+<a href="#1">1 : Basic</a><br>
+<a href="#2">2 : Basic</a><br>
+<a href="#3">3 : Basic</a><br>
+<a href="#4">4 : Button</a><br>
+<a href="#5">5 : Input</a><br>
+<a href="#6">6 : Mapping Lists to Widgets</a><br>
+<a href="#7">7 : ListView</a><br>
+<a href="#8">8 : ListTile</a><br>
+<a href="#9">9 : AppBar IconButton / Floating Action Button</a><br>
+<a href="#10">10 : Chart</a><br>
+
+
+
 
 
 
 <div class="md1"></div>
 
-#### <span class="red">1</span>
+#### 1
+
+<span class="red">Basic</span> 
 
 	import 'package:flutter/material.dart';
 
 	void main() 
 	{
-		runApp(Text("Welcome", textDirection: TextDirection.ltr,));
+		runApp
+		(
+			Text
+			(
+				"Hello Flutter", 
+				textDirection: TextDirection.ltr
+			)
+		);
 	}
 
 
 
 <div class="md1"></div>
 
-#### <span class="red">2</span>
-	
+#### 2
+
+<span class="red">Basic</span> 
+
 	import 'package:flutter/material.dart';
 
 	void main() 
@@ -69,14 +78,19 @@
 		@override
 		Widget build(BuildContext context) 
 		{
-			return MaterialApp(home: Text('hello'),);
+			return MaterialApp
+			(
+				home: Text('Hello Flutter')
+			);
 		}
 	}
 
 
 <div class="md1"></div>
 
-#### <span class="red">3</span>
+#### 3
+
+<span class="red">Basic</span> 
 
 	import 'package:flutter/material.dart';
 
@@ -90,10 +104,12 @@
 		@override
 		Widget build(BuildContext context) 
 		{
-			return MaterialApp(
-				home: Scaffold(
-				appBar: AppBar(title: Text("My First Application 1")),
-				body: Text('welcome to the flutter'),
+			return MaterialApp
+			(
+				home: Scaffold
+				(
+					appBar: AppBar(title: Text("Application")),
+					body: Text('Hello Flutter'),
 				)
 			);
 		}
@@ -102,86 +118,9 @@
 
 <div class="md1"></div>
 
-#### <span class="red">4</span>
+#### 4
 
-<span class="blue">Adding Layout Widgets</span>
-
-	import 'package:flutter/material.dart';
-
-	void main() 
-	{
-		runApp(MyApp());
-	}
-
-	class MyApp extends StatelessWidget 
-	{
-		@override
-		Widget build(BuildContext context) 
-		{
-			return MaterialApp(
-				home: Scaffold(
-					appBar: AppBar(title: Text("My First Application 1")),
-					body: Column(
-						children: [
-						Text('This is a seccond text'),
-						RaisedButton(child: Text('btn 1'), onPressed: null),
-						Text('This is a first text'),
-						RaisedButton(child: Text('btn 2'), onPressed: null),
-						],
-					),
-				)
-			);
-		}
-	}
-
-
-<div class="md1"></div>
-
-#### <span class="red">5</span>
-
-<span class="blue">Connecting Functions & Buttons</span>
-
-	import 'package:flutter/material.dart';
-
-	void main() 
-	{
-		runApp(MyApp());
-	}
-
-	class MyApp extends StatelessWidget 
-	{
-		void answer() 
-		{
-			print('button 1 is clicked');
-		}
-
-		@override
-		Widget build(BuildContext context) 
-		{
-			return MaterialApp(
-				home: Scaffold(
-					appBar: AppBar(title: Text("My First Application 1")),
-					body: Column(
-						children: [
-						Text('This is text 1'),
-						RaisedButton(child: Text('btn 1'), onPressed: answer),
-						Text('This is text 2'),
-						RaisedButton(child: Text('btn 2'),onPressed: () => print('button 2 is clicked')),
-						Text('This is text 3'),
-						RaisedButton(child: Text('btn 3'),onPressed: () {print('button 3 is clicked');}),
-						],
-					),
-				)
-			);
-		}
-	}
-
-
-<div class="md1"></div>
-
-#### <span class="red">6</span>
-
-<span class="blue">Updating Correctly with Stateful Widgets</span>
+<span class="red">Button</span> 
 
 	import 'package:flutter/material.dart';
 
@@ -210,48 +149,36 @@
 		@override
 		Widget build(BuildContext context) 
 		{
-			return MaterialApp(
-				home: Scaffold(
-			appBar: AppBar(title: Text("My First Application 1")),
-			body: Column(
-				children: [
-				Text(item.toString()),
-				RaisedButton(child: Text('add item'), onPressed: answer),
-				],
-			),
-			));
+			return MaterialApp
+			(
+				home: Scaffold
+				(
+					appBar: AppBar(title: Text("Application")),
+					body: Column
+					(
+						children: 
+						[
+							Text(item.toString()),
+							ElevatedButton(child: Text('Add'), onPressed: answer),
+						],
+					),
+				)
+			);
 		}
 	}
+
+
+
 
 
 
 <div class="md1"></div>
 
-#### <span class="red">7</span>
+#### 5
 
-<span class="blue">Creating a New, Custom Widget</span>
-
-item.dart
+<span class="red">Input</span> 
 
 	import 'package:flutter/material.dart';
-
-	class MyItem extends StatelessWidget 
-	{
-		int item;
-
-		MyItem(this.item);
-
-		@override
-		Widget build(BuildContext context) 
-		{
-			return Text(item.toString());
-		}
-	}
-
-main.dart
-
-	import 'package:flutter/material.dart';
-	import './item.dart';
 
 	void main() 
 	{
@@ -262,427 +189,1147 @@ main.dart
 	{
 		@override
 		_MyAppState createState() => _MyAppState();
-		}
+	}
 
-		class _MyAppState extends State<MyApp> 
+	class _MyAppState extends State<MyApp> 
+	{
+		final dataController=TextEditingController();
+
+		var item='';
+
+		void show() 
 		{
-		var item = 0;
+			setState(() {item = dataController.text;});
 
-		void answer() 
-		{
-			setState(() {item = item + 1;});
-
-			print(item.toString());
+			print(item);
 		}
 
 		@override
 		Widget build(BuildContext context) 
 		{
-			return MaterialApp(
-				home: Scaffold(
-			appBar: AppBar(title: Text("My First Application 1")),
-			body: Column(children: 
+			return MaterialApp
+			(
+				home: Scaffold
+				(
+					appBar: AppBar(title: Text("Application")),
+					body: Column
+					(
+						children: 
+						[
+							TextField
+							(  
+								decoration: InputDecoration(labelText: 'data'),
+								controller: dataController,
+							),                  
+							ElevatedButton(child: Text('Show'), onPressed: show),
+							Text(item),
+						],
+					),
+				)
+			);
+		}
+	}
+
+
+
+
+
+<div class="md1"></div>
+
+#### 6
+
+<span class="red">Mapping Lists to Widgets </span> 
+
+	import 'package:flutter/material.dart';
+	import 'package:flutter/cupertino.dart';
+	import 'package:intl/intl.dart';
+
+	void main() 
+	{
+	runApp(MyApp());
+	}
+
+	class MyApp extends StatelessWidget 
+	{ 
+	@override
+	Widget build(BuildContext context) 
+	{
+		return MaterialApp
+		(
+			title: 'Mapping Lists to Widgets ',
+			home: ModelList(),
+		);
+	}
+	}
+
+	class ModelList extends StatelessWidget 
+	{
+		final List<Model>  modelList = 
+		[
+			Model(id: '1', title: 'MHU', amount: '200', date: DateTime.now()),
+			Model(id: '2', title: 'AAu', amount: '400', date: DateTime.now().subtract(Duration(days: 1))),
+			Model(id: '3', title: 'BBU', amount: '600', date: DateTime.now().subtract(Duration(days: 2))),
+			Model(id: '4', title: 'CCU', amount: '800', date: DateTime.now().subtract(Duration(days: 3))),
+			Model(id: '5', title: 'DDU', amount: '1000', date: DateTime.now().subtract(Duration(days: 4))),
+			Model(id: '6', title: 'EEU', amount: '1200', date: DateTime.now().subtract(Duration(days: 5))),
+			Model(id: '7', title: 'FFU', amount: '1400', date: DateTime.now().subtract(Duration(days: 6))),
+			Model(id: '8', title: 'GGU', amount: '1600', date: DateTime.now().subtract(Duration(days: 7))),
+			Model(id: '9', title: 'HHU', amount: '1800', date: DateTime.now().subtract(Duration(days: 8))),
+			Model(id: '10', title: 'HHU', amount: '1900', date: DateTime.now().subtract(Duration(days: 9))),
+			Model(id: '11', title: 'HHU', amount: '2000', date: DateTime.now().subtract(Duration(days: 10))),
+			Model(id: '12', title: 'HHU', amount: '2200', date: DateTime.now().subtract(Duration(days: 11))),
+		];
+
+	@override
+	Widget build(BuildContext context) 
+	{
+		return Scaffold
+		(
+		appBar: AppBar(title: Text("Mapping Lists to Widgets ")),
+		body: SingleChildScrollView
+		(
+			child: Column
+			(
+			crossAxisAlignment: CrossAxisAlignment.stretch,
+			children: 
 			[
-				MyItem(item),ElevatedButton(child: Text('add item'), onPressed: answer),
+				Container
+				(     
+				child: SingleChildScrollView
+				(
+					child: Column
+					(
+					children: modelList.map((model) 
+					{
+						return Card
+						(
+						child: Row
+						(
+							children: 
+							[
+							Container
+							(
+								margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+								padding: EdgeInsets.all(10),
+								decoration: BoxDecoration(border: Border.all(color: Colors.purple, width: 2),),
+								child: Text('\$${model.amount}')
+							),
+							Column
+							(
+								crossAxisAlignment: CrossAxisAlignment.start,
+								children: 
+								[
+								Text(model.title),
+								Text(DateFormat('yyyy-MM-dd HH:mm:ss').format(model.date))                            
+								],                                               
+							)
+							],
+						),
+						);
+					}).toList()
+					)
+				)
+				)
+			]
+			),
+		),
+		);
+	}
+	}
+
+	class Model
+	{
+	String id;
+	String title;
+	String amount;
+	DateTime date;
+
+	Model
+	({
+		@required this.id,
+		@required this.title,
+		@required this.amount,
+		@required this.date
+	});
+	}
+
+
+
+
+
+<div class="md1"></div>
+
+#### 7
+
+<span class="red">ListView</span>
+
+<span class="blue">General</span> 
+
+	import 'package:flutter/material.dart';
+	import 'package:intl/intl.dart';
+	import 'package:flutter/cupertino.dart';
+
+
+
+	void main() 
+	{
+		runApp(MyApp());
+	}
+
+
+
+	class MyApp extends StatelessWidget 
+	{ 
+		@override
+		Widget build(BuildContext context) 
+		{
+			return MaterialApp
+			(
+				title: 'ListView General',
+				home: MyHomePage(),
+			);
+		}
+	}
+
+
+
+	class MyHomePage extends StatefulWidget
+	{
+		@override
+		_MyHomePageState createState() => _MyHomePageState();
+	}
+
+	class _MyHomePageState extends State<MyHomePage> 
+	{
+		//Field
+		final List<Model>  modelList = 
+		[
+			Model(id: '1', title: 'MHU', amount: '200', date: DateTime.now()),
+			Model(id: '2', title: 'AAu', amount: '400', date: DateTime.now().subtract(Duration(days: 1))),
+			Model(id: '3', title: 'BBU', amount: '600', date: DateTime.now().subtract(Duration(days: 2))),
+			Model(id: '4', title: 'CCU', amount: '800', date: DateTime.now().subtract(Duration(days: 3))),
+			Model(id: '5', title: 'DDU', amount: '1000', date: DateTime.now().subtract(Duration(days: 4))),
+			Model(id: '6', title: 'EEU', amount: '1200', date: DateTime.now().subtract(Duration(days: 5))),
+			Model(id: '7', title: 'FFU', amount: '1400', date: DateTime.now().subtract(Duration(days: 6))),
+			Model(id: '8', title: 'GGU', amount: '1600', date: DateTime.now().subtract(Duration(days: 7))),
+			Model(id: '9', title: 'HHU', amount: '1800', date: DateTime.now().subtract(Duration(days: 8))),
+		];
+
+		//Method
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Card
+			(
+				child: SingleChildScrollView
+				(
+					child: Column
+					(
+						crossAxisAlignment: CrossAxisAlignment.stretch,
+						children: 
+						[
+							ModelList(modelList)
+						],
+					)
+				)
+			);
+		}
+	}
+
+
+
+	class ModelList extends StatelessWidget 
+	{
+	final List<Model>  modelList;
+
+	ModelList(this.modelList);
+
+	@override
+	Widget build(BuildContext context) 
+	{
+		return Container
+		(
+		height: 400,
+		child: ListView
+		(
+			children: modelList.map((model)        
+			{
+			return Card
+			(
+				child: Row
+				(
+				children: 
+				[
+					Container
+					(
+					margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+					padding: EdgeInsets.all(10),
+					decoration: BoxDecoration(border: Border.all(color: Colors.purple, width: 2),),
+					child: Text('\$${model.amount}')                       
+					),
+					Column
+					(
+					crossAxisAlignment: CrossAxisAlignment.start,
+					children: 
+					[
+						Text(model.title),
+						Text(DateFormat('yyyy-MM-dd HH:mm:ss').format(model.date))
+					],
+					),
+				],
+				)
+			);
+			}
+			).toList()
+		)
+		);
+	}
+	}
+
+
+
+	class Model
+	{
+		//Field
+		String id;
+		String title;
+		String amount;
+		DateTime date;
+
+		//Constructor
+		Model
+		({
+			@required this.id,
+			@required this.title,
+			@required this.amount,
+			@required this.date
+		});
+	}
+
+#### <span class="blue">Builder</span> 
+
+	import 'package:flutter/material.dart';
+	import 'package:intl/intl.dart';
+	import 'package:flutter/cupertino.dart';
+
+	void main() 
+	{
+		runApp(MyApp());
+	}
+
+	class MyApp extends StatelessWidget 
+	{ 
+		@override
+		Widget build(BuildContext context) 
+		{
+			return MaterialApp
+			(
+				title: 'ListView',
+				home: MyHomePage(),
+			);
+		}
+	}
+
+	class MyHomePage extends StatefulWidget
+	{
+		@override
+		_MyHomePageState createState() => _MyHomePageState();
+	}
+
+	class _MyHomePageState extends State<MyHomePage> 
+	{
+		//Field
+		final List<Model>  modelList = 
+		[
+			Model(id: '1', title: 'MHU', amount: '200', date: DateTime.now()),
+			Model(id: '2', title: 'AAu', amount: '400', date: DateTime.now().subtract(Duration(days: 1))),
+			Model(id: '3', title: 'BBU', amount: '600', date: DateTime.now().subtract(Duration(days: 2))),
+			Model(id: '4', title: 'CCU', amount: '800', date: DateTime.now().subtract(Duration(days: 3))),
+			Model(id: '5', title: 'DDU', amount: '1000', date: DateTime.now().subtract(Duration(days: 4))),
+			Model(id: '6', title: 'EEU', amount: '1200', date: DateTime.now().subtract(Duration(days: 5))),
+			Model(id: '7', title: 'FFU', amount: '1400', date: DateTime.now().subtract(Duration(days: 6))),
+			Model(id: '8', title: 'GGU', amount: '1600', date: DateTime.now().subtract(Duration(days: 7))),
+			Model(id: '9', title: 'HHU', amount: '1800', date: DateTime.now().subtract(Duration(days: 8))),
+		];
+
+		//Method
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Card
+			(
+				child: SingleChildScrollView
+				(
+					child: Column
+					(
+						crossAxisAlignment: CrossAxisAlignment.stretch,
+						children: 
+						[
+							ModelList(modelList)
+						],
+					)
+				)
+			);
+		}
+	}
+
+	class ModelList extends StatelessWidget 
+	{
+	final List<Model>  modelList;
+
+	ModelList(this.modelList);
+
+	@override
+	Widget build(BuildContext context) 
+	{
+		return Container
+		(
+		height: 400,
+		child: ListView.builder
+		(
+			itemCount: modelList.length, 
+			itemBuilder:  (ctx, index)
+			{
+			return Card
+			(
+				child: Row
+				(
+				children: 
+				[
+					Container
+					(
+					margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+					padding: EdgeInsets.all(10),
+					decoration: BoxDecoration(border: Border.all(color: Colors.purple, width: 2),),
+					child: Text('\$${modelList[index].amount}')                        
+					),
+					Column
+					(
+					crossAxisAlignment: CrossAxisAlignment.start,
+					children: 
+					[
+						Text(modelList[index].title),
+						Text(DateFormat('yyyy-MM-dd HH:mm:ss').format(modelList[index].date))
+					],
+					),
+				],
+				)
+			);
+			}  
+		)
+		);
+	}
+	}
+
+	class Model
+	{
+		//Field
+		String id;
+		String title;
+		String amount;
+		DateTime date;
+
+		//Constructor
+		Model
+		({
+			@required this.id,
+			@required this.title,
+			@required this.amount,
+			@required this.date
+		});
+	}
+
+
+
+
+
+
+
+
+
+
+
+<div class="md1"></div>
+
+#### 8
+
+#### <span class="red">ListTile</span>
+
+#### <span class="blue">General</span> 
+
+#### <span class="blue">Builder</span> 
+
+	import 'package:flutter/material.dart';
+	import 'package:intl/intl.dart';
+	import 'package:flutter/cupertino.dart';
+
+	void main() 
+	{
+		runApp(MyApp());
+	}
+
+	class MyApp extends StatelessWidget 
+	{ 
+		@override
+		Widget build(BuildContext context) 
+		{
+			return MaterialApp
+			(
+				title: 'ListTile',
+				home: MyHomePage(),
+			);
+		}
+	}
+
+	class MyHomePage extends StatefulWidget
+	{
+		@override
+		_MyHomePageState createState() => _MyHomePageState();
+	}
+
+	class _MyHomePageState extends State<MyHomePage> 
+	{
+		//Field
+		final List<Model>  modelList = 
+		[
+			Model(id: '1', title: 'MHU', amount: '200', date: DateTime.now()),
+			Model(id: '2', title: 'AAu', amount: '400', date: DateTime.now().subtract(Duration(days: 1))),
+			Model(id: '3', title: 'BBU', amount: '600', date: DateTime.now().subtract(Duration(days: 2))),
+			Model(id: '4', title: 'CCU', amount: '800', date: DateTime.now().subtract(Duration(days: 3))),
+			Model(id: '5', title: 'DDU', amount: '1000', date: DateTime.now().subtract(Duration(days: 4))),
+			Model(id: '6', title: 'EEU', amount: '1200', date: DateTime.now().subtract(Duration(days: 5))),
+			Model(id: '7', title: 'FFU', amount: '1400', date: DateTime.now().subtract(Duration(days: 6))),
+			Model(id: '8', title: 'GGU', amount: '1600', date: DateTime.now().subtract(Duration(days: 7))),
+			Model(id: '9', title: 'HHU', amount: '1800', date: DateTime.now().subtract(Duration(days: 8))),
+		];
+
+		//Method
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Card
+			(
+				child: SingleChildScrollView
+				(
+					child: Column
+					(
+						crossAxisAlignment: CrossAxisAlignment.stretch,
+						children: 
+						[
+							ModelList(modelList)
+						],
+					)
+				)
+			);
+		}
+	}
+
+	class ModelList extends StatelessWidget 
+	{
+		final List<Model>  modelList;
+
+		ModelList(this.modelList);
+
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Container
+			(
+				height: 600,
+				child: ListView.builder
+				(
+					itemCount: modelList.length, 
+					itemBuilder:  (ctx, index)
+					{
+						return Card
+						(
+							elevation: 5,
+							margin: EdgeInsets.symmetric(vertical: 8,horizontal: 5),
+							child: ListTile
+							(
+								leading: CircleAvatar
+								(
+									radius: 30,
+									child: Padding
+									(
+										padding: EdgeInsets.all(6),
+										child: FittedBox
+										(
+											child: Text('\$${modelList[index].amount}')
+										),
+									)              
+								),
+								title: Text(modelList[index].title),
+								subtitle: Text(DateFormat.yMMMd().format(modelList[index].date)),
+							),
+						);
+					},  
+				)
+			);
+		}
+	}
+
+	class Model
+	{
+		//Field
+		String id;
+		String title;
+		String amount;
+		DateTime date;
+
+		//Constructor
+		Model
+		({
+			@required this.id,
+			@required this.title,
+			@required this.amount,
+			@required this.date
+		});
+	}
+
+
+
+
+<div class="md1"></div>
+	
+#### 9
+
+<span class="red">AppBar IconButton / Floating Action Button</span>
+
+	import 'package:flutter/material.dart';
+	import 'package:intl/intl.dart';
+	import 'package:flutter/cupertino.dart';
+
+	void main() 
+	{
+		runApp(MyApp());
+	}
+
+	class MyApp extends StatelessWidget 
+	{ 
+	@override
+	Widget build(BuildContext context) 
+	{
+		return MaterialApp
+		(
+			title: 'flutter_01',
+			home: MyHomePage(),
+		);
+	}
+	}
+
+	class MyHomePage extends StatefulWidget
+	{
+	@override
+	_MyHomePageState createState() => _MyHomePageState();
+	}
+
+	class _MyHomePageState extends State<MyHomePage> 
+	{
+	//Field
+	final List<Model>  modelList = 
+	[
+		Model(id: '1', title: 'MatherBoard', amount: '100', date: DateTime.now()),
+		Model(id: '2', title: 'CPU', amount: '200', date: DateTime.now()),
+	];
+
+	//Method
+	void modelAddFunction(String title, String amount)
+	{
+		final model = Model
+		(
+		id: DateTime.now().toString(),
+		title: title,
+		amount: amount,
+		date: DateTime.now()
+		);
+
+		setState(()
+		{
+			modelList.add(model);
+		});
+	}
+
+	void startAddNewModel(BuildContext ctx) 
+	{
+	showModalBottomSheet
+	(
+		context: ctx,
+		builder: (_) 
+		{
+		return SingleChildScrollView
+		(
+			child: GestureDetector
+			(
+			onTap: () {},
+			child: ModelAdd(modelAddFunction, true),
+			behavior: HitTestBehavior.opaque,
+			)
+		);
+		},
+	);
+	}
+
+
+	@override
+	Widget build(BuildContext context) 
+	{
+		return Scaffold
+		(
+		appBar: 
+			AppBar        
+			(
+			title: Text('My First Application'),
+			actions: 
+			[
+				IconButton
+				(
+					icon: Icon(Icons.add), 
+					onPressed: () => startAddNewModel(context),
+				)
 			],
 			),
-			));
-		}
-	}
-
-
-
-<div class="md1"></div>
-
-#### <span class="red">8</span>
-
-<span class="blue">First Styling & Layouting Steps</span>
-
-	import 'package:flutter/material.dart';
-
-	void main() 
-	{
-		runApp(MyApp());
-	}
-
-	class MyApp extends StatelessWidget 
-	{
-		@override
-		Widget build(BuildContext context) 
-		{
-			return MaterialApp(
-				home: Scaffold(
-			appBar: AppBar(title: Text("My First Application 1")),
-			body: Container(
-				margin: EdgeInsets.all(100.0),
-				width: double.infinity,
-				child: Text('Hello Flutter',
-					style: TextStyle(fontSize: 33), 
-					textAlign: TextAlign.center),
-			),
-			));
-		}
-	}
-
-
-
-
-
-
-
-<div class="md0"></div>
-	
-#### <span class="red">9</span>
-	
-<span class="blue">Passing Callback Functions Around</span>
-
-main.dart
-
-	import 'package:flutter/material.dart';
-	import './answer.dart';
-
-	void main() 
-	{
-		runApp(MyApp());
-	}
-
-	class MyApp extends StatefulWidget 
-	{
-		@override
-		State<StatefulWidget> createState() 
-		{
-			return _MyAppState();
-		}
-	}
-
-	class _MyAppState extends State<MyApp> 
-	{
-		var _item = 0;
-
-		void _addItem() 
-		{
-			setState(() {_item = _item + 1;});
-			if (_item == 3) {_item = 0;}
-
-			print(_item);
-		}
-
-		@override
-		Widget build(BuildContext context) 
-		{
-			return MaterialApp(
-			home: Scaffold(
-			appBar: AppBar(title: Text("Passing Callback Functions Around"),),
-			body: Column(children: [Text(_item.toString(),), Answer(_addItem),],),
-			),
-			);
-		}
-	}
-
-
-answer.dart
-
-	import 'package:flutter/material.dart';
-
-	class Answer extends StatelessWidget 
-	{
-		final Function selectHandler;
-
-		Answer(this.selectHandler);
-
-		@override
-		Widget build(BuildContext context) 
-		{
-			return Container(child: ElevatedButton(child: Text('Add Item'),onPressed: selectHandler,),);
-		}
-	}
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="md0"></div>
-	
-#### <span class="red">10</span>
-	
-<span class="blue">Mapping Lists to Widgets</span>
-
-main.dart
-
-	import 'package:flutter/material.dart';
-
-	import './question.dart';
-	import './answer.dart';
-
-	void main() 
-	{
-		runApp(MyApp());
-	}
-
-	class MyApp extends StatefulWidget 
-	{
-		@override
-		State<StatefulWidget> createState() 
-		{
-			return _MyAppState();
-		}
-	}
-
-	class _MyAppState extends State<MyApp> 
-	{
-		var _questionIndex = 0;
-
-		void _answerQuestion() 
-		{
-			setState(() {_questionIndex = _questionIndex + 1; });
-			print(_questionIndex);
-		}
-
-		@override
-		Widget build(BuildContext context) 
-		{
-			var questions = 
-			[
-			{'questionText': 'What\'s your favorite color?','answers': ['Black', 'Red', 'Green', 'White'],},
-			{'questionText': 'What\'s your favorite animal?','answers': ['Rabbit', 'Snake', 'Elephant', 'Lion'],},
-			{'questionText': 'Who\'s your favorite instructor?','answers': ['Max', 'Max', 'Max', 'Max'],},
-			];
-
-			var materialApp = MaterialApp(
-			home: Scaffold(
-				appBar: AppBar(title: Text("Passing Callback Functions Around"),),
-				body: Column(
-				children: [
-					Question(questions[_questionIndex]['questionText'],),
-					...(questions[_questionIndex]['answers'] as List<String>).map((answer) 
-					{
-					return Answer(_answerQuestion, answer);
-					}).toList()
+		body: 
+			SingleChildScrollView
+			(
+			child: 
+				Column
+				(
+				crossAxisAlignment: CrossAxisAlignment.stretch,
+				children: 
+				[
+					ModelAdd(modelAddFunction, false),  
 				],
 				),
 			),
-			);
-			
-			return materialApp;
-		}
+
+		floatingActionButton: 
+			FloatingActionButton
+			(
+			child: Icon(Icons.add),
+			onPressed: () => startAddNewModel(context),
+			),
+		floatingActionButtonLocation: 
+		FloatingActionButtonLocation.centerFloat,
+		);
+	}
 	}
 
 
-question.dart
 
-	import 'package:flutter/material.dart';
-
-	class Question extends StatelessWidget 
+	class ModelAdd extends StatefulWidget 
 	{
-		final String questionText;
+	//Field
+	final Function modelAddFunction;
+	final bool buttonType;
 
-		Question(this.questionText);
+	//Constructor
+	ModelAdd(this.modelAddFunction, this.buttonType);
 
-		@override
-		Widget build(BuildContext context) 
-		{
-			return Container(child: Text(questionText,),);
-		}
+	@override
+	_ModelAddState createState() => _ModelAddState();
 	}
 
-answer.dart
-
-	import 'package:flutter/material.dart';
-
-	class Answer extends StatelessWidget 
+	class _ModelAddState extends State<ModelAdd> 
 	{
-		final Function selectHandler;
-		final String answerText;
+	//Field
+	final titleController=TextEditingController();
+	final amountController=TextEditingController();
 
-		Answer(this.selectHandler, this.answerText);
+	void submitData()
+	{
+		final String title=titleController.text;
+		final String amount=amountController.text;
 
-		@override
-		Widget build(BuildContext context) 
+		if(title.isEmpty || amount.isEmpty)
 		{
-			return Container(child: ElevatedButton(child: Text(answerText),onPressed: selectHandler,),);
+		return;
 		}
+		widget.modelAddFunction(title, amount);
+
+		if (widget.buttonType==true)
+		{
+		Navigator.of(context).pop();
+		} 
 	}
 
+	@override
+	Widget build(BuildContext context) 
+	{
+	return Card
+		(
+		elevation: 5,
+		child: 
+			Container
+			(                
+			padding: EdgeInsets.all(10) ,
+			child: Column
+			(
+				crossAxisAlignment: CrossAxisAlignment.end,
+				children: 
+				[
+				TextField
+				(
+					decoration: InputDecoration(labelText: 'Title'),
+					controller: titleController,
+				),
+				TextField
+				(  
+					decoration: InputDecoration(labelText: 'Amount'),
+					controller: amountController,
+					keyboardType: TextInputType.number,
+				),
+				TextButton
+				(
+					child: Text('Add Transaction'), 
+					onPressed: submitData,
+				)
+				],
+			),
+			),
+		);
+	}
+	}
+
+	class Model
+	{
+	String id;
+	String title;
+	String amount;
+	DateTime date;
+
+	Model
+	({
+		@required this.id,
+		@required this.title,
+		@required this.amount,
+		@required this.date
+	});
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="md1"></div>
 	
-
-
-
-
-
-
-<div class="md0"></div>
+#### 10
 	
-#### 11
-	
-<span class="red">Splitting the App Into Widgets</span>
-
-<span class="blue">main.dart</span>
+<span class="red">Chart</span>
 
 	import 'package:flutter/material.dart';
+	import 'package:intl/intl.dart';
+	import 'package:flutter/cupertino.dart';
 
-	import './quiz.dart';
-	import './result.dart';
+
 
 	void main() 
 	{
 		runApp(MyApp());
 	}
 
-	class MyApp extends StatefulWidget 
-	{
-		@override
-		State<StatefulWidget> createState() 
-		{
-			return _MyAppState();
-		}
-	}
 
-	class _MyAppState extends State<MyApp> 
-	{
-		final _questions = const 
-		[
-			{'questionText': 'What\'s your favorite color?','answers': ['Black', 'Red', 'Green', 'White'],},
-			{'questionText': 'What\'s your favorite animal?','answers': ['Rabbit', 'Snake', 'Elephant', 'Lion'],},
-			{'questionText': 'Who\'s your favorite instructor?','answers': ['Max', 'Max', 'Max', 'Max'],},
-		];
 
-		var _questionIndex = 0;
-
-		void _answerQuestion() 
-		{
-			setState(() { _questionIndex = _questionIndex + 1;});
-
-			print(_questionIndex);
-
-			if (_questionIndex < _questions.length) 
-			{
-				print('We have more questions!');
-			} 
-			else 
-			{
-				print('No more questions!');
-			}
-		}
-
+	class MyApp extends StatelessWidget 
+	{ 
 		@override
 		Widget build(BuildContext context) 
 		{
-			return MaterialApp(
-			home: Scaffold(
-				appBar: AppBar(title: Text('Splitting the App Into Widgets'),),
-				body: _questionIndex < _questions.length
-					? Quiz(answerQuestion: _answerQuestion, questionIndex: _questionIndex, questions: _questions,)
-					: Result(),
+			return MaterialApp
+			(
+			title: 'Chart',
+			theme: ThemeData
+			(
+				primarySwatch: Colors.green,
+				accentColor: Colors.red
 			),
+			home: MyHomePage(),
 			);
 		}
 	}
 
-<span class="blue">quiz.dart</span>
 
-	import 'package:flutter/material.dart';
 
-	import './question.dart';
-	import './answer.dart';
-
-	class Quiz extends StatelessWidget 
+	class MyHomePage extends StatefulWidget
 	{
-		final List<Map<String, Object>> questions;
-		final int questionIndex;
-		final Function answerQuestion;
+		@override
+		_MyHomePageState createState() => _MyHomePageState();
+	}
 
-		Quiz({
-			@required this.questions,
-			@required this.answerQuestion,
-			@required this.questionIndex,
-		});
+	class _MyHomePageState extends State<MyHomePage> 
+	{
+		//Field
+		final List<Model>  modelList = 
+		[
+			Model(id: '1', title: 'MHU', amount: '200', date: DateTime.now()),
+			Model(id: '2', title: 'AAu', amount: '400', date: DateTime.now().subtract(Duration(days: 1))),
+			Model(id: '3', title: 'BBU', amount: '600', date: DateTime.now().subtract(Duration(days: 2))),
+			Model(id: '4', title: 'CCU', amount: '800', date: DateTime.now().subtract(Duration(days: 3))),
+			Model(id: '5', title: 'DDU', amount: '1000', date: DateTime.now().subtract(Duration(days: 4))),
+			Model(id: '6', title: 'EEU', amount: '1200', date: DateTime.now().subtract(Duration(days: 5))),
+			Model(id: '7', title: 'FFU', amount: '1400', date: DateTime.now().subtract(Duration(days: 6))),
+			Model(id: '8', title: 'GGU', amount: '1600', date: DateTime.now().subtract(Duration(days: 7))),
+			Model(id: '9', title: 'HHU', amount: '1800', date: DateTime.now().subtract(Duration(days: 8))),
+		];
 
+
+		//Property
+		List<Model> get recentModelList
+		{
+			return modelList.where((model) 
+			{
+			return model.date.isAfter
+			(
+				DateTime.now().subtract(Duration(days: 7),
+			));
+			}).toList();
+		}
+
+
+		//Method
 		@override
 		Widget build(BuildContext context) 
 		{
-			return Column(
-			children: [
-				Question(questions[questionIndex]['questionText'],),
-				...(questions[questionIndex]['answers'] as List<String>).map((answer) {
-				return Answer(answerQuestion, answer);
-				}).toList()
+			return Card
+			(
+			child: SingleChildScrollView
+			(
+				child: Column
+				(
+				crossAxisAlignment: CrossAxisAlignment.stretch,
+				children: 
+				[
+					Chart(recentModelList),
+				],
+				)
+			)
+			);
+		}
+	}
+
+
+
+	class Chart extends StatelessWidget
+	{
+		//Field
+		final List<Model> recentModelList;
+		double totalSpending=0;
+
+		//Constructor
+		Chart(this.recentModelList)
+		{
+			this.totalSpending = groupModelValue.fold(0.0, (sum, item) {return sum + item['amount'];});
+		}
+
+		//Property
+		List<Map<String, Object>> get groupModelValue
+		{
+			return List.generate(7, (index)
+			{
+			final weekDay=DateTime.now().subtract(Duration(days: index),);
+			var totalSum = 0.0;
+			for(var i=0; i<recentModelList.length;i++)
+			{
+				if
+				(
+				recentModelList[i].date.day == weekDay.day && 
+				recentModelList[i].date.month == weekDay.month &&
+				recentModelList[i].date.year == weekDay.year 
+				)
+				{
+				totalSum +=double.parse(recentModelList[i].amount);
+				}
+			}
+			return {'day': DateFormat.E().format(weekDay), 'amount': totalSum};
+			});
+		}
+
+		//Method
+		@override
+		Widget build(BuildContext context) 
+		{
+			return Card
+			(
+			elevation: 6,
+			margin: EdgeInsets.all(20),
+			child: Padding
+			(
+				padding: EdgeInsets.all(10),
+				child: Row
+				(
+				mainAxisAlignment: MainAxisAlignment.spaceAround,
+				children: groupModelValue.map
+				(
+					(data) 
+					{
+					return Flexible
+					(
+						fit: FlexFit.tight,
+						child: ChartBar
+						(
+						data['day'],
+						data['amount'],
+						totalSpending == 0.0 ? 0.0 : (data['amount'] as double) / totalSpending,
+						),
+					);
+					}
+				).toList()
+				),
+			)
+			);
+		}
+	}
+
+
+
+	class ChartBar extends StatelessWidget 
+	{
+		//Field
+		final String day;
+		final double amount;
+		final double percent;
+
+		//Constructor
+		ChartBar(this.day, this.amount, this.percent);
+
+		//Method
+		@override
+		Widget build(BuildContext context)
+		{
+			return Column
+			(
+			children: <Widget>
+			[
+				Container
+				(
+					height: 20,
+					child: FittedBox(child: Text('\$${amount.toStringAsFixed(0)}'),),
+				),
+				SizedBox(height: 5,),
+				Container
+				(
+					height: 200,
+					width: 10,
+					child: Stack
+					(
+					children: <Widget>
+					[
+						Container
+						(
+						decoration: BoxDecoration
+						(
+							border: Border.all(color: Colors.grey, width: 1.0),
+							color: Color.fromRGBO(220, 220, 220, 1),
+							borderRadius: BorderRadius.circular(10),
+						),
+						),
+						FractionallySizedBox
+						(
+						heightFactor: percent,
+						child: Container
+						(
+							decoration: BoxDecoration
+							(
+							color: Theme.of(context).primaryColor,
+							borderRadius: BorderRadius.circular(10),
+							),
+						),
+						),
+					],
+					),
+				),
+				SizedBox(height: 5,),
+				Text(day),
 			],
 			);
 		}
 	}
 
 
-<span class="blue">answer.dart</span>
 
-	import 'package:flutter/material.dart';
-
-	class Answer extends StatelessWidget 
+	class Model
 	{
-		final Function selectHandler;
-		final String answerText;
+		//Field
+		String id;
+		String title;
+		String amount;
+		DateTime date;
 
-		Answer(this.selectHandler, this.answerText);
-
-		@override
-		Widget build(BuildContext context) 
-		{
-			return Container(
-			width: double.infinity,
-			child: ElevatedButton(child: Text(answerText),onPressed: selectHandler,),
-			);
-		}
-	}
-
-
-<span class="blue">question.dart</span>
-
-	import 'package:flutter/material.dart';
-
-	class Question extends StatelessWidget 
-	{
-		final String questionText;
-
-		Question(this.questionText);
-
-		@override
-		Widget build(BuildContext context) 
-		{
-			return Container(child: Text(questionText,),);
-		}
-	}
-
-<span class="blue">result.dart</span>
-
-	import 'package:flutter/material.dart';
-
-	class Result extends StatelessWidget 
-	{
-		@override
-		Widget build(BuildContext context) 
-		{
-			return Center(child: Text('You did it!'),);
-		}
+		//Constructor
+		Model
+		({
+			@required this.id,
+			@required this.title,
+			@required this.amount,
+			@required this.date
+		});
 	}
 
 
 
 
+	
+
+
+
+
+
+<div class="md1"></div>
+	
+#### 11
+	
+<span class="red">aaa</span>
 
 
 
 
 
 
-<div class="md0"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="md1"></div>
 
 ## General
 
@@ -931,13 +1578,8 @@ answer.dart
 
 
 	
-<div class="md0"></div>
+<div class="md1"></div>
 
-
-
-
-
-	
 ## Example 1
 #### main.dart
 	import 'package:flutter/material.dart';
@@ -1081,5 +1723,52 @@ answer.dart
 	  }
 	}
 
-</body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+<div class="md1"></div>
+
+## Model
+
+#### <span class="red">General</span> 
+
+<span class="blue">main.dart</span>

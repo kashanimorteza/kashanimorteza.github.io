@@ -59,8 +59,7 @@
 
 	void main() 
 	{
-		User morteza = new User();
-		
+		User morteza = new User();		
 		morteza.name = "morteza";
 		print(morteza.name);
 		morteza.say();
@@ -68,7 +67,9 @@
 
 #### <span class="red">The Cascade operator</span>
 
-	class Student 
+<span class="blue">lib.dart</span>
+
+	class User 
 	{
 		void method1() 
 		{
@@ -81,12 +82,16 @@
 		}
 	}
 
+<span class="blue">main.dart</span>
+
 	void main() 
 	{
-		new Student()
+		new User()
 			..method1()
 			..method2();
 	}
+
+
 
 
 <div class="md0"></div>
@@ -95,14 +100,14 @@
 
 #### <span class="red">General</span>
 
-#### <span class="blue">lib.dart</span>
+<span class="blue">lib.dart</span>
 
 	class User 
 	{
 		String name;
 	}
 
-#### <span class="blue">main.dart</span>
+<span class="blue">main.dart</span>
 
 	import './lib.dart';
 
@@ -115,14 +120,14 @@
 
 #### <span class="red">Private</span>
 
-#### <span class="blue">lib.dart</span>
+<span class="blue">lib.dart</span>
 
 	class User 
 	{
 		String _name;
 	}
 
-#### <span class="blue">main.dart</span>
+<span class="blue">main.dart</span>
 
 	import './lib.dart';
 
@@ -134,14 +139,14 @@
 
 #### <span class="red">Static</span>
 
-#### <span class="blue">lib.dart</span>
+<span class="blue">lib.dart</span>
 
 	class User 
 	{
 		static String name;
 	}
 
-#### <span class="blue">main.dart</span>
+<span class="blue">main.dart</span>
 
 	import './lib.dart';
 
@@ -159,7 +164,7 @@
 
 ## This
 
-#### <span class="blue">lib.dart</span>
+<span class="blue">lib.dart</span>
 
 	class User 
 	{
@@ -174,7 +179,7 @@
 	}
 
 
-#### <span class="blue">main.dart</span>
+<span class="blue">main.dart</span>
 
 	import './lib.dart';
 
@@ -194,6 +199,8 @@
 
 #### <span class="red">Example 1</span>
 
+<span class="blue">lib.dart</span>
+
 	class User 
 	{
 		String name;
@@ -208,6 +215,10 @@
 		}
 	}
 
+<span class="blue">main.dart</span>
+
+	import './lib.dart';
+
 	void main()
 	{
 		User morteza = new User('morteza', 'kashani', 35);
@@ -215,6 +226,8 @@
 	}
 
 #### <span class="red">Example 2</span>
+
+<span class="blue">lib.dart</span>
 
 	class User 
 	{
@@ -225,6 +238,10 @@
 		User(String this.name, String this.family, int this.age);
 	}
 
+<span class="blue">main.dart</span>
+
+	import './lib.dart';
+
 	void main() 
 	{
 		User morteza = new User('morteza', 'kashani', 35);
@@ -232,6 +249,8 @@
 	}
 
 #### <span class="red">Named Constructors</span>
+
+<span class="blue">lib.dart</span>
 
 	class User 
 	{
@@ -243,6 +262,10 @@
 		User.initName(String this.name);
 	}
 
+<span class="blue">main.dart</span>
+
+	import './lib.dart';
+	
 	void main() 
 	{
 		User morteza = new User.initName('morteza');
@@ -272,10 +295,14 @@
 			this._age = age+1;
 		}
 
+		set usr_age2(int age) =>  this._age = age+1;
+
 		int get usr_age 
 		{
 			return _age;
 		}
+
+		int get usr_age2 => _age;
 	}
 
 #### <span class="blue">main.dart</span>

@@ -17,8 +17,8 @@
 [Basic](Flutter-Basic.md) |
 [Structure](Flutter-Structure.md) |
 [Script](Flutter-Script.md) |
-[My Library](Flutter-MyLibrary.md) |
-[My Program](Flutter_MyProgram.md)
+[Application](Flutter-Application.md) |
+[My Library](Flutter-MyLibrary.md)
 
 
 <div class="md3"></div>
@@ -125,9 +125,20 @@ Set JAVA_HOME variable as "C:\Programming\java_jre"
 	
 	flutter devices
 	
-	flutter create ptoject_name
+	flutter create
 	
 	flutter run
+
+
+
+
+<div class="md0"></div>
+
+## Command
+
+	flutter create flutter_01
+
+	flutter pub get
 
 
 

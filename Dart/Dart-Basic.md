@@ -83,6 +83,36 @@ Run dart command in command-line and test it
 
 
 
+<div class="md0"></div>
+
+## Packages
+
+#### intl
+
+
+
+
+<div class="md0"></div>
+
+## Concept
+
+#### AOT
+
+Ahead Of Time compilation
+
+
+#### JIT
+
+Just In Time compilation
+
+#### OEM
+
+Original Equipment Manufacturer
+
+
+
+
+
 
 <div class="md0"></div>
 
