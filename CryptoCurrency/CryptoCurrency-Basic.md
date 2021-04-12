@@ -39,7 +39,10 @@
 
 #### General
 
-<a href="aaa" target="_blank">aaa</a> - 
+<a href="https://bitcoin.org/en/" target="_blank">bitcoin</a> - 
+<a href="https://github.com/bitcoin" target="_blank">github</a> - 
+<a href="https://www.blockchain.com/" target="_blank">blockchain</a> - 
+
 
 
 #### Tutorial
