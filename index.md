@@ -34,7 +34,7 @@ version 2
 <a href="English/English.html">English</a>
 <div class="html3"></div>
 <a href="Forex/Forex.html">Forex</a>
-<div class="md3"></div>
+<div class="html3"></div>
 <a href="CryptoCurrency/CryptoCurrency.html">Crypto Currency</a>
 </td>
 
