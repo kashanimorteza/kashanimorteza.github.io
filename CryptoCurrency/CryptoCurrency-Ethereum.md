@@ -12,7 +12,7 @@
 </style>
 
 
-# [<span style="color:black;">Crypto Currency Diagram</span>](file:./CryptoCurrency.md)
+# [<span style="color:black;">Crypto Currency Ethereum</span>](file:./CryptoCurrency.md)
 [Diagram](CryptoCurrency-Diagram.md) | 
 [Bitcoin](CryptoCurrency-Bitcoin.md) |
 [Hash](CryptoCurrency-Hash.md) |
@@ -22,23 +22,14 @@
 
 
 <div class="md3"></div>
-<a href="#general">General</a> - 
-<a href="#money">Money</a> - 
-<a href="#bitcoin">Bitcoin</a> -
-<a href="#hashing">Hashing</a> -
-<a href="#signature">Signature</a> - 
-<a href="#blockchain">Blockchain</a> - 
- 
+<a href="#resource">Resource</a> - 
+<a href="#idioms">Idioms</a> -
+<a href="#structure">Structure</a> - 
+<a href="#concept">Concept</a> -
+<a href="#note">Note</a> - 
+<a href="#question">Question</a>
 
 
-
-
-
-<div class="md1"></div>
-
-## General
-
-![](Diagram/CryptoCurrency-General.jpeg)
 
 
 
@@ -46,18 +37,14 @@
 
 <div class="md1"></div>
 
-## Money
-
-![](Diagram/CryptoCurrency-Money.jpeg)
+## Resource
 
 
 
 
 <div class="md0"></div>
 
-## Bitcoin
-
-![](Diagram/CryptoCurrency-Bitcoin.jpeg)
+## Idioms
 
 
 
@@ -65,27 +52,44 @@
 
 <div class="md0"></div>
 
-## Hashing
+## Structure
 
-![](Diagram/CryptoCurrency-Hashing.jpeg)
+
+
+
+
+
+<div class="md0"></div>
+
+## Structure
+
+
+
+
 
 
 
 
 <div class="md0"></div>
 
-## Signature
+## Libreary
 
-![](Diagram/CryptoCurrency-Signature.jpeg)
+
+
+
 
 
 
 <div class="md0"></div>
 
-## Blockchain
-
-![](Diagram/CryptoCurrency-Blockchain.jpeg)
+## Command
 
 
 
 
+
+
+
+<div class="md0"></div>
+
+## Question

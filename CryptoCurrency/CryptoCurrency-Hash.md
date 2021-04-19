@@ -14,21 +14,35 @@
 
 # [<span style="color:black;">Crypto Currency Hash</span>](file:./CryptoCurrency.md)
 [Diagram](CryptoCurrency-Diagram.md) | 
-[Basic](CryptoCurrency-Basic.md) |
+[Bitcoin](CryptoCurrency-Bitcoin.md) |
 [Hash](CryptoCurrency-Hash.md) |
-[Encryption](CryptoCurrency-Encryption.md) |
-[Blockchain](CryptoCurrency-Blockchain.md)
+[Signature](CryptoCurrency-Signature.md) |
+[Blockchain](CryptoCurrency-Blockchain.md) |
+[Ethereum](CryptoCurrency-Ethereum.md)
 
 
 <div class="md3"></div>
+<a href="#diagram">Diagram</a> - 
 <a href="#resource">Resource</a> - 
 <a href="#structure">Structure</a> - 
-<a href="#idioms">Idioms</a> - 
+<a href="#concept">Concept</a> - 
 <a href="#libreary">Libreary</a> - 
 <a href="#command">Command</a> - 
 <a href="#script">Script</a> - 
 <a href="#question">Question</a> - 
 
+
+
+
+
+
+
+
+<div class="md1"></div>
+
+## Diagram
+
+![](Diagram/CryptoCurrency-Hashing.jpeg)
 
 
 
@@ -44,35 +58,50 @@ hash break website
 
 
 
-
-
-
-
-
 <div class="md0"></div>
 
 ## Structure
 
-
-
-
+Function 
 
 
 
 <div class="md0"></div>
 
-## Idioms
+## Concept
 
-salt
+#### <span class="red">General</span>
+
+<div align="right" dir="rtl">
+<span>یک تابع که یک ورودی بگیرد و همیشه یک خرجی ثابت بابت این ورودی بدهد</span>
+<div class="md4"></div>
+<span>چون خروجی‌ ثابت است و ورودی بی‌ نهایت، پس ۱۰۰ درصد ورودی‌های مختلف با خروجی یکسان خواهیم داشت، اما خروجی‌ اینقدر بزرگ که این مساله اصلا مهم نیست</span>
+</div>
+
+#### <span class="red">Properties</span>
+
+Free input size
+
+Specific output length
+
+Efficiency computed
+
+Collision resistance
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span>نتونن ورودی رو جوری تغییر بدن که به هش مورد نظرشون برسن</span>
 
 
+Hiding
+&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;
+<span>نباید از هش به دیتا برسم</span>
 
 
+Puzzle friendliness
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span>خیلی سریع تولید نشه</span>
 
 
-
-
-
+#### <span class="red">Salt</span>
 
 
 
@@ -81,8 +110,7 @@ salt
 
 ## Libreary
 
-sha2
-
+sha256
 
 
 
@@ -92,9 +120,7 @@ sha2
 
 ## Command
 
-echo hello | sha256sum
-
-
+    echo hello | sha256sum
 
 
 
