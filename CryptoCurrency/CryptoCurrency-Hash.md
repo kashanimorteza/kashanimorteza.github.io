@@ -12,7 +12,7 @@
 </style>
 
 
-# [<span style="color:black;">Crypto Currency Hash</span>](file:./CryptoCurrency.md)
+# [<span style="color:black;">Crypto Currency Hash</span>](CryptoCurrency.md)
 [Diagram](CryptoCurrency-Diagram.md) | 
 [Bitcoin](CryptoCurrency-Bitcoin.md) |
 [Hash](CryptoCurrency-Hash.md) |

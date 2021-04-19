@@ -13,7 +13,7 @@
 </style>
 
 
-# [<span style="color:black;">Crypto Currency Signature </span>](file:./CryptoCurrency.md)
+# [<span style="color:black;">Crypto Currency Signature </span>](CryptoCurrency.md)
 [Diagram](CryptoCurrency-Diagram.md) | 
 [Bitcoin](CryptoCurrency-Bitcoin.md) |
 [Hash](CryptoCurrency-Hash.md) |
