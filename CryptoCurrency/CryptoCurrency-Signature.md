@@ -1,17 +1,17 @@
 <style>
-.md0{margin-top: 150px;}
-.md1{margin-top: 75px;}
-.md2{margin-top: 50px;}
-.md33{margin-top: 25px;}
-.md3{margin-top: 15px;}
-.md4{margin-top: 5px;}
+.md0{padding-bottom: 150px;}
+.md1{padding-bottom: 75px;}
+.md2{padding-bottom: 50px;}
+.md3{padding-bottom: 25px;}
+.md4{padding-bottom: 5px;}
+.md5{padding-bottom: 10px;}
 .tbl1 td#header{background-color: D1ECCF}
 .tbl1 tr#header{background-color: D1ECCF}
 .red{color:#E74C3C}
 .blue{color:#3498DB}
 .green{color:##28B463}
+table{border: 0px solid black;}
 </style>
-
 
 # [<span style="color:black;">Crypto Currency Signature </span>](CryptoCurrency.md)
 [Diagram](CryptoCurrency-Diagram.md) | 
@@ -20,7 +20,6 @@
 [Signature](CryptoCurrency-Signature.md) |
 [Blockchain](CryptoCurrency-Blockchain.md) |
 [Ethereum](CryptoCurrency-Ethereum.md)
-
 
 <div class="md3"></div>
 <a href="#diagram">Diagram</a> - 
@@ -34,7 +33,7 @@
 <a href="#question">Question</a> 
 
 
-<div class="md1"></div>
+<div class="md3"></div>
 
 ## Diagram
 
