@@ -36,7 +36,7 @@ table{border: 0px solid black;}
 
 <div class="md3"></div>
 
-[Signature](CryptoCurrency-Signature.md) 
+[Encryption](CryptoCurrency-Encryption.md) 
 
 
 <div class="md3"></div>

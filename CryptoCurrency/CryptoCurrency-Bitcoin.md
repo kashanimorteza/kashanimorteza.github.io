@@ -17,7 +17,7 @@ table{border: 0px solid black;}
 [Diagram](CryptoCurrency-Diagram.md) | 
 [Bitcoin](CryptoCurrency-Bitcoin.md) |
 [Hash](CryptoCurrency-Hash.md) |
-[Signature](CryptoCurrency-Signature.md) |
+[Encryption](CryptoCurrency-Encryption.md) |
 [Blockchain](CryptoCurrency-Blockchain.md) |
 [Ethereum](CryptoCurrency-Ethereum.md)
 
@@ -69,6 +69,10 @@ table{border: 0px solid black;}
 
 Satoshi Nakamoto - Warren Edward Buffett
 
+#### Book
+<a target="_blank" href="https://www.oreilly.com/library/view/mastering-bitcoin/9781491902639/">oreilly</a>
+
+
 
 
 
@@ -76,7 +80,14 @@ Satoshi Nakamoto - Warren Edward Buffett
 
 ## Rules
 
-
+<div class="md1" align="right" dir="rtl">
+<div class="md4">نودها همواره بلندترین زنجیره را به عنوان زنجیره صحیح در نظر میگیرند</div>
+<div class="md4">به صورت قراردادی، اولین تراکنش در یک بلوک، تراکنش خاصی محسوب میشود که سکهی جدیدی را
+ایجاد کرده و مالک آن تولیدکنندهی آن بلوک است</div>
+<div class="md4">تفاوت مقدار خروجی یک تراکنش از مقدار ورودی آن کارمزد تراکنش است</div>
+<div class="md4">در هر دوره فقط 210 هزار پول تولید خواهد شد</div>
+<div class="md4">پس از هر دوره که 210 هزار تا پول تولید شد، مبلغ جایزه نصف خواهد شد</div>
+</div>
 
 
 
@@ -317,6 +328,10 @@ Proof of stake or virtual mining
 هش کلید public آدرس بیت کوینی من است
 <div class="md4"></div>
 bitcoin programming language(script) based on fort
+<div class="md4"></div>
+انگیزهٔ هکر برای سرقت بالاست ولی‌ انگیزی سیستم بانکی‌ برای جلوگیری پایین است، هکر با هوش مصنوعی قویتر میشه
+<div class="md4"></div>
+هر ۱۰ دقیقه یک بار یک ثبت یا بلاک در زنجیرهٔ بلاکچین اضافه می‌‌شود
 </div>
 
 <!-- General -->
@@ -416,14 +431,19 @@ aa
 <div class="md5"><span class="red">Mining</span></div>
 <div class="md3">
 <div>1 - یه سری آدم دارن پول انتقال میدان، که مثلا چه مقدار پول از کجا به کجا انتقال پیدا کند، به اینها میگن Transaction = TRX</div>
-<div>2 - ماینر یه سری Trx ها رو از MemPool می گیرد</div>
-<div>3 - Trx مخصوص که مشخص کننده جایزه ماینر هست را هم اضافه می کند</div>
-<div>4 - یک Nonce هم اضافه می کند</div>
-<div>5 - Hash بلاک قبلی‌ رو هم اضافه می‌کند</div>
-<div>6 - Hash این مجموعه اطلاعات رو حساب می کند</div>
-<div>7 - Hash ساخته شده را با قانون Bitcoin بررسی می کند</div>
-<div>8 - اگر طبق اون قانون نبود، Nonce را عوض می کند و دوباره Hash را حساب می کند</div>
-<div>9 - اگر طبق اون قانون بود، او برنده شده است و اون مقدار جایزه برای او خواهد شد و به شبکه اعلام می کند</div>
+<div>2 - تراکنشهای جدید به تمامی نودها مخابره میشوند</div>
+<div>3 -  ماینر ها تراکنشها را میگیرند و در MemPool خود ذخیره می کنند </div>
+<div>4 - Trx مخصوص که مشخص کننده جایزه ماینر هست را هم اضافه می کند</div>
+<div>5 - یک Nonce هم اضافه می کند</div>
+<div>6 - Hash بلاک قبلی‌ رو هم اضافه می‌کند</div>
+<div>7 - Hash این مجموعه اطلاعات رو حساب می کند</div>
+<div>8 - Hash ساخته شده را با قانون POW بررسی می کند</div>
+<div>9 - اگر طبق اون قانون نبود، Nonce را عوض می کند و دوباره Hash را حساب می کند</div>
+<div>10 - اگر طبق اون قانون بود، او برنده شده است و اون مقدار جایزه برای او خواهد شد و به شبکه اعلام می کند</div>
+<div>11 - سایر نودها بلوک مذکور را تنها در شرایطی میپذیرند که کل تراکنشهای آن صحیح با شند و
+قبلا خرج نشده باشند</div>
+<div>12 - سایر نودها موافقت خود را با بلوک مورد نظر با ایجاد بلوک بعدی در زنجیره اعلام میدارند و به
+این منظور از هش بلوک پذیرفته شده به عنوان هش قبلی استفاده میکنند</div>
 </div>
 <div class="md5"><span class="blue">Mining Devices</span></div>
 <div class="md3">
@@ -516,13 +536,6 @@ aa
 <div>PeerCoin</div>
 <div>Dash</div>
 </div>
-
-
-
-
-
-
-
 
 </div>
 

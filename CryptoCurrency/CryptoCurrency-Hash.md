@@ -17,7 +17,7 @@ table{border: 0px solid black;}
 [Diagram](CryptoCurrency-Diagram.md) | 
 [Bitcoin](CryptoCurrency-Bitcoin.md) |
 [Hash](CryptoCurrency-Hash.md) |
-[Signature](CryptoCurrency-Signature.md) |
+[Encryption](CryptoCurrency-Encryption.md) |
 [Blockchain](CryptoCurrency-Blockchain.md) |
 [Ethereum](CryptoCurrency-Ethereum.md)
 

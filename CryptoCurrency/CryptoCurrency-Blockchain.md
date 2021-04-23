@@ -5,29 +5,27 @@
 .md3{padding-bottom: 25px;}
 .md4{padding-bottom: 5px;}
 .md5{padding-bottom: 10px;}
+table{border: 0px solid black;}
 .tbl1 td#header{background-color: D1ECCF}
 .tbl1 tr#header{background-color: D1ECCF}
 .red{color:#E74C3C}
 .blue{color:#3498DB}
 .green{color:##28B463}
-table{border: 0px solid black;}
 </style>
 
 # [<span style="color:black;">Crypto Currency BlockChain</span>](CryptoCurrency.md)
 [Diagram](CryptoCurrency-Diagram.md) | 
 [Bitcoin](CryptoCurrency-Bitcoin.md) |
 [Hash](CryptoCurrency-Hash.md) |
-[Signature](CryptoCurrency-Signature.md) |
+[Encryption](CryptoCurrency-Encryption.md) |
 [Blockchain](CryptoCurrency-Blockchain.md) |
 [Ethereum](CryptoCurrency-Ethereum.md)
 
 <div class="md3"></div>
 <a href="#diagram">Diagram</a> - 
 <a href="#resource">Resource</a> - 
-<a href="#idioms">Idioms</a> - 
+<a href="#concept">Concept</a> - 
 <a href="#structure">Structure</a> - 
-<a href="#libreary">Libreary</a> - 
-<a href="#command">Command</a> - 
 <a href="#question">Question</a> - 
 <a href="#source">Source</a>
 
@@ -55,12 +53,25 @@ table{border: 0px solid black;}
 
 <div class="md0"></div>
 
-## Idioms
-ثبت تاریخ به صورت زنجیروار
+## Concept
 
-هر ۱۰ دقیقه یک بار یک ثبت یا بلاک در زنجیرهٔ بلاکچین اضافه می‌‌شود
+<div dir="rtl">
+<div class="md4">ما یه سری اطلاعات داریم که میریزیمشون داخل یه ظرف که به اون ظرف میگیم Block</div>
+<div class="md4">بعد این بلاک‌ها رو زنجیر وار به هم میچسبونیم که به این زنجیر یا نخ تسبیح می گوییم Chain </div>
+<div class="md4">هر وقت یک بلاک به زنجیر خودمان اضافه کردیم به آدم‌های اطرافمون داخل شبکه اعلام می‌کنیم</div>
+<div class="md3">آنها برسی‌ می‌‌کنند اگر اطلاعات مورد قبولشن باشد، بلاک جدید رو به زنجیرهٔ خودشون هم اضافه می‌‌کنند</div>
 
-انگیزهٔ هکر برای سرقت بالاست ولی‌ انگیزی سیستم بانکی‌ برای جلوگیری پایین است، هکر با هوش مصنوعی قویتر میشه
+<div class="md3">
+<span class="blue">ماهیت بلاکهای این زنجیر چگونه حفظ میشود؟</span>&nbsp;&nbsp;<span>با استفاده از Hash</span>
+</div>
+
+<div class="md3">
+<span class="blue">ترتیب این زنجیر چگونه حفظ میشود؟</span>&nbsp;&nbsp;<span>هر بلاک باید Hash بلاک قبلی‌ رو داشته باشد</span>
+</div>
+
+<div class="md4"></div>
+<div class="md4"></div>
+</div>
 
 
 
@@ -71,32 +82,9 @@ table{border: 0px solid black;}
 
 ## Structure
 
+#### <span class="red">Block</span>
 
-بلاک چین زنجیری از بلاک هست، هر بلاک هش دیتای بلاک قبلی‌ رو دارد
-
-
-
-
-
-
-
-
-<div class="md0"></div>
-
-## Libreary
-
-
-
-
-
-
-
-
-<div class="md0"></div>
-
-## Command
-
-
+#### <span class="red">Chain</span>
 
 
 
