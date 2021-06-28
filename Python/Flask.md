@@ -50,16 +50,13 @@ table{border: 0px solid black;}
 
 
 
+<div class="md1"></div>
 
 ## Resource
-
-<div class="md1">
 
 #### General
 
 <a href="https://palletsprojects.com/" target="_blank">Flask</a>
-
-</div>
 
 
 
