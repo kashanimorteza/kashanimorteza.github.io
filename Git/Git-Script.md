@@ -92,12 +92,15 @@
 <div class="md0"></div>
 
 ## Git Ignore
-| Command | Explain |
-| ------ | ------ |
-| touch .gitignore | <span align="right" dir="rtl"> اول یک فایل میسازیم  <span>  |
-| videos/ <br> sound/1.mp3 <br> *.dll <br> !myfolder/m.dll | <span align="right" dir="rtl"> آدرس فایل ها رو قرار می دهیم <span>  |
 
+	git config --global core.excludesfile ~/.gitignore
 
+	vim .gitignore
+	--------------------
+	videos/
+	sound/1.mp3
+	*.dll
+	!myfolder/m.dll
 
 
 
@@ -107,20 +110,29 @@
 
 ## Gitlab Add ssh key
 
-    ssh -V
-    cd /home/morteza/.ssh/
-    ssh-keygen -t rsa -b 2048 -C "kashani.morteza@gmail.com"
-    add thes address : /home/morteza/.ssh/gitlab
-
-    cat /home/morteza/.ssh/gitlab.pub
-    copy code and paste to gitlab : Settings > SSH Keys
-
-    ssh -T git@gitlab.com
+#### linux
     
-    vim /home/morteza/.ssh/config     
-    Host kashani.morteza.gitlab.com
-     Preferredauthentications publickey
-     IdentityFile ~/.ssh/gitlab
+    1 - cd /root/.ssh
+    2 - ssh-keygen -t rsa -b 2048 -C "kashani.morteza@gmail.com"
+		for name choose : gitlab
+	3 - chmod 700 /root/.ssh/gitlab
+	4 - chmod 700 /root/.ssh/gitlab.pub
+	5 - cat /root/.ssh/gitlab.pub
+    6 - Copy key and add to gitlab ssh key gitlab > User Settings > preferences > SSH Keys
+    7 - vim /root/.ssh/config 
+		# GitLab.com
+		Host gitlab.com
+			PreferredAuthentications publickey
+			IdentityFile gitlab
+	8 - ssh -T git@gitlab.com
+
+#### Windows
+
+    1 - run git program
+    2 - ssh-keygen -t rsa -b 2048 -C "kashani.morteza@gmail.com"
+	3 - Go to C:/Users/Administrator/.ssh/
+	4 - Copy id_rsa.pub and add to gitlab ssh key gitlab > User Settings > preferences > SSH Keys
+
 
 
 

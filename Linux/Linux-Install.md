@@ -1,15 +1,22 @@
 <style>
-.md0{margin-top: 150px;}
-.md1{margin-top: 75px;}
-.md2{margin-top: 50px;}
-.md3{margin-top: 25px;}
-.md4{margin-top: 10px;}
+.md0{padding-bottom: 150px;}
+.md1{padding-bottom: 75px;}
+.md2{padding-bottom: 50px;}
+.md3{padding-bottom: 25px;}
+.md4{padding-bottom: 5px;}
+.md5{padding-bottom: 10px;}
 .tbl1 td#header{background-color: D1ECCF}
 .tbl1 tr#header{background-color: D1ECCF}
+.red{color:#E74C3C}
+.blue{color:#3498DB}
+.green{color:#28B463}
+table{border: 0px solid black;}
 </style>
 
-
 # [<span style="color:black;">Linux Install</span>](Linux.md)
+
+<div class="md3"></div>
+
 [Basic](Linux-Basic.md) | 
 [Structure](Linux-Structure.md) | 
 [Components](Linux-Components.md) | 
@@ -32,12 +39,13 @@
 
 <div class="md1"></div>
 
-## Ubuntu
+## <span class="red">Ubuntu</span>
 
-#### Basic
+#### <span class="blue">Basic</span>
 	sudo apt update
+	sudo apt upgrade
 
-#### Tools
+#### <span class="blue">Tools</span>
 
 	sudo apt install software-properties-common
 	sudo apt install apt-transport-https
@@ -45,12 +53,18 @@
 	sudo apt install ca-certificates
 	sudo apt-get install unixodbc-dev
 
-#### Network
+#### <span class="blue">Network</span>
 
 	sudo apt install net-tools
 	sudo apt install iputils-ping
 
-#### Software
+#### <span class="blue">Server</span>
+
+SSH
+
+	sudo apt install openssh-server
+
+#### <span class="blue">Software</span>
 
 Chrome
 

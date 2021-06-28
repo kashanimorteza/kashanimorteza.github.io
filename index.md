@@ -32,47 +32,47 @@ version 2
 
 <td align="center">
 <a href="English/English.html">English</a>
-<div class="html3"></div>
+<div class="md3"></div>
 <a href="Forex/Forex.html">Forex</a>
-<div class="html3"></div>
-<a href="CryptoCurrency/CryptoCurrency.html">Crypto Currency</a>
+<div class="md3"></div>
+<a href="ABD/Index.html">ABD</a>
 </td>
 
 <td align="center">
 <a href="Linux/Linux.html">Linux</a>
-<div class="html3"></div>
+<div class="md3"></div>
 <a href="Windows/Windows.html">Windows</a>
-<div class="html3"></div>
+<div class="md3"></div>
 <a href="Google/Google.html">Google</a>
-<div class="html3"></div>
+<div class="md3"></div>
 <a href="Docker/Docker.html">Docker</a>
 </td>
 
 <td align="center">
-<a href="Python/Python.html">Python</a>
-<div class="html3"></div>
+<a href="Python/Index.html">Python</a>
+<div class="md3"></div>
 <a href="Dart/Dart.html">Dart</a>
-<div class="html3"></div>
+<div class="md3"></div>
 <a href="Flutter/Flutter.html">Flutter</a>
-<div class="html3"></div>
+<div class="md3"></div>
 <a href="Go/Go.html">Go</a>
 </td>
 
 <td align="center">
-<a href="Mysql/Mysql.html">Mysql</a>
-<div class="html3"></div>
-<a href="Postgresql/Postgresql.html">Postgresql</a>
-<div class="html3"></div>
+<a href="Mysql/Index.html">Mysql</a>
+<div class="md3"></div>
+<a href="Postgresql/Index.html">Postgresql</a>
+<div class="md3"></div>
 <a href="Sqllite/Sqllite.html">Sqllite</a>
 </td>
 
 <td align="center"> 
 <a href="Tmux/Tmux.html">tmux</a>
-<div class="html3"></div>
+<div class="md3"></div>
 <a href="Atom/0-Atom.html">Atom</a>
-<div class="html3"></div>
+<div class="md3"></div>
 <a href="VsCode/VsCode.html">VS Code</a>
-<div class="html3"></div>
+<div class="md3"></div>
 <a href="Git/Git.html">Git</a>
 </td>
 
